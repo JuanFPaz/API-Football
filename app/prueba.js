@@ -25,33 +25,16 @@ const config = {
 // }
 
 async function writeJSONStatus(data){
-    await fs.writeFile('./fixture-copa-arg-2024.json',data)
+    await fs.writeFile('./fixture-primera-c-2024.json',data)
     console.log('Se creo la data');
 }
 
 // getStatus()
 
-// Probar el dir
-
-function logDirName(){
-    console.log(__dirname)
-    console.log(__filename);
-}
-
-//Modulo Path
-function verPathDelArchivo(){
-    const dirPath = path.join(__dirname)
-    console.log(dirPath);
-}
-module.exports = {
-    logDirName,
-    verPathDelArchivo
-}
-
 async function getLigasArgentina(){
     const config = {
         method: 'get',
-        url: 'https://v3.football.api-sports.io/fixtures?league=130&season=2024',
+        url: 'https://v3.football.api-sports.io/fixture?league=131&season=2024',
         headers: {
           'x-rapidapi-key': 'API_KEY',
           'x-rapidapi-host': 'v3.football.api-sports.io'

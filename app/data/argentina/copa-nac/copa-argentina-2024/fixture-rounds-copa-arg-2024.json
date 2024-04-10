@@ -1,0 +1,8 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "130", "season": "2024" },
+  "errors": [],
+  "results": 2,
+  "paging": { "current": 1, "total": 1 },
+  "response": ["1st Round", "Round of 32"]
+}

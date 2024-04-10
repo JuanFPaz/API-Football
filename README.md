@@ -14,8 +14,33 @@
 | `/standings?league=128&season=2024` | Nos devuelve las tablas de posiciones por liga, copa de liga y temporada. |
 | `/fixture?league=128&season=2024` | Nos devuelve los fixture completos de ligas, copas de liga y copa nacional/internacional. |
 | `/fixture/rounds?league=130&season=2024` | Nos devuelve el fixture de una liga, copas de liga y copa nacional/internacional por rondas. |
-| `/teams` | miau :) |
+
 ## Paises, ligas y copas a obtener
 
-|Country| Code | Competencias |
-|Argentina| AR | CONMEBOL |
+### Argentina
+
+- Liga Profesional
+  - `league_id`: 128
+  - `current-season`: 2024
+- Copa de Liga Profesional
+  - `league_id`: 1032
+  - `current-season`:2024
+- Copa Argentina
+  - `league_id`: 130
+  - `current-season`: 2024
+- Super Copa
+  - `league-id`: 810
+  - `current-season`: 2024
+- Copa Trofeo de Campeones
+  - `league-id`: 517
+  - `current-season`: 2024
+- Primera Nacional
+  - `league_id`: 129
+  - `current-season`: 2024
+- Primera B Netropolitana:
+  - `league_id`: 131,
+  - `current-season`: 2024
+- Primera C:
+  - `league_id`: 132
+  - `current-season`: 2024
+  

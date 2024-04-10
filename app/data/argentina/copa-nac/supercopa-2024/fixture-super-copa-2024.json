@@ -1,0 +1,55 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "810", "season": "2024" },
+  "errors": [],
+  "results": 1,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 1178793,
+        "referee": "Y. Falcón",
+        "timezone": "UTC",
+        "date": "2024-03-14T00:10:00+00:00",
+        "timestamp": 1710375000,
+        "periods": { "first": 1710375000, "second": 1710378600 },
+        "venue": {
+          "id": 110,
+          "name": "Estadio Mario Alberto Kempes",
+          "city": "Ciudad de Córdoba, Provincia de Córdoba"
+        },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
+      },
+      "league": {
+        "id": 810,
+        "name": "Super Copa",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/810.png",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "season": 2024,
+        "round": "Final"
+      },
+      "teams": {
+        "home": {
+          "id": 435,
+          "name": "RiBer Plate",
+          "logo": "https://media.api-sports.io/football/teams/435.png",
+          "winner": true
+        },
+        "away": {
+          "id": 450,
+          "name": "Estudiantes L.P.",
+          "logo": "https://media.api-sports.io/football/teams/450.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}
