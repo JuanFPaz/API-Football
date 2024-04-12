@@ -2,11 +2,13 @@ const axios = require('axios');
 const path = require('node:path')
 const fs = require('node:fs/promises')
 
+const API_KEY = process.env.API_SPORTS
+
 const config = {
   method: 'get',
   url: 'https://v3.football.api-sports.io/status',
   headers: {
-    'x-rapidapi-key': 'API_KEY',
+    'x-rapidapi-key': API_KEY,
     'x-rapidapi-host': 'v3.football.api-sports.io'
   }
 };
@@ -36,7 +38,7 @@ async function getLigasArgentina(){
         method: 'get',
         url: 'https://v3.football.api-sports.io/fixture?league=131&season=2024',
         headers: {
-          'x-rapidapi-key': 'API_KEY',
+          'x-rapidapi-key': API_KEY,
           'x-rapidapi-host': 'v3.football.api-sports.io'
         }
       };
