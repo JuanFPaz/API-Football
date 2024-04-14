@@ -1,12 +1,13 @@
 const express = require('express')
-
+const cors = require('cors')
 const app = express()
 
+app.use(cors())
+
 app.get('/', (req, res) => {
-  console.log('Conexion con exito :)')
+  res.json({ mensaje: 'tkm Peke <3' })
 })
 
 app.listen(3000, () => {
   console.log('Server: http://localhost:3000')
-  setTimeout(() => { console.log('Simulando tarea asincrona') }, 5000)
 })
