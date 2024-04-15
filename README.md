@@ -32,7 +32,7 @@ dir_ejemplo
 
 ### Instalacion
 
-```git clone [github.com/JuanFPaz/API-Football](https://github.com/JuanFPaz/API-Football)```
+```git clone https://github.com/JuanFPaz/API-Football```
 
 ```cd API-football```
 
