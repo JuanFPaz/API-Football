@@ -5,7 +5,7 @@
 - Documentacion API: [API Football - Documentacion (V3)](https://www.api-football.com/documentation-v3)
 - Dashboard API: [Dashboard API Football](https://dashboard.api-football.com/)
 
-## Descripcion endpoints de la API original (todavia no hice ningun endpoint xd)
+### Descripcion endpoints de la API original (todavia no hice ningun endpoint xd)
 
 | Endpoint    |Descripción                                                          |
 |-------------|----------------------------------------------------------------------|
@@ -44,3 +44,13 @@
   - `league_id`: 132
   - `current-season`: 2024
   
+
+```
+app
+|
+|___data
+|
+|___utils
+    |
+    |___readJson.js
+```
