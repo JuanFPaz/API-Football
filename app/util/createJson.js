@@ -1,5 +1,4 @@
 const axios = require('axios')
-const { write } = require('node:fs')
 const { writeFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
@@ -7,9 +6,16 @@ const DATA_PATH = resolve(__dirname, '../data')
 
 const API_KEY = process.env.API_SPORTS
 
-async function escribirJSON (country, data) {
-  await writeFile(DATA_PATH + '/season-antiguas/2023/' + country + '/competencias-' + country + '-2023.json', data)
-  console.log('Recurso creado con exito')
+async function processResponse (data) {
+  const { parameters: { country } } = data
+  const nameFile = country.toLowerCase()
+  const PATH_FILE = join(DATA_PATH, nameFile)
+  await writeFile(`${PATH_FILE}/${nameFile}.json`, JSON.stringify(data))
+}
+
+async function processResponseWorld (nameFile, data) {
+  const PATH_FILE = join(DATA_PATH, nameFile)
+  await writeFile(`${PATH_FILE}/${nameFile}.json`, JSON.stringify(data))
 }
 
 /* PARA LAS CURRENT SEASONS XD */
@@ -25,10 +31,50 @@ async function createCompetencias (country) {
     }
   }
 
-  const response = await axios(config)
-  escribirJSON(country.toLowerCase(), JSON.stringify(response.data))
+  const { data } = await axios(config)
+  processResponse(data)
 }
 
+async function createCompetenciasWorld (country, nameFile, ...ids) {
+  const arregloConfederancion = await Promise.all(ids.map(async (id) => {
+    const config = {
+      method: 'get',
+      url: `https://v3.football.api-sports.io/leagues?country=${country}&id=${id}`,
+      headers: {
+        'x-rapidapi-key': API_KEY,
+        'x-rapidapi-host': 'v3.football.api-sports.io'
+      }
+    }
+
+    const { data } = await axios(config)
+    return data
+  }))
+  const arregloParameters = arregloConfederancion.map(c => {
+    const { parameters } = c
+    return parameters
+  })
+  const arregloResponse = arregloConfederancion.map(c => {
+    const { response: [copa] } = c
+    return copa
+  })
+  const data = {
+    get: arregloConfederancion[0].get,
+    parameters: arregloParameters,
+    errors: arregloConfederancion[0].errors,
+    results: arregloResponse.length,
+    paging: arregloConfederancion[0].paging,
+    response: arregloResponse
+  }
+
+  processResponseWorld(nameFile, data) // const config = {
+  //   method: 'get',
+  //   url: `https://v3.football.api-sports.io/leagues?country=${country}&id=${id}`,
+  //   headers: {
+  //     'x-rapidapi-key': API_KEY,
+  //     'x-rapidapi-host': 'v3.football.api-sports.io'
+  //   }
+  // }
+}
 // async function createLigasArgentinas (...params) {
 //   const [route, idLeague, idSeason] = params
 //   const config = {
@@ -45,4 +91,5 @@ async function createCompetencias (country) {
 //   console.log(response.data)
 // }
 
-createCompetencias('Argentina')
+// createCompetenciasWorld('World', 'conmebol', 13, 11, 541)
+createCompetenciasWorld('World', 'uefa', 2, 3, 848, 531)

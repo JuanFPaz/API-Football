@@ -8,7 +8,7 @@ const DATA_PATH = resolve(__dirname, '../data')
 console.log(DATA_PATH)
 
 function getLinksArgentina () {
-  const CURRENT_SEASON = join(DATA_PATH, 'season-actual', 'argentina', 'competencias-argentina.json')
+  const CURRENT_SEASON = join(DATA_PATH, 'argentina', 'argentina.json')
   return readFile(CURRENT_SEASON, 'utf-8')
     .then(data => {
       return JSON.parse(data)
@@ -35,31 +35,31 @@ function getLinksArgentina () {
     })
 }
 
-function getCopaLigaProfData () {
-  const CURRENT_CUP = join(DATA_PATH, 'season-actual', 'argentina', 'copa-de-liga', 'copa-liga-profesional-2024')
-  const CURRENT_FIXTURE = join(CURRENT_CUP, 'fixture-copa-liga-prof-2024.json')
-  const CURRENT_ROUNDS = join(CURRENT_CUP, 'fixture-rounds-copa-liga-prof-2024.json')
-  const CURRENT_STANDING = join(CURRENT_CUP, 'tabla-copa-liga-prof-2024.json')
+// function getCopaLigaProfData () {
+//   const CURRENT_CUP = join(DATA_PATH, 'season-actual', 'argentina', 'copa-de-liga', 'copa-liga-profesional-2024')
+//   const CURRENT_FIXTURE = join(CURRENT_CUP, 'fixture-copa-liga-prof-2024.json')
+//   const CURRENT_ROUNDS = join(CURRENT_CUP, 'fixture-rounds-copa-liga-prof-2024.json')
+//   const CURRENT_STANDING = join(CURRENT_CUP, 'tabla-copa-liga-prof-2024.json')
 
-  const standing = readFile(CURRENT_STANDING, 'utf-8')
-    .then(data => {
-      return JSON.parse(data)
-    })
-    .then(({ response }) => {
-      console.log(response)
-    })
+//   const standing = readFile(CURRENT_STANDING, 'utf-8')
+//     .then(data => {
+//       return JSON.parse(data)
+//     })
+//     .then(({ response }) => {
+//       console.log(response)
+//     })
 
-  return Promise.all([standing])
-}
+//   return Promise.all([standing])
+// }
 
-getCopaLigaProfData().then(d => { console.log(d) })
-function getLinksCONMEBOL () {
+// getCopaLigaProfData().then(d => { console.log(d) })
+// function getLinksCONMEBOL () {
 
-}
+// }
 
-function getLinksUEFA () {
+// function getLinksUEFA () {
 
-}
+// }
 
 function getLinksPrincipal () {
   return Promise.all([

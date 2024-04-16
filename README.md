@@ -83,3 +83,27 @@ dir_ejemplo
 - Primera C:
   - `league_id`: 132
   - `current-season`: 2024
+
+### World
+
+- CONMEBOL Libertadores:
+  - `league-id`: 13
+  - `current-season`: 2024
+- CONMEBOL Sudamericana:
+  - `league-id`: 11
+  - `current-season`: 2024
+- CONMEBOL Sudamericana:
+  - `league-id`: 541
+  - `current-season`: 2024
+- UEFA Champions League:
+  - `league-id`: 2
+  - `current-season`: 2023
+- UEFA Champions League:
+  - `league-id`: 3
+  - `current-season`: 2023
+- UEFA Conference League:
+  -`league-id`:848
+  -`current-season`:2023
+- UEFA Supercup:
+  -`league-id`:531
+  -`current-season`:2023
