@@ -1,0 +1,1 @@
+{"get":"fixture/rounds","parameters":{"league":"1032","season":"2024"},"errors":{"endpoint":"The Fixture endpoint does not exist."},"results":0,"paging":{"current":1,"total":1},"response":[]}

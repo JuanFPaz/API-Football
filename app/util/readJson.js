@@ -1,6 +1,5 @@
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
-const { json } = require('express')
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
