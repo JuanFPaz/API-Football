@@ -36,7 +36,7 @@ async function writeJSONStatus (data) {
 async function getLigasArgentina () {
   const config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/fixture?league=131&season=2024',
+    url: 'https://v3.football.api-sports.io/fixture/rounds?league=1032&season=2024',
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'

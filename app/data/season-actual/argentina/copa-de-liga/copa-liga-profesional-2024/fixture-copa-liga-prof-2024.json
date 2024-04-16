@@ -43,7 +43,10 @@
           "winner": null
         }
       },
-      "goals": { "home": 1, "away": 1 },
+      "goals": { 
+        "home": 1,
+        "away": 1 
+      },
       "score": {
         "halftime": { "home": 1, "away": 1 },
         "fulltime": { "home": 1, "away": 1 },
