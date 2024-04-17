@@ -14,14 +14,18 @@ function getLinksArgentina () {
       return JSON.parse(data)
     })
     .then(({ response }) => {
-      console.log(response)
       // nombre a response como res, para evitar que se soobrescriban
 
       const [,,,,, ligaProfesional, copaArgentina, trofeoCampeones,, superCopa,, copaDeLaLiga] = response
       const list = [ligaProfesional, copaDeLaLiga, copaArgentina, superCopa, trofeoCampeones]
       const listFormateada = list.map(l => {
-        const { league, ...rest } = l
-        return league
+        const { league, seasons } = l
+
+        const seasonsFormateada = seasons.map(s => {
+          const { year, start, end, current } = s
+          return { year, start, end, current }
+        })
+        return { league, seasons: seasonsFormateada }
       })
       const data = {
         country: {
@@ -41,11 +45,15 @@ function getLinksCONMEBOL () {
       return JSON.parse(data)
     })
     .then(({ response }) => {
-      console.log(response)
       const list = [...response]
       const listFormateada = list.map(l => {
-        const { league, ...rest } = l
-        return league
+        const { league, seasons } = l
+
+        const seasonsFormateada = seasons.map(s => {
+          const { year, start, end, current } = s
+          return { year, start, end, current }
+        })
+        return { league, seasons: seasonsFormateada }
       })
       const data = {
         country: {
@@ -68,8 +76,13 @@ function getLinksUEFA () {
     .then(({ response }) => {
       const list = [...response]
       const listFormateada = list.map(l => {
-        const { league, ...rest } = l
-        return league
+        const { league, seasons } = l
+
+        const seasonsFormateada = seasons.map(s => {
+          const { year, start, end, current } = s
+          return { year, start, end, current }
+        })
+        return { league, seasons: seasonsFormateada }
       })
       const data = {
         country: {
