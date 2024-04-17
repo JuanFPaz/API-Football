@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const { getLinksPrincipal } = require('./app/util/readJson')
+const { getLinksPrincipal, getDataLeague } = require('./app/util/readJson')
 
 const PORT = process.env.PORT ?? 3000
 
@@ -28,8 +28,16 @@ app.get('/', async (req, res) => {
   }
 })
 
-app.get('/liga-profesional-argentina', async (req, res) => {
+app.get('/2024/liga-profesional-argentina', async (req, res) => {
+  const data = {}
+  try {
+    data.timestamp = Date.now()
+    data.response = await getDataLeague()
+    res.json(data)
+    console.log(data)
+  } catch (error) {
 
+  }
 })
 
 app.get('/copa-de-la-liga', async (req, res) => {

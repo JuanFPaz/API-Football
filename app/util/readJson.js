@@ -34,39 +34,91 @@ function getLinksArgentina () {
       return data
     })
 }
+function getLinksCONMEBOL () {
+  const CURRENT_SEASON = join(DATA_PATH, 'conmebol', 'conmebol.json')
+  return readFile(CURRENT_SEASON, 'utf-8')
+    .then(data => {
+      return JSON.parse(data)
+    })
+    .then(({ response }) => {
+      console.log(response)
+      const list = [...response]
+      const listFormateada = list.map(l => {
+        const { league, ...rest } = l
+        return league
+      })
+      const data = {
+        country: {
+          name: 'CONMEBOL',
+          code: null,
+          flag: null
+        },
+        list: listFormateada
+      }
+      return data
+    })
+}
 
-// function getCopaLigaProfData () {
-//   const CURRENT_CUP = join(DATA_PATH, 'season-actual', 'argentina', 'copa-de-liga', 'copa-liga-profesional-2024')
-//   const CURRENT_FIXTURE = join(CURRENT_CUP, 'fixture-copa-liga-prof-2024.json')
-//   const CURRENT_ROUNDS = join(CURRENT_CUP, 'fixture-rounds-copa-liga-prof-2024.json')
-//   const CURRENT_STANDING = join(CURRENT_CUP, 'tabla-copa-liga-prof-2024.json')
+function getLinksUEFA () {
+  const CURRENT_SEASON = join(DATA_PATH, 'uefa', 'uefa.json')
+  return readFile(CURRENT_SEASON, 'utf-8')
+    .then(data => {
+      return JSON.parse(data)
+    })
+    .then(({ response }) => {
+      const list = [...response]
+      const listFormateada = list.map(l => {
+        const { league, ...rest } = l
+        return league
+      })
+      const data = {
+        country: {
+          name: 'UEFA',
+          code: null,
+          flag: null
+        },
+        list: listFormateada
+      }
+      return data
+    })
+}
 
-//   const standing = readFile(CURRENT_STANDING, 'utf-8')
-//     .then(data => {
-//       return JSON.parse(data)
-//     })
-//     .then(({ response }) => {
-//       console.log(response)
-//     })
+async function getDataLeague () {
+  const DIR_PATH = join(DATA_PATH, 'argentina', 'season', '2024', 'liga-profesional-argentina', 'standings-liga-profesional-argentina-2024.json')
+  const data = await readFile(DIR_PATH)
+  const { response: [{ league: { standings: [stand] } }] } = JSON.parse(data)
+  const standingFormateada = stand.map(e => {
+    const { team, points, goalsDiff, all, home, away } = e
+    return {
+      team,
+      points,
+      goalsDiff,
+      all,
+      home,
+      away
+    }
+  })
 
-//   return Promise.all([standing])
-// }
+  const tablaInicial = standingFormateada.every(e => e.all.played === 0)
 
-// getCopaLigaProfData().then(d => { console.log(d) })
-// function getLinksCONMEBOL () {
+  if (tablaInicial) {
+    return [{ standing: standingFormateada.sort((a, b) => (a.team.name > b.team.name) ? 1 : -1) }]
+  }
 
-// }
+  return [{ standing: standingFormateada }]
+}
 
-// function getLinksUEFA () {
-
-// }
+getDataLeague()
 
 function getLinksPrincipal () {
   return Promise.all([
-    getLinksArgentina()
+    getLinksArgentina(),
+    getLinksCONMEBOL(),
+    getLinksUEFA()
   ])
 }
 
 module.exports = {
-  getLinksPrincipal
+  getLinksPrincipal,
+  getDataLeague
 }

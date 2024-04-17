@@ -52,8 +52,8 @@ dir_ejemplo
 | `/countries`|Nos devuelve los países disponibles, con claves y valores para los Query Search. |
 | `/leagues?country=Argentina` | Nos devuelve todas las ligas, copas de liga y copas nacionales disponibles por paises. |
 | `/standings?league=128&season=2024` | Nos devuelve las tablas de posiciones por liga, copa de liga y temporada. |
-| `/fixture?league=128&season=2024` | Nos devuelve los fixture completos de ligas, copas de liga y copa nacional/internacional. |
-| `/fixture/rounds?league=130&season=2024` | Nos devuelve el fixture de una liga, copas de liga y copa nacional/internacional por rondas. |
+| `/fixtures?league=128&season=2024` | Nos devuelve los fixture completos de ligas, copas de liga y copa nacional/internacional. |
+| `/fixtures/rounds?league=130&season=2024` | Nos devuelve el fixture de una liga, copas de liga y copa nacional/internacional por rondas. |
 
 ## Paises, ligas y copas a obtener
 
