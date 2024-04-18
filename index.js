@@ -32,16 +32,22 @@ app.get('/2024/liga-profesional-argentina', async (req, res) => {
   const data = {}
   try {
     data.timestamp = Date.now()
-    data.response = await getDataLeague()
+    data.response = await getDataLeague('argentina', '2024', 'liga-profesional-argentina', 'standings')
     res.json(data)
-    console.log(data)
   } catch (error) {
 
   }
 })
 
-app.get('/copa-de-la-liga', async (req, res) => {
+app.get('/2024/copa-de-la-liga-profesional', async (req, res) => {
+  const data = {}
+  try {
+    data.timestamp = Date.now()
+    data.response = await getDataLeague('argentina', '2024', 'copa-de-la-liga-profesional', 'standings')
+    res.json(data)
+  } catch (error) {
 
+  }
 })
 
 app.get('/copa-argentina', async (req, res) => {

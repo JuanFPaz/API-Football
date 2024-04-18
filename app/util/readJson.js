@@ -94,11 +94,13 @@ function getLinksUEFA () {
     })
 }
 
-async function getDataLeague () {
-  const DIR_PATH = join(DATA_PATH, 'argentina', 'season', '2024', 'copa-de-la-liga-profesional', 'standings-copa-de-la-liga-profesional-2024.json')
+async function getDataLeague (...params) {
+  const [country, season, nameLeague, nameData] = params
+  const nameDir = nameLeague
+  const nameFile = `${nameData}-${nameLeague}-${season}.json`
+  const DIR_PATH = join(DATA_PATH, country, 'season', season, nameDir, nameFile)
   const data = await readFile(DIR_PATH)
   const { response: [{ league: { standings } }] } = JSON.parse(data)
-  console.log(standings.length)
   const standingsFormateadas = standings.map(standing => {
     // Parece redundante pero no lo es, cada liga tiene una tabla, por ejemplo la copa de la liga es un arreglo con 2 tablas
     // Seguramente la champions y la libertadores tengan 1 arreglo con 8 tablas
@@ -120,7 +122,6 @@ async function getDataLeague () {
 
   /* agrego nueva sentencia para reducir los standings en un solo arreglo, y hacer el every: */
   const equipos = standingsFormateadas.reduce((acc, curr) => acc.concat(curr), [])
-  console.log(standingsFormateadas)
   const partidosJugados = equipos.every(e => e.all.played === 0)
   // const tablaInicial = standingFormateada.every(e => e.all.played === 0)
 
@@ -134,8 +135,6 @@ async function getDataLeague () {
   // aca agregariamos el fixture, etx
   return [{ standing: standingsFormateadas }]
 }
-
-getDataLeague()
 
 function getLinksPrincipal () {
   return Promise.all([
