@@ -89,10 +89,11 @@ function createNameFile (data) {
   const DIR_PATH = join(DATA_PATH, nameCountry, 'season', nameSeason, nameLeague, nameFile)
   return DIR_PATH
 }
-async function createStanding () {
+async function createStanding (...params) {
+  /* Forze llamarlo params, porque el nobmre season ya esta declarado abajo, y despues lo arreglo xd */
   const config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/standings?league=128&season=2024',
+    url: `https://v3.football.api-sports.io/standings?league=${params[0]}&season=${params[1]}`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -109,10 +110,10 @@ async function createStanding () {
   await writeFile(DIR_PATH + '/' + nameFile, JSON.stringify(data))
 }
 
-async function createFixture () {
+async function createFixture (...params) {
   const config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/fixtures?league=128&season=2024',
+    url: `https://v3.football.api-sports.io/fixtures?league=${params[0]}&season=${params[1]}`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -128,15 +129,13 @@ async function createFixture () {
   const DIR_PATH = join(DATA_PATH, nameCountry, 'season', nameSeason, nameLeague)
   await writeFile(DIR_PATH + '/' + nameFile, JSON.stringify(data))
 
-  createFixtureRounds(DIR_PATH, nameFile)
+  createFixtureRounds(DIR_PATH, nameFile, params)
 }
 
-createFixture()
-
-async function createFixtureRounds (DIR_PATH, nameFile) {
+async function createFixtureRounds (DIR_PATH, nameFile, ...params) {
   const config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/fixtures/rounds?league=128&season=2024',
+    url: `https://v3.football.api-sports.io/fixtures/league?id=${params[0]}&season=${params[1]}`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -146,6 +145,9 @@ async function createFixtureRounds (DIR_PATH, nameFile) {
   const { data } = await axios(config)
   await writeFile(DIR_PATH + '/rounds-' + nameFile, JSON.stringify(data))
 }
+
+createStanding(1032, 2024)
+// createFixture(1032, 2024)
 
 // async function probando () {
 //   const data = await readFile(__dirname + '/miau.json')
