@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "bowie": "node app/util/createJson.js",
+    "joey": "node app/util/readJson.js",
     "dev": "nodemon index.js"
   },
   "devDependencies": {
