@@ -1,11 +1,10 @@
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
+const { log } = require('node:console')
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
 const DATA_PATH = resolve(__dirname, '../data')
-
-console.log(DATA_PATH)
 
 function getLinksArgentina () {
   const CURRENT_SEASON = join(DATA_PATH, 'argentina', 'argentina.json')
@@ -66,7 +65,6 @@ function getLinksCONMEBOL () {
       return data
     })
 }
-
 function getLinksUEFA () {
   const CURRENT_SEASON = join(DATA_PATH, 'uefa', 'uefa.json')
   return readFile(CURRENT_SEASON, 'utf-8')
@@ -97,28 +95,44 @@ function getLinksUEFA () {
 }
 
 async function getDataLeague () {
-  const DIR_PATH = join(DATA_PATH, 'argentina', 'season', '2024', 'liga-profesional-argentina', 'standings-liga-profesional-argentina-2024.json')
+  const DIR_PATH = join(DATA_PATH, 'argentina', 'season', '2024', 'copa-de-la-liga-profesional', 'standings-copa-de-la-liga-profesional-2024.json')
   const data = await readFile(DIR_PATH)
-  const { response: [{ league: { standings: [stand] } }] } = JSON.parse(data)
-  const standingFormateada = stand.map(e => {
-    const { team, points, goalsDiff, all, home, away } = e
-    return {
-      team,
-      points,
-      goalsDiff,
-      all,
-      home,
-      away
-    }
+  const { response: [{ league: { standings } }] } = JSON.parse(data)
+  console.log(standings.length)
+  const standingsFormateadas = standings.map(standing => {
+    // Parece redundante pero no lo es, cada liga tiene una tabla, por ejemplo la copa de la liga es un arreglo con 2 tablas
+    // Seguramente la champions y la libertadores tengan 1 arreglo con 8 tablas
+    // y la liga es arreglo con 1 tabla
+    // Podria crear un standing.length === 1, evitar hacer el siguiente MAP, pero no veo porque no lo puede hacer
+    const standingFormateada = standing.map(equipo => {
+      const { team, points, goalsDiff, all, home, away } = equipo
+      return {
+        team,
+        points,
+        goalsDiff,
+        all,
+        home,
+        away
+      }
+    })
+    return standingFormateada
   })
 
-  const tablaInicial = standingFormateada.every(e => e.all.played === 0)
+  /* agrego nueva sentencia para reducir los standings en un solo arreglo, y hacer el every: */
+  const equipos = standingsFormateadas.reduce((acc, curr) => acc.concat(curr), [])
+  console.log(standingsFormateadas)
+  const partidosJugados = equipos.every(e => e.all.played === 0)
+  // const tablaInicial = standingFormateada.every(e => e.all.played === 0)
 
-  if (tablaInicial) {
-    return [{ standing: standingFormateada.sort((a, b) => (a.team.name > b.team.name) ? 1 : -1) }]
+  if (partidosJugados) {
+    const standingsSorteadas = standingsFormateadas.map(standing => {
+      return standing.sort((a, b) => (a.team.name > b.team.name) ? 1 : -1)
+    })
+    return [{ standing: standingsSorteadas }]
   }
 
-  return [{ standing: standingFormateada }]
+  // aca agregariamos el fixture, etx
+  return [{ standing: standingsFormateadas }]
 }
 
 getDataLeague()
