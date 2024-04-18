@@ -129,12 +129,15 @@ async function getDataLeague (...params) {
     const standingsSorteadas = standingsFormateadas.map(standing => {
       return standing.sort((a, b) => (a.team.name > b.team.name) ? 1 : -1)
     })
-    return [{ standing: standingsSorteadas }]
+    return [{ standings: standingsSorteadas }]
   }
 
   // aca agregariamos el fixture, etx
-  return [{ standing: standingsFormateadas }]
+  return [{ standings: standingsFormateadas }]
 }
+
+// Esto me pasa por no manejar los erroers como corresponde -_- ' !
+// getDataLeague('argentina', '2024', 'liga-profesional-argentina', 'standings') // Error undefined: 27 SyntaxError: Expected double-quoted property name in JSON at position 845 -.-
 
 function getLinksPrincipal () {
   return Promise.all([

@@ -29,6 +29,7 @@ app.get('/', async (req, res) => {
 })
 
 app.get('/2024/liga-profesional-argentina', async (req, res) => {
+  console.log('Hola')
   const data = {}
   try {
     data.timestamp = Date.now()
