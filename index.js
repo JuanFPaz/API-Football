@@ -24,6 +24,7 @@ app.get('/', async (req, res) => {
     data.response = await getLinksPrincipal()
     res.json(data)
   } catch (err) {
+    /* TODO: manejar errores de solicitud :D */
     res.status(500).json(err)
   }
 })
