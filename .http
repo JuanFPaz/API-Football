@@ -1,1 +1,12 @@
+GET http://localhost:3000/
+
+### :)
+
 GET http://localhost:3000/2024/liga-profesional-argentina
+
+###
+GET http://localhost:3000/2024/conmebol-libertadores
+
+###
+
+GET http://localhost:3000/2023/uefa-europa-conference-league
