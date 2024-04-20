@@ -1,0 +1,1483 @@
+{
+    "get": "standings",
+    "parameters": {
+        "league": "13",
+        "season": "2024"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "league": {
+                "id": 13,
+                "name": "CONMEBOL Libertadores",
+                "country": "World",
+                "logo": "https://media.api-sports.io/football/leagues/13.png",
+                "flag": null,
+                "season": 2024,
+                "standings": [
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 124,
+                                "name": "Fluminense",
+                                "logo": "https://media.api-sports.io/football/teams/124.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 1,
+                            "group": "Group A",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 2315,
+                                "name": "Colo Colo",
+                                "logo": "https://media.api-sports.io/football/teams/2315.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 0,
+                            "group": "Group A",
+                            "form": "LW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 1176,
+                                "name": "Cerro Porteno",
+                                "logo": "https://media.api-sports.io/football/teams/1176.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 0,
+                            "group": "Group A",
+                            "form": "WL",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 2553,
+                                "name": "Alianza Lima",
+                                "logo": "https://media.api-sports.io/football/teams/2553.png"
+                            },
+                            "points": 1,
+                            "goalsDiff": -1,
+                            "group": "Group A",
+                            "form": "LD",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 456,
+                                "name": "Talleres Cordoba",
+                                "logo": "https://media.api-sports.io/football/teams/456.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 1,
+                            "group": "Group B",
+                            "form": "DW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 3
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 126,
+                                "name": "Sao Paulo",
+                                "logo": "https://media.api-sports.io/football/teams/126.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 1,
+                            "group": "Group B",
+                            "form": "WL",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 1152,
+                                "name": "Barcelona SC",
+                                "logo": "https://media.api-sports.io/football/teams/1152.png"
+                            },
+                            "points": 2,
+                            "goalsDiff": 0,
+                            "group": "Group B",
+                            "form": "DD",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 2,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 3
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 2331,
+                                "name": "Cobresal",
+                                "logo": "https://media.api-sports.io/football/teams/2331.png"
+                            },
+                            "points": 1,
+                            "goalsDiff": -2,
+                            "group": "Group B",
+                            "form": "LD",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 3
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 2328,
+                                "name": "Huachipato",
+                                "logo": "https://media.api-sports.io/football/teams/2328.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 2,
+                            "group": "Group C",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 1
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 450,
+                                "name": "Estudiantes L.P.",
+                                "logo": "https://media.api-sports.io/football/teams/450.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 1,
+                            "group": "Group C",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 3711,
+                                "name": "The Strongest",
+                                "logo": "https://media.api-sports.io/football/teams/3711.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 1,
+                            "group": "Group C",
+                            "form": "LW",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 130,
+                                "name": "Gremio",
+                                "logo": "https://media.api-sports.io/football/teams/130.png"
+                            },
+                            "points": 0,
+                            "goalsDiff": -4,
+                            "group": "Group C",
+                            "form": "LL",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 4
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 1135,
+                                "name": "Junior",
+                                "logo": "https://media.api-sports.io/football/teams/1135.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 2,
+                            "group": "Group D",
+                            "form": "DW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 2540,
+                                "name": "Universitario",
+                                "logo": "https://media.api-sports.io/football/teams/2540.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 1,
+                            "group": "Group D",
+                            "form": "DW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 1158,
+                                "name": "LDU de Quito",
+                                "logo": "https://media.api-sports.io/football/teams/1158.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 0,
+                            "group": "Group D",
+                            "form": "WL",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 120,
+                                "name": "Botafogo",
+                                "logo": "https://media.api-sports.io/football/teams/120.png"
+                            },
+                            "points": 0,
+                            "goalsDiff": -3,
+                            "group": "Group D",
+                            "form": "LL",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 4
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 3
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 3702,
+                                "name": "Bolívar",
+                                "logo": "https://media.api-sports.io/football/teams/3702.png"
+                            },
+                            "points": 6,
+                            "goalsDiff": 5,
+                            "group": "Group E",
+                            "form": "WW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 2,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 7,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 0
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 127,
+                                "name": "Flamengo",
+                                "logo": "https://media.api-sports.io/football/teams/127.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 2,
+                            "group": "Group E",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 1
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 1125,
+                                "name": "Millonarios",
+                                "logo": "https://media.api-sports.io/football/teams/1125.png"
+                            },
+                            "points": 1,
+                            "goalsDiff": -1,
+                            "group": "Group E",
+                            "form": "LD",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 4
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 3
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 2318,
+                                "name": "Palestino",
+                                "logo": "https://media.api-sports.io/football/teams/2318.png"
+                            },
+                            "points": 0,
+                            "goalsDiff": -6,
+                            "group": "Group E",
+                            "form": "LL",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 6
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 4
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 121,
+                                "name": "Palmeiras",
+                                "logo": "https://media.api-sports.io/football/teams/121.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 2,
+                            "group": "Group F",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 1153,
+                                "name": "Independiente del Valle",
+                                "logo": "https://media.api-sports.io/football/teams/1153.png"
+                            },
+                            "points": 4,
+                            "goalsDiff": 2,
+                            "group": "Group F",
+                            "form": "WD",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 1
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 2358,
+                                "name": "Liverpool Montevideo",
+                                "logo": "https://media.api-sports.io/football/teams/2358.png"
+                            },
+                            "points": 1,
+                            "goalsDiff": -2,
+                            "group": "Group F",
+                            "form": "LD",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 4
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 3
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 460,
+                                "name": "San Lorenzo",
+                                "logo": "https://media.api-sports.io/football/teams/460.png"
+                            },
+                            "points": 1,
+                            "goalsDiff": -2,
+                            "group": "Group F",
+                            "form": "LD",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 3
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 1,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 1062,
+                                "name": "Atletico-MG",
+                                "logo": "https://media.api-sports.io/football/teams/1062.png"
+                            },
+                            "points": 6,
+                            "goalsDiff": 4,
+                            "group": "Group G",
+                            "form": "WW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 2,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 6,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 1
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 2348,
+                                "name": "Penarol",
+                                "logo": "https://media.api-sports.io/football/teams/2348.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 4,
+                            "group": "Group G",
+                            "form": "WL",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 5,
+                                    "against": 1
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 5,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 1
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 437,
+                                "name": "Rosario Central",
+                                "logo": "https://media.api-sports.io/football/teams/437.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 0,
+                            "group": "Group G",
+                            "form": "LW",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 2808,
+                                "name": "Caracas FC",
+                                "logo": "https://media.api-sports.io/football/teams/2808.png"
+                            },
+                            "points": 0,
+                            "goalsDiff": -8,
+                            "group": "Group G",
+                            "form": "LL",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 9
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 1,
+                                    "against": 4
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 5
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ],
+                    [
+                        {
+                            "rank": 1,
+                            "team": {
+                                "id": 435,
+                                "name": "River Plate",
+                                "logo": "https://media.api-sports.io/football/teams/435.png"
+                            },
+                            "points": 6,
+                            "goalsDiff": 4,
+                            "group": "Group H",
+                            "form": "WW",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 2,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 4,
+                                    "against": 0
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 2,
+                            "team": {
+                                "id": 1179,
+                                "name": "Libertad Asuncion",
+                                "logo": "https://media.api-sports.io/football/teams/1179.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 1,
+                            "group": "Group H",
+                            "form": "WL",
+                            "status": "same",
+                            "description": "Promotion - Copa Libertadores (Play Offs: 1/8-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 3,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 3,
+                            "team": {
+                                "id": 2356,
+                                "name": "Club Nacional",
+                                "logo": "https://media.api-sports.io/football/teams/2356.png"
+                            },
+                            "points": 3,
+                            "goalsDiff": 0,
+                            "group": "Group H",
+                            "form": "LW",
+                            "status": "same",
+                            "description": "Promotion - Copa Sudamericana (Play Offs: 1/16-finals)",
+                            "all": {
+                                "played": 2,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 2
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 1,
+                                "draw": 0,
+                                "lose": 0,
+                                "goals": {
+                                    "for": 2,
+                                    "against": 0
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        },
+                        {
+                            "rank": 4,
+                            "team": {
+                                "id": 2807,
+                                "name": "Deportivo Tachira FC",
+                                "logo": "https://media.api-sports.io/football/teams/2807.png"
+                            },
+                            "points": 0,
+                            "goalsDiff": -5,
+                            "group": "Group H",
+                            "form": "LL",
+                            "status": "same",
+                            "description": null,
+                            "all": {
+                                "played": 2,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 2,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 5
+                                }
+                            },
+                            "home": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 2
+                                }
+                            },
+                            "away": {
+                                "played": 1,
+                                "win": 0,
+                                "draw": 0,
+                                "lose": 1,
+                                "goals": {
+                                    "for": 0,
+                                    "against": 3
+                                }
+                            },
+                            "update": "2024-04-15T00:00:00+00:00"
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+} 
