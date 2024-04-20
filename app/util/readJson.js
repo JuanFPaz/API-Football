@@ -1,6 +1,5 @@
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
-const { log, error } = require('node:console')
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
@@ -127,10 +126,9 @@ async function processGetLinksCups (confederacion) {
 }
 
 async function processGetStanding (...params) {
-  /* Primer Proceso, crear la ruta de la solicitud: */
   let dataPath
   let dataFile
-  console.log('Creando ruta del archivo')
+  /* Crear la ruta de la solicitud: */
   try {
     if (params.length < 4) {
       const customError = {
@@ -138,6 +136,15 @@ async function processGetStanding (...params) {
       }
 
       throw customError
+    }
+    if (params[3] !== 'standings') {
+      /*
+        No forzamos error, si no que devolvemos standings null para que en el front,
+        podamos filtrar si el componente Copa tiene tablita de posiciones o no.
+        Agarrado de los pelos? si. Funciona? nose ahora me fijo
+      */
+      console.log(`La ${params[2]} no tiene tablita de posiciones :(`)
+      return { standings: null }
     }
     const [country, season, nameLeague, nameData] = params
     const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
@@ -164,6 +171,7 @@ async function processGetStanding (...params) {
       message: 'Ocurrio un error leyendo el archivo.',
       reference: err
     }
+    console.error(err.message)
     console.error(customError.message)
     throw customError
   }
@@ -226,9 +234,11 @@ async function getDataLeague ({ country, season, nameLeague, nameData }) {
   */
   let data
   try {
-    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData), { fixture: ['holi'] }])
+    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), { fixture: ['holi'] }])
     console.log('Todos los datos fueron obtenidos con exito')
   } catch (err) {
+    console.error(err.message)
+    console.log(nameData)
     console.error('Retornamos un error intero :/')
     return { error: err }
   }
@@ -236,8 +246,17 @@ async function getDataLeague ({ country, season, nameLeague, nameData }) {
   return data
 }
 
-async function getDataCup () {
-  // Solicitud para tener las datas de las copas
+async function getDataCup ({ country, season, nameLeague, nameData }) {
+  let data
+  try {
+    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), { fixture: ['holi'] }])
+    console.log('Todos los datos fueron obtenidos con exito')
+  } catch (err) {
+    console.error('Retornamos un error intero :/')
+    return { error: err }
+  }
+
+  return data
 }
 
 async function getDataMatch () {
@@ -262,5 +281,6 @@ async function getLinksPrincipal () {
 
 module.exports = {
   getLinksPrincipal,
-  getDataLeague
+  getDataLeague,
+  getDataCup
 }
