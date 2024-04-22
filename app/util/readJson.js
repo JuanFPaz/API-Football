@@ -139,12 +139,11 @@ async function processGetStanding (...params) {
     }
     if (params[3] !== 'standings') {
       /*
-        No forzamos error, si no que devolvemos standings null para que en el front,
+        No forzamos error, si no que devolvemos standings false para que en el front,
         podamos filtrar si el componente Copa tiene tablita de posiciones o no.
         Agarrado de los pelos? si. Funciona? nose ahora me fijo
       */
-      console.log(`La ${params[2]} no tiene tablita de posiciones :(`)
-      return { standings: null }
+      return { standings: false }
     }
     const [country, season, nameLeague, nameData] = params
     const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
@@ -224,6 +223,7 @@ async function processGetStanding (...params) {
   }
 }
 
+/* EN LOS GET DATA TAMBIEN PUEDEN OCURRIR ERRORES, ASI QUE CUIDAO */
 async function getDataLeague ({ country, season, nameLeague, nameData }) {
   /* TO DO: Capturar un error
    correctamente del promises all,
