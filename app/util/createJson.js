@@ -129,13 +129,14 @@ async function createFixture (...params) {
   const DIR_PATH = join(DATA_PATH, nameCountry, 'season', nameSeason, nameLeague)
   await writeFile(DIR_PATH + '/' + nameFile, JSON.stringify(data))
 
-  createFixtureRounds(DIR_PATH, nameFile, params)
+  createFixtureRounds(DIR_PATH, nameFile, params[0], params[1])
 }
 
 async function createFixtureRounds (DIR_PATH, nameFile, ...params) {
+  console.log(params)
   const config = {
     method: 'get',
-    url: `https://v3.football.api-sports.io/fixtures/league?id=${params[0]}&season=${params[1]}`,
+    url: `https://v3.football.api-sports.io/fixtures/rounds?league=${params[0]}&season=${params[1]}`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -146,7 +147,7 @@ async function createFixtureRounds (DIR_PATH, nameFile, ...params) {
   await writeFile(DIR_PATH + '/rounds-' + nameFile, JSON.stringify(data))
 }
 
-createStanding(1032, 2024)
+createFixture(1032, 2024)
 // createFixture(1032, 2024)
 
 // async function probando () {
