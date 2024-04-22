@@ -45,8 +45,8 @@ app.get('/2024/liga-profesional-argentina', async (req, res) => {
   const fakeBody = {
     country: 'argentina',
     season: '2024',
-    nameLeague: 'Liga Profesional Argentina'
-    // nameData: ['standings']
+    nameLeague: 'Liga Profesional Argentina',
+    nameData: ['standings']
   }
   const data = {}
   try {

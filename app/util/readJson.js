@@ -237,8 +237,8 @@ async function getDataLeague ({ country, season, nameLeague, nameData }) {
     data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), { fixture: ['holi'] }])
     console.log('Todos los datos fueron obtenidos con exito')
   } catch (err) {
+    /* TODO, Verificar si es un error interno de processFunction u otro error. O manejar el error que venga del proccess de otra forma :/ */
     console.error(err.message)
-    console.log(nameData)
     console.error('Retornamos un error intero :/')
     return { error: err }
   }
