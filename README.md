@@ -134,8 +134,12 @@ dir_ejemplo
 - UEFA Champions League:
   - `league-id`: 2
   - `current-season`: 2023
-- UEFA Champions League:
+- UEFA Europa League:
   - `league-id`: 3
   - `current-season`: 2023
-- UEFA Conference League: -`league-id`:848 -`current-season`:2023
-- UEFA Supercup: -`league-id`:531 -`current-season`:2023
+- UEFA Conference League:
+  - `league-id`:848
+  - `current-season`:2023
+- UEFA Supercup:
+  - `league-id`:531
+  - `current-season`:2023
