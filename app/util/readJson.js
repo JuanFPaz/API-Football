@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
 const { readFile } = require('node:fs/promises')
@@ -13,7 +14,8 @@ async function processGetLinksArg () {
   } catch (err) {
     const customError = {
       process: 'getLinksArg',
-      message: 'Ocurrio un Error en process Get Links argentina, creando la ruta. - No creo que ocurra ningu nerror aca, por ahora.',
+      message:
+        'Ocurrio un Error en process Get Links argentina, creando la ruta. - No creo que ocurra ningu nerror aca, por ahora.',
       reference: 'EL CHIQUI TAPIAAA'
     }
     console.error(err)
@@ -34,12 +36,12 @@ async function processGetLinksArg () {
 
   try {
     const { response } = JSON.parse(dataFile)
-    const [,,,,, ligaProfesional, copaArgentina, trofeoCampeones,, superCopa,, copaDeLaLiga] = response
+    const [, , , , , ligaProfesional, copaArgentina, trofeoCampeones, , superCopa, , copaDeLaLiga] = response
     const list = [ligaProfesional, copaDeLaLiga, copaArgentina, superCopa, trofeoCampeones]
-    const listFormateada = list.map(l => {
+    const listFormateada = list.map((l) => {
       const { league, seasons } = l
 
-      const seasonsFormateada = seasons.map(s => {
+      const seasonsFormateada = seasons.map((s) => {
         const { year, start, end, current } = s
         return { year, start, end, current }
       })
@@ -74,7 +76,8 @@ async function processGetLinksCups (confederacion) {
   } catch (err) {
     const customError = {
       process: 'GetLinksCups',
-      message: 'Ocurrio un Error en process Get Links de la ÜEFA o CORRUPTBOL, creando la ruta. - No creo que ocurra ningu nerror aca, por ahora.',
+      message:
+        'Ocurrio un Error en process Get Links de la ÜEFA o CORRUPTBOL, creando la ruta. - No creo que ocurra ningu nerror aca, por ahora.',
       reference: 'EL CHIQUI TAPIAAA aca tmb tiene la culpa'
     }
     console.error(err)
@@ -96,10 +99,10 @@ async function processGetLinksCups (confederacion) {
   try {
     const { response } = JSON.parse(dataFile)
     const list = response
-    const listFormateada = list.map(l => {
+    const listFormateada = list.map((l) => {
       const { league, seasons } = l
 
-      const seasonsFormateada = seasons.map(s => {
+      const seasonsFormateada = seasons.map((s) => {
         const { year, start, end, current } = s
         return { year, start, end, current }
       })
@@ -132,7 +135,8 @@ async function processGetStanding (...params) {
   try {
     if (params.length < 4) {
       const customError = {
-        referenceCustomError: 'Se esperaban 4 argumentos, y solo pasamos ' + params.length
+        referenceCustomError:
+          'Se esperaban 4 argumentos, y solo pasamos ' + params.length
       }
 
       throw customError
@@ -179,12 +183,12 @@ async function processGetStanding (...params) {
 
   try {
     const { response: [{ league: { standings } }] } = JSON.parse(dataFile)
-    const standingsFormateadas = standings.map(standing => {
+    const standingsFormateadas = standings.map((standing) => {
       // Parece redundante pero no lo es, cada liga tiene una tabla, por ejemplo la copa de la liga es un arreglo con 2 tablas
       // Seguramente la champions y la libertadores tengan 1 arreglo con 8 tablas
       // y la liga es arreglo con 1 tabla
       // Podria crear un standing.length === 1, evitar hacer el siguiente MAP, pero no veo porque no lo puede hacer
-      const standingFormateada = standing.map(equipo => {
+      const standingFormateada = standing.map((equipo) => {
         const { team, points, goalsDiff, all, home, away } = equipo
         return {
           team,
@@ -200,12 +204,12 @@ async function processGetStanding (...params) {
 
     /* agrego nueva sentencia para reducir los standings en un solo arreglo, y hacer el every: */
     const equipos = standingsFormateadas.reduce((acc, curr) => acc.concat(curr), [])
-    const partidosJugados = equipos.every(e => e.all.played === 0)
+    const partidosJugados = equipos.every((e) => e.all.played === 0)
     // const tablaInicial = standingFormateada.every(e => e.all.played === 0)
 
     if (partidosJugados) {
-      const standingsSorteadas = standingsFormateadas.map(standing => {
-        return standing.sort((a, b) => (a.team.name > b.team.name) ? 1 : -1)
+      const standingsSorteadas = standingsFormateadas.map((standing) => {
+        return standing.sort((a, b) => (a.team.name > b.team.name ? 1 : -1))
       })
       return { standings: standingsSorteadas }
     }
@@ -222,6 +226,73 @@ async function processGetStanding (...params) {
     throw customError
   }
 }
+async function processGetFixtures (...params) {
+  let dataPathFixtures
+  let dataPathRoundsFixtures
+  let dataFileFixtures
+  let dataFileRoundsFixtures
+  /* Crear la ruta de la solicitud: */
+  try {
+    if (params.length < 4) {
+      const customError = {
+        referenceCustomError:
+          'Se esperaban 4 argumentos, y solo pasamos ' + params.length
+      }
+
+      throw customError
+    }
+    const [country, season, nameLeague, nameData] = params
+    const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
+    const nameFileFixtures = `${nameData}-${nameLeagueFormated}-${season}.json`
+    const nameFileRoundsFixtures = `rounds-${nameFileFixtures}`
+    // Ejemplo data path: '/data/argentina/season/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
+    dataPathFixtures = join(DATA_PATH, country, 'season', season, nameLeagueFormated, nameFileFixtures)
+    dataPathRoundsFixtures = join(DATA_PATH, country, 'season', season, nameLeagueFormated, nameFileRoundsFixtures)
+  } catch (err) {
+    const customError = {
+      process: 'getFixtures',
+      message: 'Ocurrio un Error en process getFixtures, creando la ruta:',
+      reference: err
+    }
+    console.log(customError.message)
+    throw customError
+  }
+
+  console.log('Leyendo el jodido archivo')
+
+  try {
+    dataFileFixtures = await readFile(dataPathFixtures, 'utf-8')
+    dataFileRoundsFixtures = await readFile(dataPathRoundsFixtures)
+  } catch (err) {
+    const customError = {
+      process: 'getFixtures',
+      message: 'Ocurrio un Error leyendo los archivos de los fixtures.',
+      reference: err
+    }
+    console.error(err.message)
+    console.error(customError.message)
+    throw customError
+  }
+
+  try {
+    const { response: fases } = JSON.parse(dataFileRoundsFixtures)
+    const { response: fixtures } = JSON.parse(dataFileFixtures)
+
+    const fixturesFormateados = fases.map((f, idx) => {
+      const fixtureFiltrado = fixtures.filter((fx) => fx.league.round === f).map((fx) => {
+        const { fixture: { id, date, venue, status }, teams, goals, score } = fx
+        return { id, date, venue, status, teams, goals, score }
+      })
+
+      return {
+        jornada: `Fecha ${idx + 1}`,
+        partidos: fixtureFiltrado
+      }
+    })
+
+    return { fixtures: fixturesFormateados }
+  } catch (error) {}
+}
 
 /* EN LOS GET DATA TAMBIEN PUEDEN OCURRIR ERRORES, ASI QUE CUIDAO */
 async function getDataLeague ({ country, season, nameLeague, nameData }) {
@@ -234,7 +305,10 @@ async function getDataLeague ({ country, season, nameLeague, nameData }) {
   */
   let data
   try {
-    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), { fixture: ['holi'] }])
+    data = await Promise.all([
+      processGetStanding(country, season, nameLeague, nameData[0]),
+      processGetFixtures(country, season, nameLeague, nameData[1])
+    ])
     console.log('Todos los datos fueron obtenidos con exito')
   } catch (err) {
     /* TODO, Verificar si es un error interno de processFunction u otro error. O manejar el error que venga del proccess de otra forma :/ */
