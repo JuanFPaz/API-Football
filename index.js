@@ -46,7 +46,7 @@ app.get('/2024/liga-profesional-argentina', async (req, res) => {
     country: 'argentina',
     season: '2024',
     nameLeague: 'Liga Profesional Argentina',
-    nameData: ['standings']
+    nameData: ['standings', 'fixtures']
   }
   const data = {}
   try {
@@ -66,7 +66,7 @@ app.get('/2024/copa-de-la-liga-profesional', async (req, res) => {
     country: 'argentina',
     season: '2024',
     nameLeague: 'Copa de la liga Profesional',
-    nameData: ['standings']
+    nameData: ['standings', 'fixtures']
   }
   const data = {}
   try {
