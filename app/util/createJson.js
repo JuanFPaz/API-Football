@@ -147,24 +147,11 @@ async function createFixtureRounds (DIR_PATH, nameFile, ...params) {
   await writeFile(DIR_PATH + '/rounds-' + nameFile, JSON.stringify(data))
 }
 
-createFixture(1032, 2024)
+createFixture(130, 2024)
+createFixture(517, 2024)
+createFixture(810, 2024)
+
 // createFixture(1032, 2024)
-
-// async function probando () {
-//   const data = await readFile(__dirname + '/miau.json')
-//   const { get, response: [{ league: { name, country, season } }] } = JSON.parse(data)
-//   console.log(get)
-//   console.log(name)
-
-//   const { response: [{ league: { season } }] } = JSON.parse(data)
-//   const { get } = JSON.parse(data)
-//   const nameLeague = name.toLowerCase().replace(/\s/g, '-')
-//   const nameSeason = season.toString()
-//   const nameFile = `${get}-${nameLeague}-${nameSeason}.json`
-//   console.log(nameFile)
-// }
-// probando()
-
 // createStanding()
 // createCompetenciasWorld('World', 'conmebol', 13, 11, 541)
 // createCompetenciasWorld('World', 'uefa', 2, 3, 848, 531)
