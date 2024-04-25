@@ -42,7 +42,8 @@ async function processGetLinksArg () {
 
       const seasonsFormateada = seasons.map((s) => {
         const { year, start, end, current } = s
-        return { year, start, end, current }
+        const link = `http://localhost:3000/${year.toString()}/${league.name.toLowerCase().toLowerCase().replace(/\s/g, '-')}`
+        return { year, start, end, current, link }
       })
       return { league, seasons: seasonsFormateada }
     })
@@ -102,8 +103,10 @@ async function processGetLinksCups (confederacion) {
       const { league, seasons } = l
 
       const seasonsFormateada = seasons.map((s) => {
+        /* agregando links de los endpoints por season y compotencia */
         const { year, start, end, current } = s
-        return { year, start, end, current }
+        const link = `http://localhost:3000/${year.toString()}/${league.name.toLowerCase().toLowerCase().replace(/\s/g, '-')}`
+        return { year, start, end, current, link }
       })
       return { league, seasons: seasonsFormateada }
     })
