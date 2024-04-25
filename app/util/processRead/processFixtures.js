@@ -35,8 +35,6 @@ async function processGetFixtures (...params) {
     throw customError
   }
 
-  console.log('Leyendo el jodido archivo')
-
   try {
     dataFileFixtures = await readFile(dataPathFixtures, 'utf-8')
     dataFileRoundsFixtures = await readFile(dataPathRoundsFixtures)
