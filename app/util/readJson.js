@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
-import { processGetLinksArg, processGetLinksCups } from './processRead/processLinks'
-import { processGetStanding } from './processRead/processStandings'
-import { processGetFixtures } from './processRead/processFixtures'
+const { processGetLinksArg, processGetLinksCups } = require('./processRead/processLinks')
+const { processGetStanding } = require('./processRead/processStandings')
+const { processGetFixtures } = require('./processRead/processFixtures')
 
 /* EN LOS GET DATA TAMBIEN PUEDEN OCURRIR ERRORES, ASI QUE CUIDAO */
 async function getDataLeague ({ country, season, nameLeague, nameData }) {
@@ -34,8 +34,7 @@ async function getDataLeague ({ country, season, nameLeague, nameData }) {
 async function getDataCup ({ country, season, nameLeague, nameData }) {
   let data
   try {
-    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), { fixture: ['holi'] }])
-    console.log('Todos los datos fueron obtenidos con exito')
+    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), processGetFixtures(country, season, nameLeague, nameData[1])])
   } catch (err) {
     console.error('Retornamos un error intero :/')
     return { error: err }
