@@ -3,6 +3,9 @@ GET http://localhost:3000/
 ###
 
 GET http://localhost:3000/2024/liga-profesional-argentina
+###
+
+GET http://localhost:3000/2024/copa-de-la-liga-profesional
 
 ###
 GET http://localhost:3000/2024/conmebol-libertadores
