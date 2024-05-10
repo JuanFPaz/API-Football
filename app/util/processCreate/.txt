@@ -1,3 +1,0 @@
-aca van a ir los process del create, cuando me digne a modularizarlos correctamente xd
-
-En resumen, los process del create son para obtener los recursos de la api original, y crear los archivos en app/data/

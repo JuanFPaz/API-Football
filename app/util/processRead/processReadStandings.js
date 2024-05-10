@@ -53,15 +53,16 @@ async function processGetStanding (...params) {
   }
 
   try {
-    const { response: [{ league: { standings } }] } = JSON.parse(dataFile)
+    const { response: [{ league: { standings, country, name } }] } = JSON.parse(dataFile)
     const standingsFormateadas = standings.map((standing) => {
       // Parece redundante pero no lo es, cada liga tiene una tabla, por ejemplo la copa de la liga es un arreglo con 2 tablas
       // Seguramente la champions y la libertadores tengan 1 arreglo con 8 tablas
       // y la liga es arreglo con 1 tabla
       // Podria crear un standing.length === 1, evitar hacer el siguiente MAP, pero no veo porque no lo puede hacer
       const standingFormateada = standing.map((equipo) => {
-        const { team, points, goalsDiff, all, home, away } = equipo
+        const { group, team, points, goalsDiff, all, home, away } = equipo
         return {
+          group,
           team,
           points,
           goalsDiff,
@@ -70,13 +71,56 @@ async function processGetStanding (...params) {
           away
         }
       })
+
       return standingFormateada
     })
-
+    /* Agrege a centrarl corodoba EN LA TABLA DE LA LIGA PORQUE NO ESTAAAAAAAA */
+    if (country === 'Argentina' && name === 'Liga Profesional Argentina') {
+      const centralCordobaxD = {
+        group: 'Liga Profesional Argentina',
+        team: {
+          id: 1065,
+          name: 'Central Cordoba (SdE)',
+          logo: 'https://media.api-sports.io/football/teams/1065.png'
+        },
+        points: 0,
+        goalsDiff: 0,
+        all: {
+          played: 0,
+          win: 0,
+          draw: 0,
+          lose: 0,
+          goals: {
+            for: 0,
+            against: 0
+          }
+        },
+        home: {
+          played: 0,
+          win: 0,
+          draw: 0,
+          lose: 0,
+          goals: {
+            for: 0,
+            against: 0
+          }
+        },
+        away: {
+          played: 0,
+          win: 0,
+          draw: 0,
+          lose: 0,
+          goals: {
+            for: 0,
+            against: 0
+          }
+        }
+      }
+      standingsFormateadas[0].push(centralCordobaxD)
+    }
     /* agrego nueva sentencia para reducir los standings en un solo arreglo, y hacer el every: */
     const equipos = standingsFormateadas.reduce((acc, curr) => acc.concat(curr), [])
     const partidosJugados = equipos.every((e) => e.all.played === 0)
-    // const tablaInicial = standingFormateada.every(e => e.all.played === 0)
 
     if (partidosJugados) {
       const standingsSorteadas = standingsFormateadas.map((standing) => {
@@ -85,7 +129,6 @@ async function processGetStanding (...params) {
       return { standings: standingsSorteadas }
     }
 
-    // aca agregariamos el fixture, etx
     return { standings: standingsFormateadas }
   } catch (err) {
     const customError = {
