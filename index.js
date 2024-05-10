@@ -1,13 +1,41 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const { getLinksPrincipal, getDataLeague, getDataCup } = require('./app/util/readJson')
+const { createLinks } = require('./app/util/createJson')
+const { getLinks, getDataLeague, getDataCup } = require('./app/util/readJson')
 const pc = require('picocolors')
 
 const PORT = process.env.PORT ?? 3000
 
 app.use(cors())
 
+app.post('/links', async (req, res) => {
+  const { method, url } = req
+
+  const fakeBody = {
+    country: ['England']
+  }
+  const data = {}
+
+  try {
+    console.log(`${pc.bgMagenta(method + ':')} ${pc.green(url)}`)
+    data.post = req.url
+    data.timestamp = Date.now()
+    data.response = await createLinks(fakeBody)
+    if (data.response.error) {
+      throw data.response.error
+    }
+    console.log(`${pc.bgCyan('Status: ')} ${pc.green(202)}`)
+    res.status(202).json(data)
+  } catch (err) {
+    data.error = err
+    data.response = [{ message: data.error.message }]
+    console.error(`${pc.bgRed('Status: ')} ${pc.red(409)}`)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(data.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
+    res.status(409).json(data)
+  }
+})
 app.get('/', async (req, res) => {
   const { method, url } = req
 
@@ -16,18 +44,20 @@ app.get('/', async (req, res) => {
     console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
     data.get = req.url
     data.timestamp = Date.now()
-    data.response = await getLinksPrincipal()
+    data.response = await getLinks()
     if (data.response.error) {
-      throw data
+      throw data.response.error
     }
     console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
     res.json(data)
-    console.log(data)
   } catch (err) {
+    /* */
+    data.error = err
+    data.response = [{ message: data.error.message }]
     console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
-    console.error(`${pc.bgRed('Reference: ')} ${pc.red(err.response.error.reference)}`)
-    console.error(`${pc.bgRed('Message:')} ${pc.red(err.response.error.message)}`)
-    res.status(500).json(err)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(data.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
+    res.status(500).json(data)
   }
 })
 
@@ -87,6 +117,7 @@ app.get('/2024/copa-de-la-liga-profesional', async (req, res) => {
     res.status(500).json(err)
   }
 })
+
 app.get('/2024/copa-argentina', async (req, res) => {
   const { method, url } = req
 
@@ -114,6 +145,7 @@ app.get('/2024/copa-argentina', async (req, res) => {
     res.status(500).json(err)
   }
 })
+
 app.get('/2024/conmebol-libertadores', async (req, res) => {
   const { method, url } = req
   const fakeBody = {
