@@ -4251,11 +4251,7 @@
         "date": "2023-09-20T16:45:00+00:00",
         "timestamp": 1695228300,
         "periods": { "first": 1695228300, "second": 1695231900 },
-        "venue": {
-          "id": 19941,
-          "name": "Rams Global Stadium",
-          "city": "İstanbul"
-        },
+        "venue": { "id": 19941, "name": "RAMS Park", "city": "İstanbul" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -5319,11 +5315,7 @@
         "date": "2023-10-24T16:45:00+00:00",
         "timestamp": 1698165900,
         "periods": { "first": 1698165900, "second": 1698169500 },
-        "venue": {
-          "id": 19941,
-          "name": "Rams Global Stadium",
-          "city": "İstanbul"
-        },
+        "venue": { "id": 19941, "name": "RAMS Park", "city": "İstanbul" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -7083,11 +7075,7 @@
         "date": "2023-11-29T17:45:00+00:00",
         "timestamp": 1701279900,
         "periods": { "first": 1701279900, "second": 1701283500 },
-        "venue": {
-          "id": 19941,
-          "name": "Rams Global Stadium",
-          "city": "İstanbul"
-        },
+        "venue": { "id": 19941, "name": "RAMS Park", "city": "İstanbul" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -9198,17 +9186,17 @@
     {
       "fixture": {
         "id": 1196501,
-        "referee": null,
+        "referee": "A. Taylor",
         "timezone": "UTC",
         "date": "2024-05-01T19:00:00+00:00",
         "timestamp": 1714590000,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1714590000, "second": 1714593600 },
         "venue": {
           "id": 19381,
           "name": "SIGNAL IDUNA PARK",
           "city": "Dortmund"
         },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 2,
@@ -9224,19 +9212,19 @@
           "id": 165,
           "name": "Borussia Dortmund",
           "logo": "https://media.api-sports.io/football/teams/165.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 85,
           "name": "Paris Saint Germain",
           "logo": "https://media.api-sports.io/football/teams/85.png",
-          "winner": null
+          "winner": false
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 1, "away": 0 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -9286,13 +9274,13 @@
     {
       "fixture": {
         "id": 1196543,
-        "referee": null,
+        "referee": "C. Turpin",
         "timezone": "UTC",
         "date": "2024-04-30T19:00:00+00:00",
         "timestamp": 1714503600,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1714503600, "second": 1714507200 },
         "venue": { "id": 700, "name": "Allianz Arena", "city": "München" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 2,
@@ -9317,10 +9305,10 @@
           "winner": null
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 2, "away": 2 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 2 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }

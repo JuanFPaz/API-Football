@@ -2,13 +2,13 @@
   "get": "fixtures",
   "parameters": { "league": "1032", "season": "2024" },
   "errors": [],
-  "results": 200,
+  "results": 203,
   "paging": { "current": 1, "total": 1 },
   "response": [
     {
       "fixture": {
         "id": 1158464,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-01-26T21:00:00+00:00",
         "timestamp": 1706302800,
@@ -54,7 +54,7 @@
     {
       "fixture": {
         "id": 1158465,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-01-28T22:00:00+00:00",
         "timestamp": 1706479200,
@@ -100,7 +100,7 @@
     {
       "fixture": {
         "id": 1158466,
-        "referee": "Nicolas Ramirez, Argentina",
+        "referee": "N. Ramírez",
         "timezone": "UTC",
         "date": "2024-01-25T22:00:00+00:00",
         "timestamp": 1706220000,
@@ -238,7 +238,7 @@
     {
       "fixture": {
         "id": 1158469,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-01-26T22:00:00+00:00",
         "timestamp": 1706306400,
@@ -330,7 +330,7 @@
     {
       "fixture": {
         "id": 1158471,
-        "referee": "Carlos Andres Gariano, Argentina",
+        "referee": "C. Gariano",
         "timezone": "UTC",
         "date": "2024-01-25T22:00:00+00:00",
         "timestamp": 1706220000,
@@ -376,7 +376,7 @@
     {
       "fixture": {
         "id": 1158472,
-        "referee": "Leandro Rey Hilfer, Argentina",
+        "referee": "L. Rey Hilfer",
         "timezone": "UTC",
         "date": "2024-01-27T22:00:00+00:00",
         "timestamp": 1706392800,
@@ -422,7 +422,7 @@
     {
       "fixture": {
         "id": 1158473,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-01-28T20:00:00+00:00",
         "timestamp": 1706472000,
@@ -514,7 +514,7 @@
     {
       "fixture": {
         "id": 1158475,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-01-27T20:00:00+00:00",
         "timestamp": 1706385600,
@@ -560,7 +560,7 @@
     {
       "fixture": {
         "id": 1158476,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-01-29T00:00:00+00:00",
         "timestamp": 1706486400,
@@ -698,7 +698,7 @@
     {
       "fixture": {
         "id": 1158479,
-        "referee": "Nicolas Ramirez, Argentina",
+        "referee": "N. Ramírez",
         "timezone": "UTC",
         "date": "2024-01-30T22:15:00+00:00",
         "timestamp": 1706652900,
@@ -744,7 +744,7 @@
     {
       "fixture": {
         "id": 1158480,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-01-30T20:00:00+00:00",
         "timestamp": 1706644800,
@@ -790,7 +790,7 @@
     {
       "fixture": {
         "id": 1158481,
-        "referee": "Jorge Balino, Argentina",
+        "referee": "J. Baliño",
         "timezone": "UTC",
         "date": "2024-01-30T22:15:00+00:00",
         "timestamp": 1706652900,
@@ -882,7 +882,7 @@
     {
       "fixture": {
         "id": 1158483,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-01-31T20:00:00+00:00",
         "timestamp": 1706731200,
@@ -974,7 +974,7 @@
     {
       "fixture": {
         "id": 1158485,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-01-31T23:00:00+00:00",
         "timestamp": 1706742000,
@@ -1020,7 +1020,7 @@
     {
       "fixture": {
         "id": 1158486,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-02-02T00:30:00+00:00",
         "timestamp": 1706833800,
@@ -1066,7 +1066,7 @@
     {
       "fixture": {
         "id": 1158487,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-01-31T22:15:00+00:00",
         "timestamp": 1706739300,
@@ -1158,7 +1158,7 @@
     {
       "fixture": {
         "id": 1158489,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-02-02T00:30:00+00:00",
         "timestamp": 1706833800,
@@ -1204,7 +1204,7 @@
     {
       "fixture": {
         "id": 1158490,
-        "referee": "Sebastian Nicolas Martinez, Argentina",
+        "referee": "S. Martínez",
         "timezone": "UTC",
         "date": "2024-01-31T20:45:00+00:00",
         "timestamp": 1706733900,
@@ -1250,7 +1250,7 @@
     {
       "fixture": {
         "id": 1158491,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-02-01T22:00:00+00:00",
         "timestamp": 1706824800,
@@ -1296,7 +1296,7 @@
     {
       "fixture": {
         "id": 1158492,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-02-04T22:15:00+00:00",
         "timestamp": 1707084900,
@@ -1342,7 +1342,7 @@
     {
       "fixture": {
         "id": 1158493,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-02-04T20:00:00+00:00",
         "timestamp": 1707076800,
@@ -1388,7 +1388,7 @@
     {
       "fixture": {
         "id": 1158494,
-        "referee": "Jorge Balino, Argentina",
+        "referee": "J. Baliño",
         "timezone": "UTC",
         "date": "2024-02-07T00:15:00+00:00",
         "timestamp": 1707264900,
@@ -1572,7 +1572,7 @@
     {
       "fixture": {
         "id": 1158498,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-02-03T22:00:00+00:00",
         "timestamp": 1706997600,
@@ -1618,7 +1618,7 @@
     {
       "fixture": {
         "id": 1158499,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-02-05T22:45:00+00:00",
         "timestamp": 1707173100,
@@ -1664,7 +1664,7 @@
     {
       "fixture": {
         "id": 1158500,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-02-06T22:00:00+00:00",
         "timestamp": 1707256800,
@@ -1710,7 +1710,7 @@
     {
       "fixture": {
         "id": 1158501,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-02-04T23:30:00+00:00",
         "timestamp": 1707089400,
@@ -1756,7 +1756,7 @@
     {
       "fixture": {
         "id": 1158502,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-02-05T20:30:00+00:00",
         "timestamp": 1707165000,
@@ -1848,7 +1848,7 @@
     {
       "fixture": {
         "id": 1158504,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-02-05T21:00:00+00:00",
         "timestamp": 1707166800,
@@ -2032,7 +2032,7 @@
     {
       "fixture": {
         "id": 1158508,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-02-08T22:30:00+00:00",
         "timestamp": 1707431400,
@@ -2078,7 +2078,7 @@
     {
       "fixture": {
         "id": 1158509,
-        "referee": "Hernan Mastrangelo, Argentina",
+        "referee": "H. Mastrángelo",
         "timezone": "UTC",
         "date": "2024-02-12T22:00:00+00:00",
         "timestamp": 1707775200,
@@ -2124,7 +2124,7 @@
     {
       "fixture": {
         "id": 1158510,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-02-10T20:00:00+00:00",
         "timestamp": 1707595200,
@@ -2216,7 +2216,7 @@
     {
       "fixture": {
         "id": 1158512,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-02-11T20:00:00+00:00",
         "timestamp": 1707681600,
@@ -2262,7 +2262,7 @@
     {
       "fixture": {
         "id": 1158513,
-        "referee": "Luis Lobo Medina, Argentina",
+        "referee": "L. Lobo",
         "timezone": "UTC",
         "date": "2024-02-09T22:00:00+00:00",
         "timestamp": 1707516000,
@@ -2354,7 +2354,7 @@
     {
       "fixture": {
         "id": 1158515,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-02-09T22:00:00+00:00",
         "timestamp": 1707516000,
@@ -2446,7 +2446,7 @@
     {
       "fixture": {
         "id": 1158517,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-02-11T22:00:00+00:00",
         "timestamp": 1707688800,
@@ -2538,7 +2538,7 @@
     {
       "fixture": {
         "id": 1158519,
-        "referee": "Jorge Balino, Argentina",
+        "referee": "J. Baliño",
         "timezone": "UTC",
         "date": "2024-02-10T22:15:00+00:00",
         "timestamp": 1707603300,
@@ -2584,7 +2584,7 @@
     {
       "fixture": {
         "id": 1158520,
-        "referee": "Nicolas Ramirez, Argentina",
+        "referee": "N. Ramírez",
         "timezone": "UTC",
         "date": "2024-02-15T20:00:00+00:00",
         "timestamp": 1708027200,
@@ -2676,7 +2676,7 @@
     {
       "fixture": {
         "id": 1158522,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-02-14T22:15:00+00:00",
         "timestamp": 1707948900,
@@ -2722,7 +2722,7 @@
     {
       "fixture": {
         "id": 1158523,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-02-16T00:30:00+00:00",
         "timestamp": 1708043400,
@@ -2768,7 +2768,7 @@
     {
       "fixture": {
         "id": 1158524,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-02-16T00:00:00+00:00",
         "timestamp": 1708041600,
@@ -2860,7 +2860,7 @@
     {
       "fixture": {
         "id": 1158526,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-02-13T22:15:00+00:00",
         "timestamp": 1707862500,
@@ -2906,7 +2906,7 @@
     {
       "fixture": {
         "id": 1158527,
-        "referee": "Franco Acita, Argentina",
+        "referee": "F. Acita",
         "timezone": "UTC",
         "date": "2024-02-14T20:00:00+00:00",
         "timestamp": 1707940800,
@@ -2952,7 +2952,7 @@
     {
       "fixture": {
         "id": 1158528,
-        "referee": "Nicolas Lamolina, Argentina",
+        "referee": "N. Lamolina",
         "timezone": "UTC",
         "date": "2024-02-14T22:15:00+00:00",
         "timestamp": 1707948900,
@@ -2998,7 +2998,7 @@
     {
       "fixture": {
         "id": 1158529,
-        "referee": "Carlos Andres Gariano, Argentina",
+        "referee": "C. Gariano",
         "timezone": "UTC",
         "date": "2024-02-14T20:00:00+00:00",
         "timestamp": 1707940800,
@@ -3044,7 +3044,7 @@
     {
       "fixture": {
         "id": 1158530,
-        "referee": "Pablo Gimenez, Argentina",
+        "referee": "P. Giménez",
         "timezone": "UTC",
         "date": "2024-02-15T22:00:00+00:00",
         "timestamp": 1708034400,
@@ -3182,7 +3182,7 @@
     {
       "fixture": {
         "id": 1158533,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-02-13T20:00:00+00:00",
         "timestamp": 1707854400,
@@ -3228,7 +3228,7 @@
     {
       "fixture": {
         "id": 1158534,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-02-18T20:00:00+00:00",
         "timestamp": 1708286400,
@@ -3274,7 +3274,7 @@
     {
       "fixture": {
         "id": 1158535,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-02-18T00:00:00+00:00",
         "timestamp": 1708214400,
@@ -3320,7 +3320,7 @@
     {
       "fixture": {
         "id": 1158536,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-02-18T20:00:00+00:00",
         "timestamp": 1708286400,
@@ -3366,7 +3366,7 @@
     {
       "fixture": {
         "id": 1158537,
-        "referee": "Sebastian Nicolas Martinez, Argentina",
+        "referee": "S. Martínez",
         "timezone": "UTC",
         "date": "2024-02-20T22:30:00+00:00",
         "timestamp": 1708468200,
@@ -3412,7 +3412,7 @@
     {
       "fixture": {
         "id": 1158538,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-02-19T22:15:00+00:00",
         "timestamp": 1708380900,
@@ -3458,7 +3458,7 @@
     {
       "fixture": {
         "id": 1158539,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-02-18T22:15:00+00:00",
         "timestamp": 1708294500,
@@ -3504,7 +3504,7 @@
     {
       "fixture": {
         "id": 1158540,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-02-19T20:00:00+00:00",
         "timestamp": 1708372800,
@@ -3550,7 +3550,7 @@
     {
       "fixture": {
         "id": 1158541,
-        "referee": "Nicolas Ramirez, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-02-17T20:00:00+00:00",
         "timestamp": 1708200000,
@@ -3596,7 +3596,7 @@
     {
       "fixture": {
         "id": 1158542,
-        "referee": "Leandro Rey Hilfer, Argentina",
+        "referee": "L. Rey Hilfer",
         "timezone": "UTC",
         "date": "2024-02-19T22:15:00+00:00",
         "timestamp": 1708380900,
@@ -3642,7 +3642,7 @@
     {
       "fixture": {
         "id": 1158543,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-02-17T22:00:00+00:00",
         "timestamp": 1708207200,
@@ -3826,7 +3826,7 @@
     {
       "fixture": {
         "id": 1158547,
-        "referee": "Carlos Andres Gariano, Argentina",
+        "referee": "C. Gariano",
         "timezone": "UTC",
         "date": "2024-02-20T23:00:00+00:00",
         "timestamp": 1708470000,
@@ -3964,7 +3964,7 @@
     {
       "fixture": {
         "id": 1158550,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-02-24T22:30:00+00:00",
         "timestamp": 1708813800,
@@ -4010,7 +4010,7 @@
     {
       "fixture": {
         "id": 1158551,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-02-25T22:30:00+00:00",
         "timestamp": 1708900200,
@@ -4056,7 +4056,7 @@
     {
       "fixture": {
         "id": 1158552,
-        "referee": "Hernan Mastrangelo, Argentina",
+        "referee": "H. Mastrángelo",
         "timezone": "UTC",
         "date": "2024-02-25T22:45:00+00:00",
         "timestamp": 1708901100,
@@ -4102,7 +4102,7 @@
     {
       "fixture": {
         "id": 1158553,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-02-24T20:00:00+00:00",
         "timestamp": 1708804800,
@@ -4148,7 +4148,7 @@
     {
       "fixture": {
         "id": 1158554,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-02-25T20:00:00+00:00",
         "timestamp": 1708891200,
@@ -4194,7 +4194,7 @@
     {
       "fixture": {
         "id": 1158555,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-02-24T22:30:00+00:00",
         "timestamp": 1708813800,
@@ -4240,7 +4240,7 @@
     {
       "fixture": {
         "id": 1158556,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-02-26T22:30:00+00:00",
         "timestamp": 1708986600,
@@ -4286,7 +4286,7 @@
     {
       "fixture": {
         "id": 1158557,
-        "referee": "Leandro Rey Hilfer, Argentina",
+        "referee": "L. Rey Hilfer",
         "timezone": "UTC",
         "date": "2024-02-27T00:30:00+00:00",
         "timestamp": 1708993800,
@@ -4332,7 +4332,7 @@
     {
       "fixture": {
         "id": 1158558,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-02-26T22:00:00+00:00",
         "timestamp": 1708984800,
@@ -4424,7 +4424,7 @@
     {
       "fixture": {
         "id": 1158560,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-02-27T00:45:00+00:00",
         "timestamp": 1708994700,
@@ -4516,7 +4516,7 @@
     {
       "fixture": {
         "id": 1158562,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-03-02T22:00:00+00:00",
         "timestamp": 1709416800,
@@ -4700,7 +4700,7 @@
     {
       "fixture": {
         "id": 1158566,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-03-02T22:15:00+00:00",
         "timestamp": 1709417700,
@@ -4746,7 +4746,7 @@
     {
       "fixture": {
         "id": 1158567,
-        "referee": "Nicolas Lamolina, Argentina",
+        "referee": "N. Lamolina",
         "timezone": "UTC",
         "date": "2024-02-29T22:00:00+00:00",
         "timestamp": 1709244000,
@@ -4838,7 +4838,7 @@
     {
       "fixture": {
         "id": 1158569,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-03-01T22:00:00+00:00",
         "timestamp": 1709330400,
@@ -4884,7 +4884,7 @@
     {
       "fixture": {
         "id": 1158570,
-        "referee": "Franco Acita, Argentina",
+        "referee": "F. Acita",
         "timezone": "UTC",
         "date": "2024-03-03T20:00:00+00:00",
         "timestamp": 1709496000,
@@ -4930,7 +4930,7 @@
     {
       "fixture": {
         "id": 1158571,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-03-03T22:15:00+00:00",
         "timestamp": 1709504100,
@@ -4976,7 +4976,7 @@
     {
       "fixture": {
         "id": 1158572,
-        "referee": "Luis Lobo Medina, Argentina",
+        "referee": "L. Lobo",
         "timezone": "UTC",
         "date": "2024-03-02T20:00:00+00:00",
         "timestamp": 1709409600,
@@ -5068,7 +5068,7 @@
     {
       "fixture": {
         "id": 1158574,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-03-03T20:00:00+00:00",
         "timestamp": 1709496000,
@@ -5114,7 +5114,7 @@
     {
       "fixture": {
         "id": 1158575,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-03-04T00:30:00+00:00",
         "timestamp": 1709512200,
@@ -5252,7 +5252,7 @@
     {
       "fixture": {
         "id": 1158578,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-03-06T20:00:00+00:00",
         "timestamp": 1709755200,
@@ -5298,7 +5298,7 @@
     {
       "fixture": {
         "id": 1158579,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-03-05T22:00:00+00:00",
         "timestamp": 1709676000,
@@ -5390,7 +5390,7 @@
     {
       "fixture": {
         "id": 1158581,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-03-07T20:00:00+00:00",
         "timestamp": 1709841600,
@@ -5482,7 +5482,7 @@
     {
       "fixture": {
         "id": 1158583,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-03-08T00:15:00+00:00",
         "timestamp": 1709856900,
@@ -5574,7 +5574,7 @@
     {
       "fixture": {
         "id": 1158585,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-03-06T22:15:00+00:00",
         "timestamp": 1709763300,
@@ -5620,7 +5620,7 @@
     {
       "fixture": {
         "id": 1158586,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-03-05T23:00:00+00:00",
         "timestamp": 1709679600,
@@ -5666,7 +5666,7 @@
     {
       "fixture": {
         "id": 1158587,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-03-06T22:15:00+00:00",
         "timestamp": 1709763300,
@@ -5712,7 +5712,7 @@
     {
       "fixture": {
         "id": 1158588,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-03-08T00:15:00+00:00",
         "timestamp": 1709856900,
@@ -5758,7 +5758,7 @@
     {
       "fixture": {
         "id": 1158589,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-03-07T22:00:00+00:00",
         "timestamp": 1709848800,
@@ -5804,7 +5804,7 @@
     {
       "fixture": {
         "id": 1158590,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-03-12T00:15:00+00:00",
         "timestamp": 1710202500,
@@ -5850,7 +5850,7 @@
     {
       "fixture": {
         "id": 1158591,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-03-10T22:15:00+00:00",
         "timestamp": 1710108900,
@@ -5896,7 +5896,7 @@
     {
       "fixture": {
         "id": 1158592,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-03-12T00:15:00+00:00",
         "timestamp": 1710202500,
@@ -5942,7 +5942,7 @@
     {
       "fixture": {
         "id": 1158593,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-03-09T22:15:00+00:00",
         "timestamp": 1710022500,
@@ -5988,7 +5988,7 @@
     {
       "fixture": {
         "id": 1158594,
-        "referee": "Hernan Mastrangelo, Argentina",
+        "referee": "H. Mastrángelo",
         "timezone": "UTC",
         "date": "2024-03-09T20:00:00+00:00",
         "timestamp": 1710014400,
@@ -6034,7 +6034,7 @@
     {
       "fixture": {
         "id": 1158595,
-        "referee": "Franco Acita, Argentina",
+        "referee": "F. Acita",
         "timezone": "UTC",
         "date": "2024-03-10T20:00:00+00:00",
         "timestamp": 1710100800,
@@ -6126,7 +6126,7 @@
     {
       "fixture": {
         "id": 1158597,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-03-11T22:00:00+00:00",
         "timestamp": 1710194400,
@@ -6172,7 +6172,7 @@
     {
       "fixture": {
         "id": 1158598,
-        "referee": "Jorge Balino, Argentina",
+        "referee": "J. Baliño",
         "timezone": "UTC",
         "date": "2024-03-13T00:15:00+00:00",
         "timestamp": 1710288900,
@@ -6218,7 +6218,7 @@
     {
       "fixture": {
         "id": 1158599,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-03-10T22:15:00+00:00",
         "timestamp": 1710108900,
@@ -6310,7 +6310,7 @@
     {
       "fixture": {
         "id": 1158601,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-03-09T20:00:00+00:00",
         "timestamp": 1710014400,
@@ -6402,7 +6402,7 @@
     {
       "fixture": {
         "id": 1158603,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-03-10T20:00:00+00:00",
         "timestamp": 1710100800,
@@ -6494,7 +6494,7 @@
     {
       "fixture": {
         "id": 1158605,
-        "referee": "Luis Lobo Medina, Argentina",
+        "referee": "L. Lobo",
         "timezone": "UTC",
         "date": "2024-03-20T00:15:00+00:00",
         "timestamp": 1710893700,
@@ -6540,7 +6540,7 @@
     {
       "fixture": {
         "id": 1158606,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-03-17T19:00:00+00:00",
         "timestamp": 1710702000,
@@ -6586,7 +6586,7 @@
     {
       "fixture": {
         "id": 1158607,
-        "referee": "Sebastian Nicolas Martinez, Argentina",
+        "referee": "S. Martínez",
         "timezone": "UTC",
         "date": "2024-03-17T21:30:00+00:00",
         "timestamp": 1710711000,
@@ -6632,7 +6632,7 @@
     {
       "fixture": {
         "id": 1158608,
-        "referee": "Leandro Rey Hilfer, Argentina",
+        "referee": "L. Rey Hilfer",
         "timezone": "UTC",
         "date": "2024-03-15T19:30:00+00:00",
         "timestamp": 1710531000,
@@ -6724,7 +6724,7 @@
     {
       "fixture": {
         "id": 1158610,
-        "referee": "Hernan Mastrangelo, Argentina",
+        "referee": "H. Mastrángelo",
         "timezone": "UTC",
         "date": "2024-03-18T00:00:00+00:00",
         "timestamp": 1710720000,
@@ -6770,7 +6770,7 @@
     {
       "fixture": {
         "id": 1158611,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-03-17T19:00:00+00:00",
         "timestamp": 1710702000,
@@ -6816,7 +6816,7 @@
     {
       "fixture": {
         "id": 1158612,
-        "referee": "Pablo Dovalo, Argentina",
+        "referee": "P. Dóvalo",
         "timezone": "UTC",
         "date": "2024-03-16T00:00:00+00:00",
         "timestamp": 1710547200,
@@ -6862,7 +6862,7 @@
     {
       "fixture": {
         "id": 1158613,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-03-16T20:00:00+00:00",
         "timestamp": 1710619200,
@@ -6954,7 +6954,7 @@
     {
       "fixture": {
         "id": 1158615,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-03-15T22:15:00+00:00",
         "timestamp": 1710540900,
@@ -7000,7 +7000,7 @@
     {
       "fixture": {
         "id": 1158616,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-03-19T00:15:00+00:00",
         "timestamp": 1710807300,
@@ -7184,7 +7184,7 @@
     {
       "fixture": {
         "id": 1158620,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-03-31T21:30:00+00:00",
         "timestamp": 1711920600,
@@ -7230,7 +7230,7 @@
     {
       "fixture": {
         "id": 1158621,
-        "referee": "Carlos Andres Gariano, Argentina",
+        "referee": "C. Gariano",
         "timezone": "UTC",
         "date": "2024-03-31T19:00:00+00:00",
         "timestamp": 1711911600,
@@ -7276,7 +7276,7 @@
     {
       "fixture": {
         "id": 1158622,
-        "referee": "Leandro Rey Hilfer, Argentina",
+        "referee": "L. Rey Hilfer",
         "timezone": "UTC",
         "date": "2024-03-29T23:30:00+00:00",
         "timestamp": 1711755000,
@@ -7322,7 +7322,7 @@
     {
       "fixture": {
         "id": 1158623,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-03-28T23:00:00+00:00",
         "timestamp": 1711666800,
@@ -7414,7 +7414,7 @@
     {
       "fixture": {
         "id": 1158625,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-03-29T21:00:00+00:00",
         "timestamp": 1711746000,
@@ -7506,7 +7506,7 @@
     {
       "fixture": {
         "id": 1158627,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-03-30T22:00:00+00:00",
         "timestamp": 1711836000,
@@ -7552,7 +7552,7 @@
     {
       "fixture": {
         "id": 1158628,
-        "referee": "Ariel Penel, Argentina",
+        "referee": "A. Penel",
         "timezone": "UTC",
         "date": "2024-03-29T21:00:00+00:00",
         "timestamp": 1711746000,
@@ -7598,7 +7598,7 @@
     {
       "fixture": {
         "id": 1158629,
-        "referee": "Nazareno Arasa, Argentina",
+        "referee": "N. Arasa",
         "timezone": "UTC",
         "date": "2024-03-30T20:00:00+00:00",
         "timestamp": 1711828800,
@@ -7644,7 +7644,7 @@
     {
       "fixture": {
         "id": 1158630,
-        "referee": "Fernando Espinoza, Argentina",
+        "referee": "F. Espinoza",
         "timezone": "UTC",
         "date": "2024-03-31T19:00:00+00:00",
         "timestamp": 1711911600,
@@ -7782,7 +7782,7 @@
     {
       "fixture": {
         "id": 1158633,
-        "referee": "Luis Lobo Medina, Argentina",
+        "referee": "L. Lobo",
         "timezone": "UTC",
         "date": "2024-04-07T19:00:00+00:00",
         "timestamp": 1712516400,
@@ -7874,7 +7874,7 @@
     {
       "fixture": {
         "id": 1158635,
-        "referee": "Jorge Balino, Argentina",
+        "referee": "J. Baliño",
         "timezone": "UTC",
         "date": "2024-04-08T18:30:00+00:00",
         "timestamp": 1712601000,
@@ -7920,7 +7920,7 @@
     {
       "fixture": {
         "id": 1158636,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-04-07T19:00:00+00:00",
         "timestamp": 1712516400,
@@ -8058,7 +8058,7 @@
     {
       "fixture": {
         "id": 1158639,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-04-08T23:00:00+00:00",
         "timestamp": 1712617200,
@@ -8104,7 +8104,7 @@
     {
       "fixture": {
         "id": 1158640,
-        "referee": "Pablo Echavarria, Argentina",
+        "referee": "P. Echavarría",
         "timezone": "UTC",
         "date": "2024-04-08T23:00:00+00:00",
         "timestamp": 1712617200,
@@ -8150,7 +8150,7 @@
     {
       "fixture": {
         "id": 1158641,
-        "referee": "Facundo Tello, Argentina",
+        "referee": "F. Tello",
         "timezone": "UTC",
         "date": "2024-04-06T20:00:00+00:00",
         "timestamp": 1712433600,
@@ -8288,7 +8288,7 @@
     {
       "fixture": {
         "id": 1158644,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-04-07T21:30:00+00:00",
         "timestamp": 1712525400,
@@ -8380,7 +8380,7 @@
     {
       "fixture": {
         "id": 1158646,
-        "referee": "Fernando Rapallini, Argentina",
+        "referee": "F. Rapallini",
         "timezone": "UTC",
         "date": "2024-04-15T23:00:00+00:00",
         "timestamp": 1713222000,
@@ -8426,7 +8426,7 @@
     {
       "fixture": {
         "id": 1158647,
-        "referee": "Nicolas Ramirez, Argentina",
+        "referee": "N. Ramírez",
         "timezone": "UTC",
         "date": "2024-04-15T23:00:00+00:00",
         "timestamp": 1713222000,
@@ -8472,7 +8472,7 @@
     {
       "fixture": {
         "id": 1158648,
-        "referee": "Sebastian Zunino, Argentina",
+        "referee": "S. Zunino",
         "timezone": "UTC",
         "date": "2024-04-14T21:15:00+00:00",
         "timestamp": 1713129300,
@@ -8518,7 +8518,7 @@
     {
       "fixture": {
         "id": 1158649,
-        "referee": "Carlos Andres Gariano, Argentina",
+        "referee": "C. Gariano",
         "timezone": "UTC",
         "date": "2024-04-14T22:00:00+00:00",
         "timestamp": 1713132000,
@@ -8610,7 +8610,7 @@
     {
       "fixture": {
         "id": 1158651,
-        "referee": "Silvio Trucco, Argentina",
+        "referee": "S. Trucco",
         "timezone": "UTC",
         "date": "2024-04-15T23:00:00+00:00",
         "timestamp": 1713222000,
@@ -8656,7 +8656,7 @@
     {
       "fixture": {
         "id": 1158652,
-        "referee": "Fernando Echenique, Argentina",
+        "referee": "F. Echenique",
         "timezone": "UTC",
         "date": "2024-04-15T23:00:00+00:00",
         "timestamp": 1713222000,
@@ -8702,7 +8702,7 @@
     {
       "fixture": {
         "id": 1158653,
-        "referee": "Franco Acita, Argentina",
+        "referee": "F. Acita",
         "timezone": "UTC",
         "date": "2024-04-13T20:00:00+00:00",
         "timestamp": 1713038400,
@@ -8840,7 +8840,7 @@
     {
       "fixture": {
         "id": 1158656,
-        "referee": "Luis Lobo Medina, Argentina",
+        "referee": "L. Lobo",
         "timezone": "UTC",
         "date": "2024-04-14T23:00:00+00:00",
         "timestamp": 1713135600,
@@ -8978,7 +8978,7 @@
     {
       "fixture": {
         "id": 1158659,
-        "referee": "Fabrizio Llobet, Argentina",
+        "referee": "F. Llobet",
         "timezone": "UTC",
         "date": "2024-04-14T19:00:00+00:00",
         "timestamp": 1713121200,
@@ -9024,7 +9024,7 @@
     {
       "fixture": {
         "id": 1196703,
-        "referee": "Andres Merlos, Argentina",
+        "referee": "A. Merlos",
         "timezone": "UTC",
         "date": "2024-04-20T18:30:00+00:00",
         "timestamp": 1713637800,
@@ -9070,7 +9070,7 @@
     {
       "fixture": {
         "id": 1196704,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "UTC",
         "date": "2024-04-20T21:30:00+00:00",
         "timestamp": 1713648600,
@@ -9162,15 +9162,15 @@
     {
       "fixture": {
         "id": 1196706,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Falcón",
         "timezone": "UTC",
         "date": "2024-04-21T18:30:00+00:00",
         "timestamp": 1713724200,
         "periods": { "first": 1713724200, "second": 1713727800 },
         "venue": {
-          "id": 19570,
-          "name": "Estadio Mâs Monumental",
-          "city": "Capital Federal, Ciudad de Buenos Aires"
+          "id": 110,
+          "name": "Estadio Mario Alberto Kempes",
+          "city": "Ciudad de Córdoba, Provincia de Córdoba"
         },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
@@ -9203,6 +9203,144 @@
         "fulltime": { "home": 2, "away": 3 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1197147,
+        "referee": "F. Tello",
+        "timezone": "UTC",
+        "date": "2024-04-28T18:30:00+00:00",
+        "timestamp": 1714329000,
+        "periods": { "first": 1714329000, "second": 1714332600 },
+        "venue": {
+          "id": null,
+          "name": "Estadio Único de San Nicolás",
+          "city": "San Nicolás de los Arroyos"
+        },
+        "status": { "long": "Match Finished", "short": "PEN", "elapsed": 120 }
+      },
+      "league": {
+        "id": 1032,
+        "name": "Copa de la Liga Profesional",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/1032.png",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "season": 2024,
+        "round": "1st Phase - Semi-finals"
+      },
+      "teams": {
+        "home": {
+          "id": 458,
+          "name": "Argentinos JRS",
+          "logo": "https://media.api-sports.io/football/teams/458.png",
+          "winner": false
+        },
+        "away": {
+          "id": 438,
+          "name": "Velez Sarsfield",
+          "logo": "https://media.api-sports.io/football/teams/438.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": 0, "away": 0 },
+        "penalty": { "home": 2, "away": 4 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1197148,
+        "referee": "N. Arasa",
+        "timezone": "UTC",
+        "date": "2024-04-30T23:00:00+00:00",
+        "timestamp": 1714518000,
+        "periods": { "first": 1714518000, "second": 1714521600 },
+        "venue": {
+          "id": 110,
+          "name": "Estadio Mario Alberto Kempes",
+          "city": "Ciudad de Córdoba, Provincia de Córdoba"
+        },
+        "status": { "long": "Match Finished", "short": "PEN", "elapsed": 120 }
+      },
+      "league": {
+        "id": 1032,
+        "name": "Copa de la Liga Profesional",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/1032.png",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "season": 2024,
+        "round": "1st Phase - Semi-finals"
+      },
+      "teams": {
+        "home": {
+          "id": 450,
+          "name": "Estudiantes L.P.",
+          "logo": "https://media.api-sports.io/football/teams/450.png",
+          "winner": true
+        },
+        "away": {
+          "id": 451,
+          "name": "Boca Juniors",
+          "logo": "https://media.api-sports.io/football/teams/451.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 0, "away": 0 },
+        "penalty": { "home": 3, "away": 1 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1198418,
+        "referee": "N. Ramírez",
+        "timezone": "UTC",
+        "date": "2024-05-05T18:30:00+00:00",
+        "timestamp": 1714933800,
+        "periods": { "first": 1714933800, "second": 1714937400 },
+        "venue": {
+          "id": null,
+          "name": "Estadio Único Madre de Ciudades",
+          "city": "Santiago del Estero, Prov. de Santiago del Estero"
+        },
+        "status": { "long": "Match Finished", "short": "PEN", "elapsed": 120 }
+      },
+      "league": {
+        "id": 1032,
+        "name": "Copa de la Liga Profesional",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/1032.png",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "season": 2024,
+        "round": "1st Phase - Final"
+      },
+      "teams": {
+        "home": {
+          "id": 450,
+          "name": "Estudiantes L.P.",
+          "logo": "https://media.api-sports.io/football/teams/450.png",
+          "winner": true
+        },
+        "away": {
+          "id": 438,
+          "name": "Velez Sarsfield",
+          "logo": "https://media.api-sports.io/football/teams/438.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 0, "away": 0 },
+        "penalty": { "home": 4, "away": 3 }
       }
     }
   ]

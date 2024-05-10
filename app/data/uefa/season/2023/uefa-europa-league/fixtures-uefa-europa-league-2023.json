@@ -1989,7 +1989,7 @@
         "periods": { "first": 1695322800, "second": 1695326400 },
         "venue": {
           "id": 508,
-          "name": "The American Express Community Stadium",
+          "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
@@ -2289,11 +2289,7 @@
         "date": "2023-10-05T16:45:00+00:00",
         "timestamp": 1696524300,
         "periods": { "first": 1696524300, "second": 1696527900 },
-        "venue": {
-          "id": 12678,
-          "name": "Stade Orange Vélodrome",
-          "city": "Marseille"
-        },
+        "venue": { "id": 667, "name": "Orange Vélodrome", "city": "Marseille" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -2993,11 +2989,7 @@
         "date": "2023-10-26T16:45:00+00:00",
         "timestamp": 1698338700,
         "periods": { "first": 1698338700, "second": 1698342300 },
-        "venue": {
-          "id": 12678,
-          "name": "Stade Orange Vélodrome",
-          "city": "Marseille"
-        },
+        "venue": { "id": 667, "name": "Orange Vélodrome", "city": "Marseille" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -3259,7 +3251,7 @@
         "periods": { "first": 1698346800, "second": 1698350400 },
         "venue": {
           "id": 508,
-          "name": "The American Express Community Stadium",
+          "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
@@ -4607,11 +4599,7 @@
         "date": "2023-11-30T20:00:00+00:00",
         "timestamp": 1701374400,
         "periods": { "first": 1701374400, "second": 1701378000 },
-        "venue": {
-          "id": 12678,
-          "name": "Stade Orange Vélodrome",
-          "city": "Marseille"
-        },
+        "venue": { "id": 667, "name": "Orange Vélodrome", "city": "Marseille" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -5481,7 +5469,7 @@
         "periods": { "first": 1702584000, "second": 1702587600 },
         "venue": {
           "id": 508,
-          "name": "The American Express Community Stadium",
+          "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
@@ -7456,13 +7444,13 @@
     {
       "fixture": {
         "id": 1196783,
-        "referee": null,
+        "referee": "Daniel Siebert, Germany",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1714676400, "second": 1714680000 },
         "venue": { "id": 667, "name": "Orange Vélodrome", "city": "Marseille" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 3,
@@ -7487,10 +7475,10 @@
           "winner": null
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 1, "away": 1 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 1, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -7540,13 +7528,13 @@
     {
       "fixture": {
         "id": 1196785,
-        "referee": null,
+        "referee": "François Letexier, France",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1714676400, "second": 1714680000 },
         "venue": { "id": 910, "name": "Stadio Olimpico", "city": "Roma" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 3,
@@ -7562,19 +7550,19 @@
           "id": 497,
           "name": "AS Roma",
           "logo": "https://media.api-sports.io/football/teams/497.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 168,
           "name": "Bayer Leverkusen",
           "logo": "https://media.api-sports.io/football/teams/168.png",
-          "winner": null
+          "winner": true
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 0, "away": 2 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 2 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
