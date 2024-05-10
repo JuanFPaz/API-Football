@@ -1,40 +1,33 @@
 /* eslint-disable no-undef */
 /* eslint-disable promise/param-names */
 /* eslint-disable no-unused-vars */
-const { processGetLinksArg, processGetLinksCups } = require('./processRead/processLinks')
-const { processGetStanding } = require('./processRead/processStandings')
-const { processGetFixtures } = require('./processRead/processFixtures')
+const { processGetLinksArg, processGetLinksEng, processGetLinksCups } = require('./processRead/processReadLinks')
+const { processGetStanding } = require('./processRead/processReadStandings')
+const { processGetFixtures } = require('./processRead/processReadFixtures')
+const { bgWhite } = require('picocolors')
 
 /* EN LOS GET DATA TAMBIEN PUEDEN OCURRIR ERRORES, ASI QUE CUIDAO */
 async function getDataLeague ({ country, season, nameLeague, nameData }) {
-  /* TO DO: Capturar un error
-   correctamente del promises all,
-   porque si algo sale mal en algrun proceso,
-   debemos capturarlo en el endpoint de la solicitud.
-   Independientemente de que 3 de 4 procesos hayan salido bien
-   no podemos devolver un procesos mal y 3 bien xd
-  */
   let data
   try {
-    data = await Promise.all([
-      processGetStanding(country, season, nameLeague, nameData[0]),
-      processGetFixtures(country, season, nameLeague, nameData[1])
-    ])
-    console.log('Todos los datos fueron obtenidos con exito')
+    const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), processGetFixtures(country, season, nameLeague, nameData[1])])
+    data = [{ standings, fixtures }]
+    console.log(data)
   } catch (err) {
     /* TODO, Verificar si es un error interno de processFunction u otro error. O manejar el error que venga del proccess de otra forma :/ */
     console.error(err.message)
     console.error('Retornamos un error intero :/')
     return { error: err }
   }
-
   return data
 }
 
 async function getDataCup ({ country, season, nameLeague, nameData }) {
   let data
   try {
-    data = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), processGetFixtures(country, season, nameLeague, nameData[1])])
+    const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), processGetFixtures(country, season, nameLeague, nameData[1])])
+    data = [{ standings, fixtures }]
+    console.log(process)
   } catch (err) {
     console.error('Retornamos un error intero :/')
     return { error: err }
@@ -48,23 +41,28 @@ async function getDataMatch () {
   // Ej: Boca vs RiBer
 }
 
-async function getLinksPrincipal () {
+async function getLinks () {
   let data
   try {
     data = await Promise.all([
-      processGetLinksArg(), // a, en el catch de processGetLinks me estan lanzando un error, tengo que capturarlo y mandarlo a mi catch
+      processGetLinksArg(),
+      processGetLinksEng(),
       processGetLinksCups('conmebol'),
       processGetLinksCups('uefa')
     ])
   } catch (err) {
-    console.error('Retornamos un error intero :/')
-    return { error: err }
+    if (err.isCustomError) {
+      console.log(bgWhite('Ocurrio un Custom Error:'))
+      return { error: err }
+    }
+    console.log(bgWhite('Ocurrio un Error:'))
+    return { error: { procces: 'GetLinks', message: err.message, reference: 'Ocurrio antes de leer los datos' } }
   }
   return data
 }
 
 module.exports = {
-  getLinksPrincipal,
+  getLinks,
   getDataLeague,
   getDataCup
 }
