@@ -27,7 +27,6 @@ async function getDataCup ({ country, season, nameLeague, nameData }) {
   try {
     const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(country, season, nameLeague, nameData[0]), processGetFixtures(country, season, nameLeague, nameData[1])])
     data = [{ standings, fixtures }]
-    console.log(process)
   } catch (err) {
     console.error('Retornamos un error intero :/')
     return { error: err }

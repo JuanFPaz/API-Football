@@ -128,7 +128,7 @@ dir_ejemplo
 - CONMEBOL Sudamericana:
   - `league-id`: 11
   - `current-season`: 2024
-- CONMEBOL Sudamericana:
+- CONMEBOL Recopa Sudamericana:
   - `league-id`: 541
   - `current-season`: 2024
 - UEFA Champions League:

@@ -12,7 +12,18 @@ GET http://localhost:3000/2024/conmebol-libertadores
 ###
 GET http://localhost:3000/2024/conmebol-sudamericana
 ###
+GET http://localhost:3000/2024/conmebol-recopa
+###
 GET http://localhost:3000/2023/uefa-champions-league
+###
+GET http://localhost:3000/2023/uefa-europa-league
+###
+GET http://localhost:3000/2023/uefa-europa-conference-league
+###
+GET http://localhost:3000/2023/uefa-super-cup
+###
+GET https://v3.football.api-sports.io/fixtures/rounds?league=13&season=2024
+x-rapidapi-host: v3.football.api-sports.io
 ###
 GET https://v3.football.api-sports.io/fixtures/statistics?fixture=1158464
 x-rapidapi-host: v3.football.api-sports.io

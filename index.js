@@ -36,6 +36,7 @@ app.post('/links', async (req, res) => {
     res.status(409).json(data)
   }
 })
+
 app.get('/', async (req, res) => {
   const { method, url } = req
 
@@ -51,7 +52,6 @@ app.get('/', async (req, res) => {
     console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
     res.json(data)
   } catch (err) {
-    /* */
     data.error = err
     data.response = [{ message: data.error.message }]
     console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
@@ -200,6 +200,33 @@ app.get('/2024/conmebol-sudamericana', async (req, res) => {
   }
 })
 
+app.get('/2024/conmebol-recopa', async (req, res) => {
+  const { method, url } = req
+  const fakeBody = {
+    country: 'conmebol',
+    season: '2024',
+    nameLeague: 'CONMEBOL Recopa',
+    nameData: [null, 'fixtures']
+  }
+  const data = {}
+  try {
+    console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
+    data.get = url
+    data.timestamp = Date.now()
+    data.response = await getDataCup({ ...fakeBody })
+    if (data.response.error) {
+      throw data
+    }
+    console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
+    res.json(data)
+  } catch (err) {
+    console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(err.response.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(err.response.error.message)}`)
+    res.status(500).json(err)
+  }
+})
+
 app.get('/2023/uefa-champions-league', async (req, res) => {
   const { method, url } = req
 
@@ -281,7 +308,32 @@ app.get('/2023/uefa-europa-conference-league', async (req, res) => {
     res.status(500).json(err)
   }
 })
-
+app.get('/2023/uefa-super-cup', async (req, res) => {
+  const { method, url } = req
+  const fakeBody = {
+    country: 'uefa',
+    season: '2023',
+    nameLeague: 'UEFA Super Cup',
+    nameData: [null, 'fixtures']
+  }
+  const data = {}
+  try {
+    console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
+    data.get = url
+    data.timestamp = Date.now()
+    data.response = await getDataCup({ ...fakeBody })
+    if (data.response.error) {
+      throw data
+    }
+    console.log(`${pc.bgCyan('Status:')} ${pc.green(200)}`)
+    res.json(data)
+  } catch (err) {
+    console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(err.response.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(err.response.error.message)}`)
+    res.status(500).json(err)
+  }
+})
 app.listen(PORT, () => {
   console.log('Server: http://localhost:' + PORT)
 })

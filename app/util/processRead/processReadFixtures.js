@@ -53,9 +53,11 @@ async function processGetFixtures (...params) {
   try {
     const { response: fases } = JSON.parse(dataFileRoundsFixtures)
     const { response: fixtures } = JSON.parse(dataFileFixtures)
+
     const [,, nameLeague] = params /* -_- */
 
     const fixturesFormateados = rondasFilter(nameLeague, fases, fixtures)
+
     if (fixturesFormateados.customError) {
       throw fixturesFormateados.customError
     }
@@ -64,7 +66,7 @@ async function processGetFixtures (...params) {
     const customError = {
       process: 'getFixtures',
       message: 'Ocurrio un Error formateando la respuesta de los fixtures.',
-      reference: err
+      reference: err.message
     }
     console.error(err.message)
     console.error(customError.message)
