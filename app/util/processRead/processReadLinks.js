@@ -3,8 +3,6 @@ const { resolve, join } = require('node:path')
 
 const DATA_PATH = resolve(__dirname, '../../data')
 
-console.log(DATA_PATH)
-
 async function processGetLinksArg () {
   let dataPath
   let dataFile
@@ -51,7 +49,7 @@ async function processGetLinksArg () {
       country: {
         name: 'Argentina',
         code: 'AR',
-        flag: 'https://media.api-sports.io/football/leagues/128.png'
+        flag: 'https://media.api-sports.io/flags/ar.svg'
       },
       list: listFormateada
     }
@@ -60,7 +58,7 @@ async function processGetLinksArg () {
     const customError = {
       isCustomError: true,
       process: 'getLinksCups',
-      reference: 'Ocurrio un ',
+      reference: 'Ocurrio un asdas',
       message: err.message
     }
     throw customError
@@ -98,7 +96,7 @@ async function processGetLinksEng () {
   try {
     const { response } = JSON.parse(dataFile)
     const [premierLeague, , , faCup, , carabaoCup, , , , communityShield] = response
-    const list = [premierLeague, faCup, carabaoCup, communityShield]
+    const list = [premierLeague]
     const listFormateada = list.map((l) => {
       const { league, seasons } = l
 
@@ -111,9 +109,9 @@ async function processGetLinksEng () {
     })
     const data = {
       country: {
-        name: 'Inglaterra',
+        name: 'Pirata go Home',
         code: 'ING',
-        flag: 'https://media.api-sports.io/football/leagues/128.png'
+        flag: 'https://media.api-sports.io/flags/gb.svg'
       },
       list: listFormateada
     }
@@ -159,8 +157,7 @@ async function processGetLinksCups (confederacion) {
 
   try {
     const { response } = JSON.parse(dataFile)
-    const list = response
-    const listFormateada = list.map((l) => {
+    const listFormateada = response.map((l) => {
       const { league, seasons } = l
 
       const seasonsFormateada = seasons.map((s) => {

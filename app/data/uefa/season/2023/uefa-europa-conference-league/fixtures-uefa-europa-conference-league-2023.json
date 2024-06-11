@@ -2,7 +2,7 @@
   "get": "fixtures",
   "parameters": { "league": "848", "season": "2023" },
   "errors": [],
-  "results": 416,
+  "results": 417,
   "paging": { "current": 1, "total": 1 },
   "response": [
     {
@@ -3533,7 +3533,7 @@
         "date": "2023-07-27T18:00:00+00:00",
         "timestamp": 1690480800,
         "periods": { "first": 1690480800, "second": 1690484400 },
-        "venue": { "id": null, "name": "Opus Arena", "city": "Osijek" },
+        "venue": { "id": 20730, "name": "Opus Arena", "city": "Osijek" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -8931,7 +8931,7 @@
         "date": "2023-08-17T18:00:00+00:00",
         "timestamp": 1692295200,
         "periods": { "first": 1692295200, "second": 1692298800 },
-        "venue": { "id": null, "name": "Opus Arena", "city": "Osijek" },
+        "venue": { "id": 20730, "name": "Opus Arena", "city": "Osijek" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -12114,7 +12114,7 @@
         "timestamp": 1695220200,
         "periods": { "first": 1695220200, "second": 1695223800 },
         "venue": {
-          "id": 19207,
+          "id": null,
           "name": "Decathlon Arena - Stade Pierre-Mauroy",
           "city": "Villeneuve d'Ascq"
         },
@@ -12985,7 +12985,7 @@
         "date": "2023-10-05T16:45:00+00:00",
         "timestamp": 1696524300,
         "periods": { "first": 1696524300, "second": 1696527900 },
-        "venue": { "id": 20334, "name": "Planet Group Arena", "city": "Gent" },
+        "venue": { "id": 20727, "name": "Planet Group Arena", "city": "Gent" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -13514,7 +13514,7 @@
         "timestamp": 1698338700,
         "periods": { "first": 1698338700, "second": 1698342300 },
         "venue": {
-          "id": 19207,
+          "id": null,
           "name": "Decathlon Arena - Stade Pierre-Mauroy",
           "city": "Villeneuve d'Ascq"
         },
@@ -13605,7 +13605,7 @@
         "date": "2023-10-26T16:45:00+00:00",
         "timestamp": 1698338700,
         "periods": { "first": 1698338700, "second": 1698342300 },
-        "venue": { "id": 20334, "name": "Planet Group Arena", "city": "Gent" },
+        "venue": { "id": 20727, "name": "Planet Group Arena", "city": "Gent" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -15039,7 +15039,7 @@
         "date": "2023-11-30T17:45:00+00:00",
         "timestamp": 1701366300,
         "periods": { "first": 1701366300, "second": 1701369900 },
-        "venue": { "id": 20334, "name": "Planet Group Arena", "city": "Gent" },
+        "venue": { "id": 20727, "name": "Planet Group Arena", "city": "Gent" },
         "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
@@ -15962,7 +15962,7 @@
         "timestamp": 1702584000,
         "periods": { "first": 1702584000, "second": 1702587600 },
         "venue": {
-          "id": 19207,
+          "id": null,
           "name": "Decathlon Arena - Stade Pierre-Mauroy",
           "city": "Villeneuve d'Ascq"
         },
@@ -18048,7 +18048,7 @@
     {
       "fixture": {
         "id": 1196787,
-        "referee": "Marco Guida, Italy",
+        "referee": "M. Guida",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
@@ -18090,17 +18090,17 @@
     {
       "fixture": {
         "id": 1196788,
-        "referee": null,
+        "referee": "F. Zwayer",
         "timezone": "UTC",
         "date": "2024-05-09T19:00:00+00:00",
         "timestamp": 1715281200,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1715281200, "second": 1715284800 },
         "venue": {
           "id": null,
           "name": "Stadio Georgios Karaiskáki",
           "city": "Piraeus"
         },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 848,
@@ -18116,19 +18116,19 @@
           "id": 553,
           "name": "Olympiakos Piraeus",
           "logo": "https://media.api-sports.io/football/teams/553.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 66,
           "name": "Aston Villa",
           "logo": "https://media.api-sports.io/football/teams/66.png",
-          "winner": null
+          "winner": false
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 2, "away": 0 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -18136,7 +18136,7 @@
     {
       "fixture": {
         "id": 1196789,
-        "referee": "Michael Oliver, England",
+        "referee": "M. Oliver",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
@@ -18182,13 +18182,13 @@
     {
       "fixture": {
         "id": 1196790,
-        "referee": null,
+        "referee": "H. Meler",
         "timezone": "UTC",
         "date": "2024-05-08T16:45:00+00:00",
         "timestamp": 1715186700,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1715186700, "second": 1715190300 },
         "venue": { "id": 176, "name": "Jan Breydelstadion", "city": "Brugge" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 848,
@@ -18213,11 +18213,53 @@
           "winner": null
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 1, "away": 1 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
         "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1199596,
+        "referee": "Artur Soares Dias",
+        "timezone": "UTC",
+        "date": "2024-05-29T19:00:00+00:00",
+        "timestamp": 1717009200,
+        "periods": { "first": 1717009200, "second": 1717012800 },
+        "venue": { "id": null, "name": "OPAP Arena", "city": "Athens" },
+        "status": { "long": "Match Finished", "short": "AET", "elapsed": 120 }
+      },
+      "league": {
+        "id": 848,
+        "name": "UEFA Europa Conference League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/848.png",
+        "flag": null,
+        "season": 2023,
+        "round": "Final"
+      },
+      "teams": {
+        "home": {
+          "id": 553,
+          "name": "Olympiakos Piraeus",
+          "logo": "https://media.api-sports.io/football/teams/553.png",
+          "winner": true
+        },
+        "away": {
+          "id": 502,
+          "name": "Fiorentina",
+          "logo": "https://media.api-sports.io/football/teams/502.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": 1, "away": 0 },
         "penalty": { "home": null, "away": null }
       }
     }

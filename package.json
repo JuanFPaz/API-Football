@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "bowie": "node app/util/createJson.js",
-    "joey": "node app/util/readJson.js",
-    "dev": "nodemon index.js"
+    "dev": "node --watch index.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",

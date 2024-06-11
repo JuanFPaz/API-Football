@@ -45,8 +45,6 @@ async function processGetFixtures (...params) {
       message: 'Ocurrio un Error leyendo los archivos de los fixtures.',
       reference: err
     }
-    console.error(err.message)
-    console.error(customError.message)
     throw customError
   }
 
@@ -56,6 +54,7 @@ async function processGetFixtures (...params) {
 
     const [,, nameLeague] = params /* -_- */
 
+    console.log(nameLeague)
     const fixturesFormateados = rondasFilter(nameLeague, fases, fixtures)
 
     if (fixturesFormateados.customError) {
@@ -66,9 +65,9 @@ async function processGetFixtures (...params) {
     const customError = {
       process: 'getFixtures',
       message: 'Ocurrio un Error formateando la respuesta de los fixtures.',
-      reference: err.message
+      reference: err
     }
-    console.error(err.message)
+    console.error(err)
     console.error(customError.message)
     throw customError
   }

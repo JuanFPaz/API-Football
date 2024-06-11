@@ -2,7 +2,7 @@
   "get": "fixtures",
   "parameters": { "league": "3", "season": "2023" },
   "errors": [],
-  "results": 174,
+  "results": 175,
   "paging": { "current": 1, "total": 1 },
   "response": [
     {
@@ -1988,7 +1988,7 @@
         "timestamp": 1695322800,
         "periods": { "first": 1695322800, "second": 1695326400 },
         "venue": {
-          "id": 508,
+          "id": null,
           "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
@@ -3250,7 +3250,7 @@
         "timestamp": 1698346800,
         "periods": { "first": 1698346800, "second": 1698350400 },
         "venue": {
-          "id": 508,
+          "id": null,
           "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
@@ -5468,7 +5468,7 @@
         "timestamp": 1702584000,
         "periods": { "first": 1702584000, "second": 1702587600 },
         "venue": {
-          "id": 508,
+          "id": null,
           "name": "American Express Stadium",
           "city": "Falmer, East Sussex"
         },
@@ -7444,7 +7444,7 @@
     {
       "fixture": {
         "id": 1196783,
-        "referee": "Daniel Siebert, Germany",
+        "referee": "D. Siebert",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
@@ -7486,13 +7486,13 @@
     {
       "fixture": {
         "id": 1196784,
-        "referee": null,
+        "referee": "Jesús Gil",
         "timezone": "UTC",
         "date": "2024-05-09T19:00:00+00:00",
         "timestamp": 1715281200,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1715281200, "second": 1715284800 },
         "venue": { "id": 879, "name": "Gewiss Stadium", "city": "Bergamo" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 3,
@@ -7508,19 +7508,19 @@
           "id": 499,
           "name": "Atalanta",
           "logo": "https://media.api-sports.io/football/teams/499.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 81,
           "name": "Marseille",
           "logo": "https://media.api-sports.io/football/teams/81.png",
-          "winner": null
+          "winner": false
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 3, "away": 0 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 3, "away": 0 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -7528,7 +7528,7 @@
     {
       "fixture": {
         "id": 1196785,
-        "referee": "François Letexier, France",
+        "referee": "F. Letexier",
         "timezone": "UTC",
         "date": "2024-05-02T19:00:00+00:00",
         "timestamp": 1714676400,
@@ -7570,13 +7570,13 @@
     {
       "fixture": {
         "id": 1196786,
-        "referee": null,
+        "referee": "D. Makkelie",
         "timezone": "UTC",
         "date": "2024-05-09T19:00:00+00:00",
         "timestamp": 1715281200,
-        "periods": { "first": null, "second": null },
+        "periods": { "first": 1715281200, "second": 1715284800 },
         "venue": { "id": 699, "name": "BayArena", "city": "Leverkusen" },
-        "status": { "long": "Not Started", "short": "NS", "elapsed": null }
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
         "id": 3,
@@ -7601,10 +7601,52 @@
           "winner": null
         }
       },
-      "goals": { "home": null, "away": null },
+      "goals": { "home": 2, "away": 2 },
       "score": {
-        "halftime": { "home": null, "away": null },
-        "fulltime": { "home": null, "away": null },
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1199589,
+        "referee": "I. Kovács",
+        "timezone": "UTC",
+        "date": "2024-05-22T19:00:00+00:00",
+        "timestamp": 1716404400,
+        "periods": { "first": 1716404400, "second": 1716408000 },
+        "venue": { "id": 1970, "name": "Aviva Stadium", "city": "Dublin" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
+      },
+      "league": {
+        "id": 3,
+        "name": "UEFA Europa League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/3.png",
+        "flag": null,
+        "season": 2023,
+        "round": "Final"
+      },
+      "teams": {
+        "home": {
+          "id": 499,
+          "name": "Atalanta",
+          "logo": "https://media.api-sports.io/football/teams/499.png",
+          "winner": true
+        },
+        "away": {
+          "id": 168,
+          "name": "Bayer Leverkusen",
+          "logo": "https://media.api-sports.io/football/teams/168.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 3, "away": 0 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }

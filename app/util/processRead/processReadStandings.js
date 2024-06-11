@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
@@ -8,23 +9,25 @@ async function processGetStanding (...params) {
   let dataFile
   /* Crear la ruta de la solicitud: */
   try {
-    if (params.length < 4) {
+    if (params.length !== 4) {
       const customError = {
-        referenceCustomError:
-              'Se esperaban 4 argumentos, y solo pasamos ' + params.length
+        message:
+              'Se esperaban 4 argumentos, y solo recibimos ' + params.length
       }
 
       throw customError
     }
-    if (params[3] !== 'standings') {
-      /*
-            No forzamos error, si no que devolvemos standings false para que en el front,
-            podamos filtrar si el componente Copa tiene tablita de posiciones o no.
-            Agarrado de los pelos? si. Funciona? Si
-          */
-      return { standings: false }
-    }
+
     const [country, season, nameLeague, nameData] = params
+    if (!nameData) {
+      return { standings: [false] }
+    } else if (nameData !== 'standings') {
+      const customError = {
+        message:
+              'Se esperaba leer los standings pero me pasaste el ' + nameData
+      }
+      throw customError
+    }
     const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
     const nameFile = `${nameData}-${nameLeagueFormated}-${season}.json`
     // Ejemplo data path: '/data/argentina/season/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
@@ -32,10 +35,10 @@ async function processGetStanding (...params) {
   } catch (err) {
     const customError = {
       process: 'getStanding',
-      message: 'Ocurrio un Error en process standing, creando la ruta:',
-      reference: err
+      message: 'Ocurrio un Error en process read standing, creando la ruta',
+      reference: err.message
     }
-    console.log(customError.message)
+    console.log(err.message)
     throw customError
   }
 
@@ -47,8 +50,6 @@ async function processGetStanding (...params) {
       message: 'Ocurrio un error leyendo el archivo.',
       reference: err
     }
-    console.error(err.message)
-    console.error(customError.message)
     throw customError
   }
 
@@ -74,50 +75,7 @@ async function processGetStanding (...params) {
 
       return standingFormateada
     })
-    /* Agrege a centrarl corodoba EN LA TABLA DE LA LIGA PORQUE NO ESTAAAAAAAA */
-    if (country === 'Argentina' && name === 'Liga Profesional Argentina') {
-      const centralCordobaxD = {
-        group: 'Liga Profesional Argentina',
-        team: {
-          id: 1065,
-          name: 'Central Cordoba (SdE)',
-          logo: 'https://media.api-sports.io/football/teams/1065.png'
-        },
-        points: 0,
-        goalsDiff: 0,
-        all: {
-          played: 0,
-          win: 0,
-          draw: 0,
-          lose: 0,
-          goals: {
-            for: 0,
-            against: 0
-          }
-        },
-        home: {
-          played: 0,
-          win: 0,
-          draw: 0,
-          lose: 0,
-          goals: {
-            for: 0,
-            against: 0
-          }
-        },
-        away: {
-          played: 0,
-          win: 0,
-          draw: 0,
-          lose: 0,
-          goals: {
-            for: 0,
-            against: 0
-          }
-        }
-      }
-      standingsFormateadas[0].push(centralCordobaxD)
-    }
+
     /* agrego nueva sentencia para reducir los standings en un solo arreglo, y hacer el every: */
     const equipos = standingsFormateadas.reduce((acc, curr) => acc.concat(curr), [])
     const partidosJugados = equipos.every((e) => e.all.played === 0)
@@ -136,7 +94,6 @@ async function processGetStanding (...params) {
       message: 'Ocurrio un error procesando la respuesta, antes de envirla D:',
       reference: err
     }
-    console.error(customError.message)
     throw customError
   }
 }

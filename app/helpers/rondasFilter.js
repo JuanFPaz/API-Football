@@ -8,35 +8,35 @@ function rondasCopaDeLaLiga (...unFixture) {
       const { fixture: { id, date, venue, status }, teams, goals, score } = fx
       return { id, date, venue, status, teams, goals, score }
     })
-
     return {
       fixtureName: regex.test(f) ? `Fecha ${indice + 1}` : f,
       fixtureLength: fixtureFiltrado.length,
-      fixturesMatchs: fixtureFiltrado
+      fixtureMatchs: fixtureFiltrado
     }
   })
+
   const primeraFaseFormateada = fixtureFormateado.filter(f => regexNew.test(f.fixtureName))
   const segundaFaseFormateada = fixtureFormateado.filter(f => !regexNew.test(f.fixtureName))
 
   const primeraFase = [
     {
       phaseName: 'Fase Regular',
-      phasesLength: primeraFaseFormateada.length,
-      phasesFixtures: primeraFaseFormateada
+      phaseLength: primeraFaseFormateada.length,
+      phaseFixtures: primeraFaseFormateada
     }
   ]
 
   const segundaFase = [
     {
       phaseName: 'Fase Final',
-      phasesLength: segundaFaseFormateada.length,
-      phasesFixtures: segundaFaseFormateada
+      phaseLength: segundaFaseFormateada.length,
+      phaseFixtures: segundaFaseFormateada
     }
   ]
   return [primeraFase, segundaFase]
 }
 
-function rondasCopaArgentina (...unFixture) {
+function rondasCopasNacionales (...unFixture) {
   const [fases, fixtures] = unFixture
 
   const fixtureFormateado = fases.map((f) => {
@@ -48,15 +48,15 @@ function rondasCopaArgentina (...unFixture) {
     return {
       fixtureName: f,
       fixtureLength: fixtureFiltrado.length,
-      fixturesMatchs: fixtureFiltrado
+      fixtureMatchs: fixtureFiltrado
     }
   })
 
   const unicaFase = [
     {
       phaseName: 'Fase Unica/Eliminacion Directa',
-      phasesLength: fixtureFormateado.length,
-      phasesFixtures: fixtureFormateado
+      phaseLength: fixtureFormateado.length,
+      phaseFixtures: fixtureFormateado
     }
   ]
 
@@ -75,18 +75,181 @@ function rondasLigaArgentina (...unFixture) {
     return {
       fixtureName: `Fecha ${indice + 1}`,
       fixtureLength: fixtureFiltrado.length,
-      fixturesMatchs: fixtureFiltrado
+      fixtureMatchs: fixtureFiltrado
     }
   })
+
   const faseRegular = [
     {
       phaseName: 'Fase Regular',
-      phasesLength: fixtureFormateado.length,
-      phasesFixtures: fixtureFormateado
+      phaseLength: fixtureFormateado.length,
+      phaseFixtures: fixtureFormateado
     }
   ]
 
   return [faseRegular]
+}
+
+function rondasChampionsLeague (...unFixture) {
+  const [fases, fixtures] = unFixture
+  const regexPrevPhase = /\b(Preliminary Round|1st Qualifying Round|2nd Qualifying Round|3rd Qualifying Round|Play-offs)\b/
+  const regexGroupPhase = /Group [A-H] - [1-6]/
+  const regexFinalPhase = /\b(Round of 16|Quarter-finals|Semi-finals|Final)\b/
+  const fixtureFormateado = fases.map((f) => {
+    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
+      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
+      return { id, date, venue, status, teams, goals, score }
+    })
+
+    return {
+      fixtureName: f,
+      fixtureLength: fixtureFiltrado.length,
+      fixtureMatchs: fixtureFiltrado
+    }
+  })
+
+  const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
+  const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+  const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
+
+  const primeraFase = [
+    {
+      phaseName: 'Fase Previa/Eliminacion',
+      phaseLength: primeraFaseFormateada.length,
+      phaseFixtures: primeraFaseFormateada
+    }
+  ]
+
+  const segundaFase = [
+    {
+      phaseName: 'Fase de Grupos',
+      phaseLength: segundaFaseFormateada.length,
+      phaseFixtures: segundaFaseFormateada
+    }
+  ]
+
+  const terceraFase = [
+    {
+      phaseName: 'Fase Final',
+      phaseLength: terceraFaseFormateada.length,
+      phaseFixtures: terceraFaseFormateada
+    }
+  ]
+  return [primeraFase, segundaFase, terceraFase]
+}
+
+function rondasUEFA (...unFixture) {
+  const [fases, fixtures] = unFixture
+  const regexPrevPhase = /\b(1st Qualifying Round|2nd Qualifying Round|3rd Qualifying Round|Play-offs)\b/
+  const regexGroupPhase = /Group Stage - /
+  const regexFinalPhase = /\b(Knockout Round Play-offs|Round of 16|Quarter-finals|Semi-finals|Final)\b/
+  const fixtureFormateado = fases.map((f) => {
+    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
+      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
+      return { id, date, venue, status, teams, goals, score }
+    })
+
+    return {
+      fixtureName: f,
+      fixtureLength: fixtureFiltrado.length,
+      fixtureMatchs: fixtureFiltrado
+    }
+  })
+
+  const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
+  const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+  const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
+
+  const primeraFase = [
+    {
+      phaseName: 'Fase Previa/Eliminacion',
+      phaseLength: primeraFaseFormateada.length,
+      phaseFixtures: primeraFaseFormateada
+    }
+  ]
+
+  const segundaFase = [
+    {
+      phaseName: 'Fase de Grupos',
+      phaseLength: segundaFaseFormateada.length,
+      phaseFixtures: segundaFaseFormateada
+    }
+  ]
+
+  const terceraFase = [
+    {
+      phaseName: 'Fase Final',
+      phaseLength: terceraFaseFormateada.length,
+      phaseFixtures: terceraFaseFormateada
+    }
+  ]
+  return [primeraFase, segundaFase, terceraFase]
+}
+
+function rondasCONMEBOL (...unFixture) {
+  const [fases, fixtures] = unFixture
+  const regexPrevPhase = /\b(1st Round|2nd Round|3rd Round)\b/
+  const regexGroupPhase = /Group Stage - [1-6]/
+
+  const fixtureFormateado = fases.map((f) => {
+    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
+      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
+      return { id, date, venue, status, teams, goals, score }
+    })
+
+    return {
+      fixtureName: f,
+      fixtureLength: fixtureFiltrado.length,
+      fixtureMatchs: fixtureFiltrado
+    }
+  })
+
+  const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
+  const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+
+  const primeraFase = [
+    {
+      phaseName: 'Fase Previa/Eliminacion',
+      phasesLength: primeraFaseFormateada.length,
+      phaseFixtures: primeraFaseFormateada
+    }
+  ]
+
+  const segundaFase = [
+    {
+      phaseName: 'Fase de Grupos',
+      phasesLength: segundaFaseFormateada.length,
+      phaseFixtures: segundaFaseFormateada
+    }
+  ]
+  return [primeraFase, segundaFase]
+}
+
+function rondasFinalesUnicas (...unFixture) {
+  const [fases, fixtures] = unFixture
+
+  const fixtureFormateado = fases.map((f) => {
+    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
+      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
+      return { id, date, venue, status, teams, goals, score }
+    })
+
+    return {
+      fixtureName: f,
+      fixtureLength: fixtureFiltrado.length,
+      fixtureMatchs: fixtureFiltrado
+    }
+  })
+
+  const unicaFase = [
+    {
+      phaseName: 'Final Unica',
+      phaseLength: fixtureFormateado.length,
+      phaseFixtures: fixtureFormateado
+    }
+  ]
+
+  return [unicaFase]
 }
 
 function rondasFilter (unaLiga, unaFases, unosFixtures) {
@@ -98,7 +261,34 @@ function rondasFilter (unaLiga, unaFases, unosFixtures) {
       return rondasCopaDeLaLiga(unaFases, unosFixtures)
     }
     case 'Copa Argentina' : {
-      return rondasCopaArgentina(unaFases, unosFixtures)
+      return rondasCopasNacionales(unaFases, unosFixtures)
+    }
+    case 'Premier League': {
+      return rondasLigaArgentina(unaFases, unosFixtures)
+    }
+    case 'FA Cup':{
+      return rondasCopasNacionales(unaFases, unosFixtures)
+    }
+    case 'UEFA Champions League' : {
+      return rondasChampionsLeague(unaFases, unosFixtures)
+    }
+    case 'UEFA Europa League' : {
+      return rondasUEFA(unaFases, unosFixtures)
+    }
+    case 'UEFA Europa Conference League' : {
+      return rondasUEFA(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL Libertadores' : {
+      return rondasCONMEBOL(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL sudamericana' : {
+      return rondasCONMEBOL(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL Recopa' : {
+      return rondasFinalesUnicas(unaFases, unosFixtures)
+    }
+    case 'UEFA Super Cup' : {
+      return rondasFinalesUnicas(unaFases, unosFixtures)
     }
     default:{
       const customError = {
