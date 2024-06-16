@@ -220,6 +220,7 @@ function rondasCONMEBOL (...unFixture) {
   const [fases, fixtures] = unFixture
   const regexPrevPhase = /\b(1st Round|2nd Round|3rd Round)\b/
   const regexGroupPhase = /Group Stage - [1-6]/
+  const regexFinalPhase = /\b(Round of 32|Round of 16|Quarter-finals|Semi-finals|Final)\b/
 
   const fixtureFormateado = fases.map((f) => {
     const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
@@ -236,6 +237,7 @@ function rondasCONMEBOL (...unFixture) {
 
   const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
   const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+  const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
 
   const primeraFase = [
     {
@@ -252,7 +254,15 @@ function rondasCONMEBOL (...unFixture) {
       phaseFixtures: segundaFaseFormateada
     }
   ]
-  return [primeraFase, segundaFase]
+
+  const terceraFase = [
+    {
+      phaseName: 'Fase Final',
+      phaseLength: terceraFaseFormateada.length,
+      phaseFixtures: terceraFaseFormateada
+    }
+  ]
+  return [primeraFase, segundaFase, terceraFase]
 }
 
 function rondasFinalesUnicas (...unFixture) {

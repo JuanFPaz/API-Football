@@ -2,12 +2,11 @@ const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path');
 
 (async () => {
-  function rondasCopaAmerica (...unFixture) {
-    /** Por ahora obtenemos solo fase de grupos - Obtener datos de viejas copas americas y terminar de escribir rondasCopaAmerica */
+  function rondasUEFA (...unFixture) {
     const [fases, fixtures] = unFixture
-    console.log(fases)
-    const regexGroupPhase = /Group Stage - [1-3]/
-
+    const regexPrevPhase = /\b(1st Qualifying Round|2nd Qualifying Round|3rd Qualifying Round|Play-offs)\b/
+    const regexGroupPhase = /Group Stage - /
+    const regexFinalPhase = /\b(Knockout Round Play-offs|Round of 16|Quarter-finals|Semi-finals|Final)\b/
     const fixtureFormateado = fases.map((f) => {
       const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
         const { fixture: { id, date, venue, status }, teams, goals, score } = fx
@@ -21,17 +20,34 @@ const { resolve, join } = require('node:path');
       }
     })
 
-    const primeraFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+    const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
+    const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
+    const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
 
     const primeraFase = [
       {
-        phaseName: 'Fase de Grupos',
-        phasesLength: primeraFaseFormateada.length,
+        phaseName: 'Fase Previa/Eliminacion',
+        phaseLength: primeraFaseFormateada.length,
         phaseFixtures: primeraFaseFormateada
       }
     ]
 
-    return [primeraFase]
+    const segundaFase = [
+      {
+        phaseName: 'Fase de Grupos',
+        phaseLength: segundaFaseFormateada.length,
+        phaseFixtures: segundaFaseFormateada
+      }
+    ]
+
+    const terceraFase = [
+      {
+        phaseName: 'Fase Final',
+        phaseLength: terceraFaseFormateada.length,
+        phaseFixtures: terceraFaseFormateada
+      }
+    ]
+    return [primeraFase, segundaFase, terceraFase]
   }
 
   const DATA_PATH = resolve(__dirname, '../data')
