@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
@@ -163,16 +164,19 @@ async function processGetLinksCups (confederacion) {
       const seasonsFormateada = seasons.map((s) => {
         /* agregando links de los endpoints por season y compotencia */
         const { year, start, end, current } = s
-        const link = `http://localhost:3000/${year.toString()}/${league.name.toLowerCase().toLowerCase().replace(/\s/g, '-')}`
+        const link = `http://localhost:3000/${year.toString()}/${league.name.toLowerCase().replace(/\s/g, '-')}`
         return { year, start, end, current, link }
       })
       return { league, seasons: seasonsFormateada }
     })
+
+    // arreglar, usar objecto['conmebol'] en ves de esta sentencia condicional anidada.
+    const FLAG = confederacion === 'conmebol' ? 'https://i.imgur.com/NCAlqtf.png' : confederacion === 'uefa' ? 'https://i.imgur.com/0ts3uoO.png' : ''
     const data = {
       country: {
         name: confederacion.toUpperCase(),
         code: confederacion.toUpperCase(),
-        flag: null
+        flag: FLAG
       },
       list: listFormateada
     }

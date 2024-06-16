@@ -9,6 +9,8 @@ async function processGetFixtures (...params) {
   let dataPathRoundsFixtures
   let dataFileFixtures
   let dataFileRoundsFixtures
+  /** Este se lo enviamos a roundFilter */
+  let nameLeagueFilter
   /* Crear la ruta de la solicitud: */
   try {
     if (params.length < 4) {
@@ -20,6 +22,7 @@ async function processGetFixtures (...params) {
       throw customError
     }
     const [country, season, nameLeague, nameData] = params
+    nameLeagueFilter = nameLeague /** Lo hago aca pornque nose si el toLowerCase y el replace mutan el nameLague, despues lo pruebo. */
     const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
     const nameFileFixtures = `${nameData}-${nameLeagueFormated}-${season}.json`
     const nameFileRoundsFixtures = `rounds-${nameFileFixtures}`
@@ -38,7 +41,7 @@ async function processGetFixtures (...params) {
 
   try {
     dataFileFixtures = await readFile(dataPathFixtures, 'utf-8')
-    dataFileRoundsFixtures = await readFile(dataPathRoundsFixtures)
+    dataFileRoundsFixtures = await readFile(dataPathRoundsFixtures, 'utf-8')
   } catch (err) {
     const customError = {
       process: 'getFixtures',
@@ -52,10 +55,7 @@ async function processGetFixtures (...params) {
     const { response: fases } = JSON.parse(dataFileRoundsFixtures)
     const { response: fixtures } = JSON.parse(dataFileFixtures)
 
-    const [,, nameLeague] = params /* -_- */
-
-    console.log(nameLeague)
-    const fixturesFormateados = rondasFilter(nameLeague, fases, fixtures)
+    const fixturesFormateados = rondasFilter(nameLeagueFilter, fases, fixtures)
 
     if (fixturesFormateados.customError) {
       throw fixturesFormateados.customError

@@ -12,29 +12,43 @@ app.use(cors())
 app.post('/links', async (req, res) => {
   const { method, url } = req
 
-  const fakeBody = {
-    country: ['italy']
-  }
-  const data = {}
-
-  try {
-    console.log(`${pc.bgMagenta(method + ':')} ${pc.green(url)}`)
-    data.post = req.url
-    data.timestamp = Date.now()
-    data.response = await createLinks({ ...fakeBody })
-    if (data.response.error) {
-      throw data.response.error
+  let body = ''
+  req.on('data', (chunk) => {
+    // Recibe un objeto asi:
+    // const fakeBody = {
+    //   id: [9,8,7,5,4]
+    //   country: ['world, nations']
+    // }
+    // o asi
+    // Recibe un objeto asi:
+    // const fakeBody = {
+    //   id: [9,8,7,5,4]
+    //   country: ['argenita']
+    // }
+    body += chunk
+  })
+  req.on('end', async () => {
+    const data = {}
+    const bodyParse = JSON.parse(body)
+    try {
+      console.log(`${pc.bgMagenta(method + ':')} ${pc.green(url)}`)
+      data.post = req.url
+      data.timestamp = Date.now()
+      data.response = await createLinks({ ...bodyParse })
+      if (data.response.error) {
+        throw data.response.error
+      }
+      console.log(`${pc.bgCyan('Status: ')} ${pc.green(202)}`)
+      res.status(202).json(data)
+    } catch (err) {
+      data.error = err
+      data.response = [{ message: data.error.message }]
+      console.error(`${pc.bgRed('Status: ')} ${pc.red(409)}`)
+      console.error(`${pc.bgRed('Reference: ')} ${pc.red(data.error.reference)}`)
+      console.error(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
+      res.status(409).json(data)
     }
-    console.log(`${pc.bgCyan('Status: ')} ${pc.green(202)}`)
-    res.status(202).json(data)
-  } catch (err) {
-    data.error = err
-    data.response = [{ message: data.error.message }]
-    console.error(`${pc.bgRed('Status: ')} ${pc.red(409)}`)
-    console.error(`${pc.bgRed('Reference: ')} ${pc.red(data.error.reference)}`)
-    console.error(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
-    res.status(409).json(data)
-  }
+  })
 })
 
 app.post('/fixtures', async (req, res) => {
@@ -304,6 +318,34 @@ app.get('/:season/conmebol-libertadores', async (req, res) => {
   }
 })
 
+app.get('/:season/copa-america', async (req, res) => {
+  const { method, url, params } = req
+  const { season } = params
+  const fakeBody = {
+    country: 'nations',
+    season,
+    league: 'Copa America',
+    nameData: ['standings', 'fixtures']
+  }
+  const data = {}
+  try {
+    console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
+    data.get = url
+    data.timestamp = Date.now()
+    data.response = await getDataCup({ ...fakeBody })
+    if (data.response.error) {
+      throw data
+    }
+    console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
+    res.json(data)
+  } catch (err) {
+    console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(err.response.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(err.response.error.message)}`)
+    res.status(500).json(err)
+  }
+})
+
 app.get('/:season/conmebol-sudamericana', async (req, res) => {
   const { method, url, params } = req
   const { season } = params
@@ -449,7 +491,7 @@ app.get('/:season/uefa-super-cup', async (req, res) => {
   const fakeBody = {
     country: 'uefa',
     season,
-    nameLeague: 'UEFA Super Cup',
+    league: 'UEFA Super Cup',
     nameData: [false, 'fixtures']
   }
   const data = {}

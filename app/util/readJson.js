@@ -101,6 +101,7 @@ async function getLinks () {
     data = await Promise.all([
       processGetLinksArg(),
       processGetLinksEng(),
+      processGetLinksCups('nations'),
       processGetLinksCups('conmebol'),
       processGetLinksCups('uefa')
     ])

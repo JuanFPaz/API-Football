@@ -1,1 +1,27 @@
-{"get":"fixtures/rounds","parameters":{"league":"4","season":"2024"},"errors":[],"results":18,"paging":{"current":1,"total":1},"response":["Group A - 1","Group B - 1","Group D - 1","Group C - 1","Group E - 1","Group F - 1","Group B - 2","Group A - 2","Group C - 2","Group E - 2","Group D - 2","Group F - 2","Group A - 3","Group B - 3","Group D - 3","Group C - 3","Group E - 3","Group F - 3"]}
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "4", "season": "2024" },
+  "errors": [],
+  "results": 18,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    "Group A - 1",
+    "Group B - 1",
+    "Group D - 1",
+    "Group C - 1",
+    "Group E - 1",
+    "Group F - 1",
+    "Group A - 2",
+    "Group B - 2",
+    "Group C - 2",
+    "Group E - 2",
+    "Group D - 2",
+    "Group F - 2",
+    "Group A - 3",
+    "Group B - 3",
+    "Group D - 3",
+    "Group C - 3",
+    "Group E - 3",
+    "Group F - 3"
+  ]
+}
