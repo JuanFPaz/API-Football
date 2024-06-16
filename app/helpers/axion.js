@@ -15,6 +15,25 @@ async function axionLinks (country) {
   return axios(config)
 }
 
+async function axionLinksIds (...params) {
+  const [country, ids] = params
+  const arregloDeLinks = await Promise.all(ids.map(async (id) => {
+    const config = {
+      method: 'get',
+      url: `https://v3.football.api-sports.io/leagues?country=${country}&id=${id}`,
+      headers: {
+        'x-rapidapi-key': API_KEY,
+        'x-rapidapi-host': 'v3.football.api-sports.io'
+      }
+    }
+
+    const { data } = await axios(config)
+    return data
+  }))
+
+  return arregloDeLinks
+}
+
 // Si mal no me acuerdo, este era para World/Conmebol y World/Uefa
 // async function axionLinksId (...params) {
 //   const [country, id] = params
@@ -30,8 +49,8 @@ async function axionLinks (country) {
 //   return axios(config)
 // }
 
-async function axionFixtures (...ids) {
-  const [league, season] = ids
+async function axionFixtures (...params) {
+  const [league, season] = params
 
   const config = {
     method: 'get',
@@ -45,8 +64,8 @@ async function axionFixtures (...ids) {
   return axios(config)
 }
 
-async function axionFixturesRounds (...ids) {
-  const [league, season] = ids
+async function axionFixturesRounds (...params) {
+  const [league, season] = params
 
   const config = {
     method: 'get',
@@ -60,8 +79,8 @@ async function axionFixturesRounds (...ids) {
   return axios(config)
 }
 
-async function axionStandings (...ids) {
-  const [league, season] = ids
+async function axionStandings (...params) {
+  const [league, season] = params
 
   const config = {
     method: 'get',
@@ -77,6 +96,7 @@ async function axionStandings (...ids) {
 
 module.exports = {
   axionLinks,
+  axionLinksIds,
   axionFixtures,
   axionFixturesRounds,
   axionStandings

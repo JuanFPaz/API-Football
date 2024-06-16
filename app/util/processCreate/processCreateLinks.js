@@ -1,19 +1,21 @@
+/* eslint-disable no-unreachable */
 const { writeFile, access, mkdir } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
-const { axionLinks } = require('../../helpers/axion')
+const { axionLinksIds } = require('../../helpers/axion')
 
 const DATA_PATH = resolve(__dirname, '../../data')
 
-async function processCreateLinks (...params) {
+async function processCreateLinks ({ country, id }) {
   let countryName
   let nameDir
   let nameFile
 
   try {
-    const [country] = params
-    countryName = country[0]
-    nameDir = countryName.toLowerCase()
+    const [_countryName, _nameDir] = country
+    countryName = _countryName
+    nameDir = _nameDir || _countryName.toLowerCase()
     nameFile = nameDir
+    console.log(nameFile)
   } catch (err) {
     const customError = {
       isCustomError: true,
@@ -57,15 +59,29 @@ async function processCreateLinks (...params) {
   }
 
   try {
-    /* Y ahora verificamos, si el archivo que queremos crear existe. En caso de que exista, cortamos el proceso.
-      Ya que en esta solicitud solo creamos el recurso. Si queremos actualizar el JSON, vamos a utilizar el updateJSON.
-      Las cosas por sus nombres. */
-
     await access(NAME_FILE)
     const customError = { isCustomError: true, process: 'processCreateLinks', reference: 'archivo existente.', message: 'El archivo ya existe, no se puede Sobreescribir. En caso que necesites actualizarlo, usar el updateJson cabron.' }
     return customError
   } catch (error) {
-    const { data } = await axionLinks(nameDir)
+    const arregloDeLinks = await axionLinksIds(countryName, id)
+    const arregloParameters = arregloDeLinks.map(lk => {
+      const { parameters } = lk
+      return parameters
+    })
+    const arregloResponse = arregloDeLinks.map(lk => {
+      const { response: [link] } = lk
+      return link
+    })
+    const data = {
+      get: arregloDeLinks[0].get,
+      parameters: arregloParameters,
+      errors: arregloDeLinks[0].errors,
+      results: arregloResponse.length,
+
+      paging: arregloDeLinks[0].paging,
+      response: arregloResponse
+    }
+
     await writeFile(NAME_FILE, JSON.stringify(data))
     return { message: 'Recurso creado correctamente, ponele (?' }
   }

@@ -13,9 +13,9 @@ const API_KEY = process.env.API_SPORTS
 // y ahi recien hacer el axios y crear los archivos.
 // Porque probando y probando las funciones de procceso, consumiste el 75% de la api sin darte cuenta -_-
 
-async function createLinks ({ country }) {
+async function createLinks ({ country, id }) {
   try {
-    const createFile = await processCreateLinks(country)
+    const createFile = await processCreateLinks({ country, id })
     if (createFile.isCustomError) {
       throw createFile
     }
@@ -50,7 +50,7 @@ async function createStandings ({ league, season, country }) {
 }
 
 //* Este no sirve, pero todavia no lo voy a borrar
-// async function createCompetenciasWorld (country, nameFile, ...ids) {
+// async function createLinks (country, nameFile, ...ids) {
 //   /* nanmeFIle sirve para el nombre del directori oy del archivo que estamos creando. Ej: data/uefa/uefa.json */
 //   const arregloConfederacion = await Promise.all(ids.map(async (id) => {
 //     const config = {
@@ -78,6 +78,7 @@ async function createStandings ({ league, season, country }) {
 //     parameters: arregloParameters,
 //     errors: arregloConfederacion[0].errors,
 //     results: arregloResponse.length,
+
 //     paging: arregloConfederacion[0].paging,
 //     response: arregloResponse
 //   }

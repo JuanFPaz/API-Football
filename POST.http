@@ -1,19 +1,26 @@
 POST http://localhost:3000/links
+Content-Type: application/json
+
+{
+    "id":[1,9,4],
+    "country": ["world","nations"]
+}
+
 ###
 POST http://localhost:3000/fixtures
 Content-Type: application/json
 
 {
-    "league": 130,
+    "league": 4,
     "season": 2024,
-    "country": ["argentina"]
+    "country": ["nations"]
 }
 ###
 POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
-    "league": 128,
+    "league": 4,
     "season": 2024,
-    "country": ["argentina"]
+    "country": ["nations"]
 }
