@@ -318,6 +318,34 @@ app.get('/:season/conmebol-libertadores', async (req, res) => {
   }
 })
 
+app.get('/:season/euro-championship', async (req, res) => {
+  const { method, url, params } = req
+  const { season } = params
+  const fakeBody = {
+    country: 'nations',
+    season,
+    league: 'Euro Championship',
+    nameData: ['standings', 'fixtures']
+  }
+  const data = {}
+  try {
+    console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
+    data.get = url
+    data.timestamp = Date.now()
+    data.response = await getDataCup({ ...fakeBody })
+    if (data.response.error) {
+      throw data
+    }
+    console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
+    res.json(data)
+  } catch (err) {
+    console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
+    console.error(`${pc.bgRed('Reference: ')} ${pc.red(err.response.error.reference)}`)
+    console.error(`${pc.bgRed('Message:')} ${pc.red(err.response.error.message)}`)
+    res.status(500).json(err)
+  }
+})
+
 app.get('/:season/copa-america', async (req, res) => {
   const { method, url, params } = req
   const { season } = params
