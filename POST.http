@@ -11,17 +11,17 @@ POST http://localhost:3000/fixtures
 Content-Type: application/json
 
 {
-    "league": 13,
+    "league": 4,
     "season": 2024,
-    "country": ["conmebol"]
+    "country": ["nations"]
 }
 ###
 POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
-    "league": 13,
+    "league": 4,
     "season": 2024,
-    "country": ["conmebol"]
+    "country": ["nations"]
 }
 
