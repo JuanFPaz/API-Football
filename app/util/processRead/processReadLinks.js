@@ -50,9 +50,9 @@ async function processGetLinksArg () {
       country: {
         name: 'Argentina',
         code: 'AR',
-        flag: 'https://media.api-sports.io/flags/ar.svg'
-      },
-      list: listFormateada
+        flag: 'https://media.api-sports.io/flags/ar.svg',
+        leagues: listFormateada
+      }
     }
     return data
   } catch (err) {
@@ -111,10 +111,10 @@ async function processGetLinksEng () {
     const data = {
       country: {
         name: 'Pirata go Home',
-        code: 'ING',
-        flag: 'https://media.api-sports.io/flags/gb.svg'
-      },
-      list: listFormateada
+        code: 'ENG',
+        flag: 'https://media.api-sports.io/flags/gb.svg',
+        leagues: listFormateada
+      }
     }
     return data
   } catch (err) {
@@ -176,9 +176,9 @@ async function processGetLinksCups (confederacion) {
       country: {
         name: confederacion.toUpperCase(),
         code: confederacion.toUpperCase(),
-        flag: FLAG
-      },
-      list: listFormateada
+        flag: FLAG,
+        leagues: listFormateada
+      }
     }
     return data
   } catch (err) {

@@ -9,6 +9,16 @@ const PORT = process.env.PORT ?? 3000
 
 app.use(cors())
 
+app.use('/:season/:league', (req, res, next) => {
+  console.log(req.params)
+  const data = {
+    league: req.params.league,
+    season: req.params.season
+  }
+  req.cookies = JSON.stringify(data)
+  next()
+})
+
 app.post('/links', async (req, res) => {
   const { method, url } = req
 
@@ -347,12 +357,12 @@ app.get('/:season/euro-championship', async (req, res) => {
 })
 
 app.get('/:season/copa-america', async (req, res) => {
-  const { method, url, params } = req
-  const { season } = params
+  const { method, url, cookies } = req
+  const { season, league } = JSON.parse(cookies)
   const fakeBody = {
     country: 'nations',
     season,
-    league: 'Copa America',
+    league,
     nameData: ['standings', 'fixtures']
   }
   const data = {}

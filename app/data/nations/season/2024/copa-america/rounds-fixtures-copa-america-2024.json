@@ -1,8 +1,1 @@
-{
-  "get": "fixtures/rounds",
-  "parameters": { "league": "9", "season": "2024" },
-  "errors": [],
-  "results": 3,
-  "paging": { "current": 1, "total": 1 },
-  "response": ["Group Stage - 1", "Group Stage - 2", "Group Stage - 3"]
-}
+{"get":"fixtures/rounds","parameters":{"league":"9","season":"2024"},"errors":[],"results":3,"paging":{"current":1,"total":1},"response":["Group Stage - 1","Group Stage - 2","Group Stage - 3"]}

@@ -11,7 +11,7 @@ POST http://localhost:3000/fixtures
 Content-Type: application/json
 
 {
-    "league": 4,
+    "league": 9,
     "season": 2024,
     "country": ["nations"]
 }
@@ -20,7 +20,7 @@ POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
-    "league": 4,
+    "league": 9,
     "season": 2024,
     "country": ["nations"]
 }

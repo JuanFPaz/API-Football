@@ -87,34 +87,6 @@ async function processCreateLinks ({ country, id }) {
   }
 }
 
-// async function processCreateLinksWorld (...params) {
-//   let countryName
-//   let ids
-//   let nameDir
-//   let nameFile
-
-//   const PATH_FILE = join(DATA_PATH, nameFile)
-//   const NAME_FILE = `${PATH_FILE}/${nameFile}.json`
-//   try {
-//     await access(PATH_FILE) // <- Automaticamente, si el directorio que le pasamos no existe, se pasa al bloque catch
-//   } catch (error) {
-//     if (error.code === 'ENOENT' && error.syscall === 'access') {
-//       console.log('Creando el directorio ' + PATH_FILE)
-//       await mkdir(PATH_FILE)
-//     }
-//   }
-
-//   try {
-//     await access(NAME_FILE)
-//     console.log('El archivo ya existe, no se puede Sobreescribir. En caso que necesites actualizarlo, usar el updateJson cabron.')
-//   } catch (error) {
-//     if (error.code === 'ENOENT' && error.syscall === 'access') {
-//       console.log('Creando el directorio ' + PATH_FILE)
-//       await writeFile(NAME_FILE, JSON.stringify(data))
-//     }
-//   }
-// }
-
 module.exports = {
   processCreateLinks
 }

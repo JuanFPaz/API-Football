@@ -51,7 +51,8 @@ dir_ejemplo
 | Endpoint                                  | Descripción                                                                                                              |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | `/countries`                              | Nos devuelve los países disponibles, con claves y valores para los Query Search.                                         |
-| `/leagues?country=Argentina`              | Nos devuelve todas las ligas, copas de liga y copas nacionales disponibles por paises.                                   |
+| `/leagues?country=Argentina`              | Nos devuelve todas las ligas, copas de liga y copas nacionales disponibles de un pais.                                   |
+| `/leagues?country=Argentina&id=128`              | Nos devuelve la liga especificada por ID de un pais.                                   |
 | `/standings?league=128&season=2024`       | Nos devuelve las tablas de posiciones por liga, copa de liga y temporada.                                                |
 | `/fixtures?league=128&season=2024`        | Nos devuelve los fixture completos de ligas, copas de liga y copa nacional/internacional.                                |
 | `/fixtures/rounds?league=130&season=2024` | Nos devuelve el fixture de una liga, copas de liga y copa nacional/internacional por rondas.                             |
@@ -63,7 +64,7 @@ dir_ejemplo
 ### Nations
 
 - Mundial de FIFA
-  - `league_id`: 1
+  - `league_param`: 1
   - `country_name` : world
   - `current-season`: 2022
 - Eurocopa
