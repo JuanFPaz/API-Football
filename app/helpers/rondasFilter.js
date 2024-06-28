@@ -541,7 +541,7 @@ function rondasFilter (unaLiga, unaFases, unosFixtures) {
     case 'UEFA Super Cup' : {
       return rondasFinalesUnicas(unaFases, unosFixtures)
     }
-    case 'copa-america':{
+    case 'Copa America':{
       return rondasCopaAmerica(unaFases, unosFixtures)
     }
     case 'Euro Championship':{

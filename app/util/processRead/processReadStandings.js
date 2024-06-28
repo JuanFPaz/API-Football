@@ -1,60 +1,23 @@
-/* eslint-disable no-unused-vars */
 const { readFile } = require('node:fs/promises')
-const { resolve, join } = require('node:path')
 
-const DATA_PATH = resolve(__dirname, '../../data')
-
-async function processGetStanding (...params) {
-  let dataPath
-  let dataFile
-  /* Crear la ruta de la solicitud: */
+async function processGetStanding (pathStanding) {
+  let dataStanding
   try {
-    if (params.length !== 4) {
-      const customError = {
-        message:
-              'Se esperaban 4 argumentos, y solo recibimos ' + params.length
-      }
-
-      throw customError
+    if (!pathStanding) {
+      return { standings: pathStanding }
     }
-
-    const [country, season, nameLeague, nameData] = params
-    if (!nameData) {
-      return { standings: [false] }
-    } else if (nameData !== 'standings') {
-      const customError = {
-        message:
-              'Se esperaba leer los standings pero me pasaste el ' + nameData
-      }
-      throw customError
-    }
-    const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
-    const nameFile = `${nameData}-${nameLeagueFormated}-${season}.json`
-    // Ejemplo data path: '/data/argentina/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
-    dataPath = join(DATA_PATH, country, season, nameLeagueFormated, nameFile)
+    dataStanding = await readFile(pathStanding, 'utf-8')
   } catch (err) {
     const customError = {
-      process: 'getStanding',
-      message: 'Ocurrio un Error en process read standing, creando la ruta',
-      reference: err.message
-    }
-    console.log(err.message)
-    throw customError
-  }
-
-  try {
-    dataFile = await readFile(dataPath, 'utf-8')
-  } catch (err) {
-    const customError = {
-      process: 'getStanding',
-      message: 'Ocurrio un error leyendo el archivo.',
-      reference: err
+      reference: 'Ocurrio un error obteniendo los standing antes de enviar la respuesta.',
+      process: 'processGetStanding',
+      message: err
     }
     throw customError
   }
 
   try {
-    const { response: [{ league: { standings, country, name } }] } = JSON.parse(dataFile)
+    const { response: [{ league: { standings } }] } = JSON.parse(dataStanding)
     const standingsFormateadas = standings.map((standing) => {
       // Parece redundante pero no lo es, cada liga tiene una tabla, por ejemplo la copa de la liga es un arreglo con 2 tablas
       // Seguramente la champions y la libertadores tengan 1 arreglo con 8 tablas
@@ -90,14 +53,13 @@ async function processGetStanding (...params) {
     return { standings: standingsFormateadas }
   } catch (err) {
     const customError = {
-      process: 'getStanding',
-      message: 'Ocurrio un error procesando la respuesta, antes de envirla D:',
-      reference: err
+      reference: 'Ocurrio un error obteniendo los standing antes de enviar la respuesta.',
+      process: 'processGetStanding',
+      message: err
     }
     throw customError
   }
 }
-
 module.exports = {
   processGetStanding
 }

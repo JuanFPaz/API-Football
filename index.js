@@ -2,105 +2,39 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const { join } = require('node:path')
-const { access } = require('node:fs/promises')
+const { validateReadLeague, validateReadLinks } = require('./app/middleware/validateRead')
+const { getDataLeague, getLinks } = require('./app/util/readJson')
+const pc = require('picocolors')
 // const { createLinks, createFixtures, createStandings } = require('./app/util/createJson')
-// const { getLinks, getDataLeague, getDataCup } = require('./app/util/readJson')
-// const pc = require('picocolors')
 
 const PORT = process.env.PORT ?? 3000
-const DATA_PATH = join(__dirname, '/app/data')
 
 app.use(cors())
 
-const liga = {
-  arg: {
-    country: 'argentina',
-    liga_profesional_argentina: {
-      standing: true,
-      fixture: true
-    },
-    copa_de_la_liga_profesiona: {
-      standing: true,
-      fixture: true
-    },
-    copa_argentina: {
-      standing: false,
-      fixture: true
-    }
-  },
-  eng: {},
-  conmebol: {},
-  uefa: {},
-  nations: {}
-}
-async function validateData ({ country, league, season, fixture, standing }) {
-  const nameFileStand = `standings-${league}-${season}.json`
-  const nameFileFixture = `fixtures-${league}-${season}.json`
-  const PATH_DIR = join(DATA_PATH, country, season, league, nameFileStand)
-  try {
-    await access(PATH_DIR)
-  } catch (err) {
-    const customError = {
-      middReference: 'validateURL',
-      process: 'helper',
-      message: err
-    }
-    throw customError
-  }
-}
-
-function validateURL ({ country, league, season }) {
-  let getCountry
-  let getLeague
-  const _league = league.toLowerCase().replace(/-/g, '_')
-  try {
-    getCountry = liga[country]
-    if (!getCountry) {
-      throw Error(`Ocurrio un error leyendo los params: El valor /${country} no es un segmento valido.`)
-    }
-  } catch (err) {
-    const customError = {
-      middReference: 'validateURL',
-      process: 'helper',
-      message: err.message
-    }
-    throw customError
-  }
-  try {
-    getLeague = getCountry[_league]
-    if (!getLeague) {
-      throw Error(`Ocurrio un error leyendo los params: El valor /${league} no es un segmento valido.`)
-    }
-  } catch (err) {
-    const customError = {
-      middReference: 'validateURL',
-      process: 'helper',
-      message: err.message
-    }
-    throw customError
-  }
-
-  return { country: getCountry.country, season, league, standing: getLeague.standing, fixture: getLeague.fixture }
-}
-
-app.use('/:country/:season/:league', async (req, res, next) => {
-  const { country, season, league } = req.params
-  /* En el 1er trycatch, capturo el objeto que reemplaza el viejo fakeBody */
-  /* ahora lo voy a llamar bodycuky (? */
-  try {
-    /*
-    validateURL verifica los segmentos,
-    si no hay coincidencias, finalziamso el proceso
-    */
-    const bodyCuky = validateURL({ country, league, season })
-    await validateData({ ...bodyCuky })
-    /* Ahora viene la parte dificil, la recursividaaaaaa */
-  } catch (err) {
-    console.error(err)
-  }
+app.use((req, res, next) => {
+  const { method, url } = req
+  console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
+  console.log(`${pc.bgCyan('DATE:')} ${pc.green(new Date().toLocaleString())}`)
+  next()
 })
 
+app.get('/', validateReadLinks)
+
+app.get('/', getLinks)
+
+app.get('/:country/:season/:league', validateReadLeague)
+
+app.get('/:country/:season/:league', getDataLeague)
+
+app.use((req, res) => {
+  const data = {}
+  data.get = req.url
+  data.timestamp = Date.now()
+  data.error = { message: 'URL Inexistente' }
+  console.log(`${pc.bgRed('Request Invalid')}`)
+  console.log(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
+  res.status(400).json(data)
+})
 // app.use('/:season/:league', (req, res, next) => {
 //   console.log(req.params)
 //   const data = {
@@ -219,30 +153,6 @@ app.use('/:country/:season/:league', async (req, res, next) => {
 //       res.status(409).json(data)
 //     }
 //   })
-// })
-
-// app.get('/', async (req, res) => {
-//   const { method, url } = req
-
-//   const data = {}
-//   try {
-//     console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
-//     data.get = req.url
-//     data.timestamp = Date.now()
-//     data.response = await getLinks()
-//     if (data.response.error) {
-//       throw data.response.error
-//     }
-//     console.log(`${pc.bgCyan('Status: ')} ${pc.green(200)}`)
-//     res.json(data)
-//   } catch (err) {
-//     data.error = err
-//     data.response = [{ message: data.error.message }]
-//     console.error(`${pc.bgRed('Status: ')} ${pc.red(500)}`)
-//     console.error(`${pc.bgRed('Reference: ')} ${pc.red(data.error.reference)}`)
-//     console.error(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
-//     res.status(500).json(data)
-//   }
 // })
 
 // app.get('/:season/liga-profesional-argentina', async (req, res) => {
