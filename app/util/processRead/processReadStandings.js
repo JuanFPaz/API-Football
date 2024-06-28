@@ -30,8 +30,8 @@ async function processGetStanding (...params) {
     }
     const nameLeagueFormated = nameLeague.toLowerCase().replace(/\s/g, '-') // Sirve para el nombre del directorio que queremos ir y el nmombre del archivo
     const nameFile = `${nameData}-${nameLeagueFormated}-${season}.json`
-    // Ejemplo data path: '/data/argentina/season/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
-    dataPath = join(DATA_PATH, country, 'season', season, nameLeagueFormated, nameFile)
+    // Ejemplo data path: '/data/argentina/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
+    dataPath = join(DATA_PATH, country, season, nameLeagueFormated, nameFile)
   } catch (err) {
     const customError = {
       process: 'getStanding',

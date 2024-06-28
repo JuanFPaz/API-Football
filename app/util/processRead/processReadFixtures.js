@@ -27,8 +27,8 @@ async function processGetFixtures (...params) {
     const nameFileFixtures = `${nameData}-${nameLeagueFormated}-${season}.json`
     const nameFileRoundsFixtures = `rounds-${nameFileFixtures}`
     // Ejemplo data path: '/data/argentina/season/2024/liga-profesional-argentina/standings-liga-profesional-argentina-2024.json'
-    dataPathFixtures = join(DATA_PATH, country, 'season', season, nameLeagueFormated, nameFileFixtures)
-    dataPathRoundsFixtures = join(DATA_PATH, country, 'season', season, nameLeagueFormated, nameFileRoundsFixtures)
+    dataPathFixtures = join(DATA_PATH, country, season, nameLeagueFormated, nameFileFixtures)
+    dataPathRoundsFixtures = join(DATA_PATH, country, season, nameLeagueFormated, nameFileRoundsFixtures)
   } catch (err) {
     const customError = {
       process: 'getFixtures',

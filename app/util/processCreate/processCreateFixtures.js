@@ -34,7 +34,7 @@ async function processCreateFixtures (...params) {
     throw customError
   }
 
-  const PATH_DIR = join(DATA_PATH, nameDir, 'season', nameSeasonDir)
+  const PATH_DIR = join(DATA_PATH, nameDir, nameSeasonDir)
 
   try {
     await access(PATH_DIR) // <- Automaticamente, si el directorio que le pasamos no existe, se pasa al bloque catch

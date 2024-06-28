@@ -5,8 +5,7 @@ Content-Type: application/json
     "id":[1,9,4],
     "country": ["world","nations"]
 }
-
-###
+### copa america
 POST http://localhost:3000/fixtures
 Content-Type: application/json
 
@@ -15,12 +14,31 @@ Content-Type: application/json
     "season": 2024,
     "country": ["nations"]
 }
-###
+### copa america
 POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
     "league": 9,
+    "season": 2024,
+    "country": ["nations"]
+}
+
+### euro
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "league": 4,
+    "season": 2024,
+    "country": ["nations"]
+}
+### euro
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "league": 4,
     "season": 2024,
     "country": ["nations"]
 }

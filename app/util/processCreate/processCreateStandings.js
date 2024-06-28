@@ -29,7 +29,7 @@ async function processCreateStandings (...params) {
     throw customError
   }
 
-  const PATH_DIR = join(DATA_PATH, nameDir, 'season', nameSeasonDir)
+  const PATH_DIR = join(DATA_PATH, nameDir, nameSeasonDir)
 
   try {
     /* Primero verificamos si el directorio app/data/nameFile/ existe, porque sino, da un error y explota todo */

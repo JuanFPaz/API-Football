@@ -301,6 +301,7 @@ function rondasEUROCopa (...unFixture) {
   const [fases, fixtures] = unFixture
 
   const regexGroupPhase = /Group/
+  const regexFinalPhase = /Round of 16|Quarter-finals|Semi-finals|Final/
   const fixtureFormateado = fases.map((f) => {
     const fixtureFiltrado = fixtures
       .filter((fx) => fx.league.round === f)
@@ -325,9 +326,13 @@ function rondasEUROCopa (...unFixture) {
   const regexSecondDate = /Group [A-H] - 2/
   const regexThirdDate = /Group [A-H] - 3/
 
-  const primeraFaseFormateada = fixtureFormateado
-    .filter((f) => regexGroupPhase.test(f.fixtureName))
+  const primeraFaseFormateada = fixtureFormateado.filter((f) => regexGroupPhase.test(f.fixtureName))
 
+  const segundaFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
+
+  /* Fue la mejor forma de juntar los fixtures de la champions (y euro) como los de los demas
+      ¿Porque no pueden ser como lalibertadoreeees? (:
+  */
   const prueba = [
     {
       fixtureName: 'Group Stage 1',
@@ -345,10 +350,6 @@ function rondasEUROCopa (...unFixture) {
       fixtureMatchs: []
     }
   ]
-
-  /* Fue la mejor forma de juntar los fixtures de la champions (y euro) como los de los demas
-      ¿Porque no pueden ser como lalibertadoreeees? (:
-  */
   primeraFaseFormateada.filter(f => {
     return regexFirstDate.test(f.fixtureName)
   }).forEach(f => {
@@ -385,7 +386,15 @@ function rondasEUROCopa (...unFixture) {
     }
   ]
 
-  return [primeraFase]
+  const segundaFase = [
+    {
+      phaseName: 'Fase Final',
+      phaseLength: segundaFaseFormateada.length,
+      phaseFixtures: segundaFaseFormateada
+    }
+  ]
+
+  return [primeraFase, segundaFase]
 }
 
 function rondasCopaAmerica (...unFixture) {
