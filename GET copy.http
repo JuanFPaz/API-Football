@@ -1,0 +1,5 @@
+GET http://localhost:3000/arg/2024/liga-profesional-argentina
+###
+GET http://localhost:3000/arg/2024/copa-argentina
+###
+GET http://localhost:3000/ita/2024/premier-league

@@ -12,11 +12,6 @@ async function processCreateFixtures (...params) {
   let leagueId
   let seasonId
 
-  /* Primero creamos las variables del directrio
-  tipo
-    UEFA -> SEASON -> 2023
-    */
-
   try {
     const [league, season, country] = params
     countryName = country[0]
