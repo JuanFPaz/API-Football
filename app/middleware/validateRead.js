@@ -13,7 +13,7 @@ async function validateReadLeague (req, res, next) {
     next()
   } catch (err) {
     console.log(`${pc.bgRed('Request Invalid')}`)
-    console.log(`${pc.bgRed('Message:')} ${pc.red(err.reference)}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
     const data = {}
     data.get = req.url
     data.timestamp = Date.now()

@@ -18,7 +18,8 @@ async function getDataLeague (req, res) {
     res.status(200).json(data)
   } catch (err) {
     console.log(`${pc.bgRed('Status:')} ${pc.red(500)}`)
-    console.log(`${pc.bgRed('Message:')} ${pc.red(err.reference)}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    console.log(err)
     data.response = err
     res.status(500).json(data)
   }
@@ -35,8 +36,8 @@ async function getLinks (req, res) {
       processGetLinksArg(pathArg),
       processGetLinksEng(pathEng),
       processGetLinksCups('nations', pathNation),
-      processGetLinksCups('conmebol', pathUEFA),
-      processGetLinksCups('uefa', pathCONMEBOL)
+      processGetLinksCups('conmebol', pathCONMEBOL),
+      processGetLinksCups('uefa', pathUEFA)
     ])
     data.response = response
     console.log(`${pc.bgCyan('Status:')} ${pc.green(200)}`)
@@ -44,7 +45,8 @@ async function getLinks (req, res) {
     res.json(data)
   } catch (err) {
     console.log(`${pc.bgRed('Status:')} ${pc.red(500)}`)
-    console.log(`${pc.bgRed('Message:')} ${pc.red(err.reference)}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    console.log(err)
     data.response = err
     res.status(500).json(data)
   }

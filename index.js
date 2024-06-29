@@ -13,6 +13,7 @@ app.use(cors())
 
 app.use((req, res, next) => {
   const { method, url } = req
+  console.log(' ')
   console.log(`${pc.bgCyan(method + ':')} ${pc.green(url)}`)
   console.log(`${pc.bgCyan('DATE:')} ${pc.green(new Date().toLocaleString())}`)
   next()
@@ -32,7 +33,7 @@ app.use((req, res) => {
   data.timestamp = Date.now()
   data.error = { message: 'URL Inexistente' }
   console.log(`${pc.bgRed('Request Invalid')}`)
-  console.log(`${pc.bgRed('Message:')} ${pc.red(data.error.message)}`)
+  console.log(`${pc.bgRed('Message:')} ${pc.red(data.error)}`)
   res.status(400).json(data)
 })
 // app.use('/:season/:league', (req, res, next) => {

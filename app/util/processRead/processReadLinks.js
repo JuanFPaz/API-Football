@@ -121,12 +121,6 @@ async function processGetLinksCups (nation, path) {
 
   try {
     const { response } = JSON.parse(dataFile)
-    /*
-    TODO:
-    ACA FORCE LA CREACION DEL DATA COUNTRY ANTES DE LISTFORMATEADA, PARA PODER OBTENER EL LEAGUE.CODE Y PONERLO EN LA URL DE LA LISTA FORMATEADA
-    ASI QUE VAS A TENER QUE PENSAR EN OTRA ESTRATEGUIA Y ARREGLAR EL PROCESSREADLINKS -.-
-    */
-    // arreglar, usar objecto['conmebol'] en ves de esta sentencia condicional anidada.
     const FLAG = nation === 'conmebol' ? 'https://i.imgur.com/NCAlqtf.png' : nation === 'uefa' ? 'https://i.imgur.com/0ts3uoO.png' : ''
     const data = {
       country: {

@@ -5,7 +5,7 @@ const liga = {
       standing: true,
       fixture: true
     },
-    copa_de_la_liga_profesiona: {
+    copa_de_la_liga_profesional: {
       standing: true,
       fixture: true
     },
