@@ -58,10 +58,12 @@ const liga = {
   nations: {
     country: 'nations',
     copa_america: {
+      id: 9,
       standing: true,
       fixture: true
     },
     euro_championship: {
+      id: 4,
       standing: true,
       fixture: true
     }
