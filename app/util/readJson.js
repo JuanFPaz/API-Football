@@ -1,124 +1,59 @@
-/* eslint-disable no-throw-literal */
-/* eslint-disable no-undef */
-/* eslint-disable promise/param-names */
-/* eslint-disable no-unused-vars */
 const { processGetLinksArg, processGetLinksEng, processGetLinksCups } = require('./processRead/processReadLinks')
 const { processGetStanding } = require('./processRead/processReadStandings')
 const { processGetFixtures } = require('./processRead/processReadFixtures')
-const { bgWhite } = require('picocolors')
+const pc = require('picocolors')
 
-/* EN LOS GET DATA TAMBIEN PUEDEN OCURRIR ERRORES, ASI QUE CUIDAO */
-async function getDataLeague ({ country, season, league, nameData }) {
-  let data
-  const verificarBody = Object.entries({ country, season, league, nameData })
+async function getDataLeague (req, res) {
+  const { pathStanding, ...pathFixtures } = JSON.parse(req.cookies)
 
-  /* TODO: FIltrar correctamente esto, guardarlo en un arreglo y enviar mas bonito el error.
-    Deberias arreglar todos los errores en general xd
-  */
+  console.log(`${pc.bgGreen('Procesando la respuesta')}`)
+  const data = {}
   try {
-    verificarBody.forEach(dato => {
-      const [propiedad, valor] = dato
-      if (!valor) {
-        throw {
-          message:
-          `La propiedad ${propiedad} es ${valor}. Revisa tu body que sea igual a:
-            {
-              country,
-              season,
-              league,
-              nameData
-            }
-        `
-        }
-      }
-    })
-  } catch (error) {
-    return { error }
-  }
-  try {
-    const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(country, season, league, nameData[0]), processGetFixtures(country, season, league, nameData[1])])
-    data = [{ standings, fixtures }]
+    data.get = req.url
+    data.timestamp = Date.now()
+    const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(pathStanding), processGetFixtures(pathFixtures)])
+    data.response = [{ standings, fixtures }]
+    console.log(`${pc.bgCyan('Status:')} ${pc.green(200)}`)
+    console.log(`${pc.bgCyan('Message:')} ${pc.green('Respuesta formateada con exito.')}`)
+    res.status(200).json(data)
   } catch (err) {
-    /* TODO, Verificar si es un error interno de processFunction u otro error. O manejar el error que venga del proccess de otra forma :/ */
-    console.error('Retornamos un error intero :/')
-    return { error: err }
+    console.log(`${pc.bgRed('Status:')} ${pc.red(500)}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    console.log(err)
+    data.response = err
+    res.status(500).json(data)
   }
-  return data
 }
 
-async function getDataCup ({ country, season, league, nameData }) {
-  let data
-  const verificarBody = Object.entries({ country, season, league, nameData })
-  const verificarData = [...nameData]
-  /* TODO: FIltrar correctamente esto, guardarlo en un arreglo y enviar mas bonito el error.
-    Deberias arreglar todos los errores en general xd
-  */
+async function getLinks (req, res) {
+  const { pathArg, pathEng, pathNation, pathUEFA, pathCONMEBOL } = JSON.parse(req.cookies)
+  const data = {}
+  console.log(`${pc.bgGreen('Procesando la respuesta')}`)
   try {
-    verificarBody.forEach(dato => {
-      const [propiedad, valor] = dato
-
-      console.log(valor)
-
-      if (!valor) {
-        throw {
-          message:
-          `La propiedad ${propiedad} es ${valor}. Revisa tu body que sea igual a:
-            {
-              country,
-              season,
-              league,
-              nameData
-            }
-        `
-        }
-      }
-    })
-    if (verificarData.length !== 2) {
-      throw { message: `En la propiedad se esperaba un arreglo con dos elementos para leer las tablas y el fixture. Y solo recibimos ${verificarData.length}` }
-    }
-  } catch (error) {
-    return { error }
-  }
-  try {
-    const [{ standings }, { fixtures }] = await Promise.all([processGetStanding(country, season, league, nameData[0]), processGetFixtures(country, season, league, nameData[1])])
-    data = [{ standings, fixtures }]
-  } catch (err) {
-    console.error('Retornamos un error intero :/')
-    return { error: err }
-  }
-
-  return data
-}
-
-async function getDataMatch () {
-  // Solicitud para tener los datos de un partido en especifico solicitado por el usaurio
-  // Ej: Boca vs RiBer
-}
-
-async function getLinks () {
-  let data
-  try {
-    data = await Promise.all([
-      processGetLinksArg(),
-      processGetLinksEng(),
-      processGetLinksCups('nations'),
-      processGetLinksCups('conmebol'),
-      processGetLinksCups('uefa')
+    data.get = req.url
+    data.timestamp = Date.now()
+    const response = await Promise.all([
+      processGetLinksArg(pathArg),
+      processGetLinksEng(pathEng),
+      processGetLinksCups('nations', pathNation),
+      processGetLinksCups('conmebol', pathCONMEBOL),
+      processGetLinksCups('uefa', pathUEFA)
     ])
+    data.response = response
+    console.log(`${pc.bgCyan('Status:')} ${pc.green(200)}`)
+    console.log(`${pc.bgCyan('Message:')} ${pc.green('Respuesta formateada con exito.')}`)
+    res.json(data)
   } catch (err) {
-    /* Esto no retorna el error como esperaba, pero aveces funciona xd */
-    if (err.isCustomError) {
-      console.log(bgWhite('Ocurrio un Custom Error:'))
-      return { error: err }
-    }
-    console.log(bgWhite('Ocurrio un Error:'))
-    return { error: { procces: 'GetLinks', message: err.message, reference: 'Ocurrio antes de leer los datos' } }
+    console.log(`${pc.bgRed('Status:')} ${pc.red(500)}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    console.log(err)
+    data.response = err
+    res.status(500).json(data)
   }
   return data
 }
 
 module.exports = {
   getLinks,
-  getDataLeague,
-  getDataCup
+  getDataLeague
 }

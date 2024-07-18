@@ -119,6 +119,13 @@ dir_ejemplo
   - `league_param` : 483
   - `current-season:` 2020 -.-
 
+
+### Brazil
+
+- Serie A (Brasileirao)
+  - `country_name` : brazil
+  - `league_param` : 71
+  - `current-season:` 2024
 <!--   
 - Primera Nacional
   - `league_id`: 129

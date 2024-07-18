@@ -1,0 +1,2673 @@
+{
+  "get": "standings",
+  "parameters": { "league": "4", "season": "2016" },
+  "errors": [],
+  "results": 1,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "league": {
+        "id": 4,
+        "name": "Euro Championship",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/4.png",
+        "flag": null,
+        "season": 2016,
+        "standings": [
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 770,
+                "name": "Czech Republic",
+                "logo": "https://media.api-sports.io/football/teams/770.png"
+              },
+              "points": 22,
+              "goalsDiff": 5,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 19, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 18,
+                "name": "Iceland",
+                "logo": "https://media.api-sports.io/football/teams/18.png"
+              },
+              "points": 20,
+              "goalsDiff": 11,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 17, "against": 6 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": { "id": null, "name": "Turkey", "logo": null },
+              "points": 18,
+              "goalsDiff": 5,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 14, "against": 9 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Netherlands", "logo": null },
+              "points": 13,
+              "goalsDiff": 3,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 4,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 17, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Kazakhstan", "logo": null },
+              "points": 5,
+              "goalsDiff": -11,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 2,
+                "lose": 7,
+                "goals": { "for": 7, "against": 18 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Latvia", "logo": null },
+              "points": 5,
+              "goalsDiff": -13,
+              "group": "GROUP A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 5,
+                "lose": 5,
+                "goals": { "for": 6, "against": 19 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 1,
+                "name": "Belgium",
+                "logo": "https://media.api-sports.io/football/teams/1.png"
+              },
+              "points": 23,
+              "goalsDiff": 19,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 24, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 767,
+                "name": "Wales",
+                "logo": "https://media.api-sports.io/football/teams/767.png"
+              },
+              "points": 21,
+              "goalsDiff": 7,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 11, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": null,
+                "name": "Bosnia & Herzegovina",
+                "logo": null
+              },
+              "points": 17,
+              "goalsDiff": 5,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 17, "against": 12 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Israel", "logo": null },
+              "points": 13,
+              "goalsDiff": 2,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 4,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 16, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Cyprus", "logo": null },
+              "points": 12,
+              "goalsDiff": -1,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 4,
+                "draw": 0,
+                "lose": 6,
+                "goals": { "for": 16, "against": 17 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Andorra", "logo": null },
+              "points": 0,
+              "goalsDiff": -32,
+              "group": "GROUP B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 0,
+                "lose": 10,
+                "goals": { "for": 4, "against": 36 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 9,
+                "name": "Spain",
+                "logo": "https://media.api-sports.io/football/teams/9.png"
+              },
+              "points": 27,
+              "goalsDiff": 20,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 9,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 23, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 773,
+                "name": "Slovakia",
+                "logo": "https://media.api-sports.io/football/teams/773.png"
+              },
+              "points": 22,
+              "goalsDiff": 9,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 17, "against": 8 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 772,
+                "name": "Ukraine",
+                "logo": "https://media.api-sports.io/football/teams/772.png"
+              },
+              "points": 19,
+              "goalsDiff": 10,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 1,
+                "lose": 3,
+                "goals": { "for": 14, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Belarus", "logo": null },
+              "points": 11,
+              "goalsDiff": -6,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 8, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "FYR Macedonia", "logo": null },
+              "points": 4,
+              "goalsDiff": -12,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 1,
+                "lose": 8,
+                "goals": { "for": 6, "against": 18 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Luxembourg", "logo": null },
+              "points": 4,
+              "goalsDiff": -21,
+              "group": "GROUP C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 1,
+                "lose": 8,
+                "goals": { "for": 6, "against": 27 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 25,
+                "name": "Germany",
+                "logo": "https://media.api-sports.io/football/teams/25.png"
+              },
+              "points": 22,
+              "goalsDiff": 15,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 24, "against": 9 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 24,
+                "name": "Poland",
+                "logo": "https://media.api-sports.io/football/teams/24.png"
+              },
+              "points": 21,
+              "goalsDiff": 23,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 33, "against": 10 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 776,
+                "name": "Rep. Of Ireland",
+                "logo": "https://media.api-sports.io/football/teams/776.png"
+              },
+              "points": 18,
+              "goalsDiff": 12,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 19, "against": 7 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Scotland", "logo": null },
+              "points": 15,
+              "goalsDiff": 10,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 4,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 22, "against": 12 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Georgia", "logo": null },
+              "points": 9,
+              "goalsDiff": -6,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 0,
+                "lose": 7,
+                "goals": { "for": 10, "against": 16 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Gibraltar", "logo": null },
+              "points": 0,
+              "goalsDiff": -54,
+              "group": "GROUP D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 0,
+                "lose": 10,
+                "goals": { "for": 2, "against": 56 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 10,
+                "name": "England",
+                "logo": "https://media.api-sports.io/football/teams/10.png"
+              },
+              "points": 30,
+              "goalsDiff": 28,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 10,
+                "draw": 0,
+                "lose": 0,
+                "goals": { "for": 31, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 15,
+                "name": "Switzerland",
+                "logo": "https://media.api-sports.io/football/teams/15.png"
+              },
+              "points": 21,
+              "goalsDiff": 16,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 0,
+                "lose": 3,
+                "goals": { "for": 24, "against": 8 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": { "id": null, "name": "Slovenia", "logo": null },
+              "points": 16,
+              "goalsDiff": 7,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 18, "against": 11 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Estonia", "logo": null },
+              "points": 10,
+              "goalsDiff": -5,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 9 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Lithuania", "logo": null },
+              "points": 10,
+              "goalsDiff": -11,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 7, "against": 18 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "San Marino", "logo": null },
+              "points": 1,
+              "goalsDiff": -35,
+              "group": "GROUP E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 1,
+                "lose": 9,
+                "goals": { "for": 1, "against": 36 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 771,
+                "name": "Northern Ireland",
+                "logo": "https://media.api-sports.io/football/teams/771.png"
+              },
+              "points": 21,
+              "goalsDiff": 8,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 16, "against": 8 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 774,
+                "name": "Romania",
+                "logo": "https://media.api-sports.io/football/teams/774.png"
+              },
+              "points": 20,
+              "goalsDiff": 9,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 5,
+                "lose": 0,
+                "goals": { "for": 11, "against": 2 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 769,
+                "name": "Hungary",
+                "logo": "https://media.api-sports.io/football/teams/769.png"
+              },
+              "points": 16,
+              "goalsDiff": 2,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 4,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Finland", "logo": null },
+              "points": 12,
+              "goalsDiff": -1,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 3,
+                "lose": 4,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Faroe Islands", "logo": null },
+              "points": 6,
+              "goalsDiff": -11,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 2,
+                "draw": 0,
+                "lose": 8,
+                "goals": { "for": 6, "against": 17 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Greece", "logo": null },
+              "points": 6,
+              "goalsDiff": -7,
+              "group": "GROUP F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 3,
+                "lose": 6,
+                "goals": { "for": 7, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 775,
+                "name": "Austria",
+                "logo": "https://media.api-sports.io/football/teams/775.png"
+              },
+              "points": 28,
+              "goalsDiff": 17,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 9,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 22, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 4,
+                "name": "Russia",
+                "logo": "https://media.api-sports.io/football/teams/4.png"
+              },
+              "points": 20,
+              "goalsDiff": 16,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 21, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 5,
+                "name": "Sweden",
+                "logo": "https://media.api-sports.io/football/teams/5.png"
+              },
+              "points": 18,
+              "goalsDiff": 6,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 5,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 15, "against": 9 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Montenegro", "logo": null },
+              "points": 11,
+              "goalsDiff": -3,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 10, "against": 13 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Liechtenstein", "logo": null },
+              "points": 5,
+              "goalsDiff": -24,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 2,
+                "lose": 7,
+                "goals": { "for": 2, "against": 26 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Moldova", "logo": null },
+              "points": 2,
+              "goalsDiff": -12,
+              "group": "GROUP G",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 2,
+                "lose": 8,
+                "goals": { "for": 4, "against": 16 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 768,
+                "name": "Italy",
+                "logo": "https://media.api-sports.io/football/teams/768.png"
+              },
+              "points": 24,
+              "goalsDiff": 9,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 7,
+                "draw": 3,
+                "lose": 0,
+                "goals": { "for": 16, "against": 7 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 3,
+                "name": "Croatia",
+                "logo": "https://media.api-sports.io/football/teams/3.png"
+              },
+              "points": 20,
+              "goalsDiff": 15,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 20, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": { "id": null, "name": "Norway", "logo": null },
+              "points": 19,
+              "goalsDiff": 3,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 6,
+                "draw": 1,
+                "lose": 3,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Bulgaria", "logo": null },
+              "points": 11,
+              "goalsDiff": -3,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 3,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 9, "against": 12 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Azerbaijan", "logo": null },
+              "points": 6,
+              "goalsDiff": -11,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 1,
+                "draw": 3,
+                "lose": 6,
+                "goals": { "for": 7, "against": 18 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": { "id": null, "name": "Malta", "logo": null },
+              "points": 2,
+              "goalsDiff": -13,
+              "group": "GROUP H",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 10,
+                "win": 0,
+                "draw": 2,
+                "lose": 8,
+                "goals": { "for": 3, "against": 16 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 27,
+                "name": "Portugal",
+                "logo": "https://media.api-sports.io/football/teams/27.png"
+              },
+              "points": 21,
+              "goalsDiff": 6,
+              "group": "GROUP I",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 8,
+                "win": 7,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 11, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 778,
+                "name": "Albania",
+                "logo": "https://media.api-sports.io/football/teams/778.png"
+              },
+              "points": 14,
+              "goalsDiff": 5,
+              "group": "GROUP I",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 8,
+                "win": 4,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 10, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": { "id": null, "name": "Denmark", "logo": null },
+              "points": 12,
+              "goalsDiff": 3,
+              "group": "GROUP I",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": { "id": null, "name": "Serbia", "logo": null },
+              "points": 4,
+              "goalsDiff": -5,
+              "group": "GROUP I",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 8, "against": 13 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": { "id": null, "name": "Armenia", "logo": null },
+              "points": 2,
+              "goalsDiff": -9,
+              "group": "GROUP I",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 8,
+                "win": 0,
+                "draw": 2,
+                "lose": 6,
+                "goals": { "for": 5, "against": 14 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-08-12T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 2,
+                "name": "France",
+                "logo": "https://media.api-sports.io/football/teams/2.png"
+              },
+              "points": 7,
+              "goalsDiff": 3,
+              "group": "Group A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 4, "against": 1 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 15,
+                "name": "Switzerland",
+                "logo": "https://media.api-sports.io/football/teams/15.png"
+              },
+              "points": 5,
+              "goalsDiff": 1,
+              "group": "Group A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": { "for": 2, "against": 1 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 778,
+                "name": "Albania",
+                "logo": "https://media.api-sports.io/football/teams/778.png"
+              },
+              "points": 3,
+              "goalsDiff": -2,
+              "group": "Group A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": { "for": 1, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 774,
+                "name": "Romania",
+                "logo": "https://media.api-sports.io/football/teams/774.png"
+              },
+              "points": 1,
+              "goalsDiff": -2,
+              "group": "Group A",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 2, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 767,
+                "name": "Wales",
+                "logo": "https://media.api-sports.io/football/teams/767.png"
+              },
+              "points": 6,
+              "goalsDiff": 3,
+              "group": "Group B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 6, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 10,
+                "name": "England",
+                "logo": "https://media.api-sports.io/football/teams/10.png"
+              },
+              "points": 5,
+              "goalsDiff": 1,
+              "group": "Group B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": { "for": 3, "against": 2 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 773,
+                "name": "Slovakia",
+                "logo": "https://media.api-sports.io/football/teams/773.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": { "for": 3, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 4,
+                "name": "Russia",
+                "logo": "https://media.api-sports.io/football/teams/4.png"
+              },
+              "points": 1,
+              "goalsDiff": -4,
+              "group": "Group B",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 2, "against": 6 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 25,
+                "name": "Germany",
+                "logo": "https://media.api-sports.io/football/teams/25.png"
+              },
+              "points": 7,
+              "goalsDiff": 3,
+              "group": "Group C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 3, "against": 0 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 24,
+                "name": "Poland",
+                "logo": "https://media.api-sports.io/football/teams/24.png"
+              },
+              "points": 7,
+              "goalsDiff": 2,
+              "group": "Group C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 2, "against": 0 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 771,
+                "name": "Northern Ireland",
+                "logo": "https://media.api-sports.io/football/teams/771.png"
+              },
+              "points": 3,
+              "goalsDiff": 0,
+              "group": "Group C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": { "for": 2, "against": 2 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 772,
+                "name": "Ukraine",
+                "logo": "https://media.api-sports.io/football/teams/772.png"
+              },
+              "points": 0,
+              "goalsDiff": -5,
+              "group": "Group C",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": { "for": 0, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 3,
+                "name": "Croatia",
+                "logo": "https://media.api-sports.io/football/teams/3.png"
+              },
+              "points": 7,
+              "goalsDiff": 2,
+              "group": "Group D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 5, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 9,
+                "name": "Spain",
+                "logo": "https://media.api-sports.io/football/teams/9.png"
+              },
+              "points": 6,
+              "goalsDiff": 3,
+              "group": "Group D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 5, "against": 2 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": { "id": null, "name": "Turkey", "logo": null },
+              "points": 3,
+              "goalsDiff": -2,
+              "group": "Group D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": { "for": 2, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 770,
+                "name": "Czech Republic",
+                "logo": "https://media.api-sports.io/football/teams/770.png"
+              },
+              "points": 1,
+              "goalsDiff": -3,
+              "group": "Group D",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 2, "against": 5 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 768,
+                "name": "Italy",
+                "logo": "https://media.api-sports.io/football/teams/768.png"
+              },
+              "points": 6,
+              "goalsDiff": 2,
+              "group": "Group E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 3, "against": 1 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 1,
+                "name": "Belgium",
+                "logo": "https://media.api-sports.io/football/teams/1.png"
+              },
+              "points": 6,
+              "goalsDiff": 2,
+              "group": "Group E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 4, "against": 2 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 776,
+                "name": "Rep. Of Ireland",
+                "logo": "https://media.api-sports.io/football/teams/776.png"
+              },
+              "points": 4,
+              "goalsDiff": -2,
+              "group": "Group E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": { "for": 2, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 5,
+                "name": "Sweden",
+                "logo": "https://media.api-sports.io/football/teams/5.png"
+              },
+              "points": 1,
+              "goalsDiff": -2,
+              "group": "Group E",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 1, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 1,
+              "team": {
+                "id": 769,
+                "name": "Hungary",
+                "logo": "https://media.api-sports.io/football/teams/769.png"
+              },
+              "points": 5,
+              "goalsDiff": 2,
+              "group": "Group F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 18,
+                "name": "Iceland",
+                "logo": "https://media.api-sports.io/football/teams/18.png"
+              },
+              "points": 5,
+              "goalsDiff": 1,
+              "group": "Group F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": { "for": 4, "against": 3 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 27,
+                "name": "Portugal",
+                "logo": "https://media.api-sports.io/football/teams/27.png"
+              },
+              "points": 3,
+              "goalsDiff": 0,
+              "group": "Group F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 3,
+                "lose": 0,
+                "goals": { "for": 4, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 775,
+                "name": "Austria",
+                "logo": "https://media.api-sports.io/football/teams/775.png"
+              },
+              "points": 1,
+              "goalsDiff": -3,
+              "group": "Group F",
+              "form": null,
+              "status": null,
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 1, "against": 4 }
+              },
+              "home": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "away": {
+                "played": null,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": null, "against": null }
+              },
+              "update": "2018-09-27T00:00:00+00:00"
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

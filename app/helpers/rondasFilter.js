@@ -1,3 +1,57 @@
+function rondasFilter (unaLiga, unaFases, unosFixtures) {
+  console.log(unaLiga)
+  switch (unaLiga) {
+    case 'Liga Profesional Argentina': {
+      return rondasLigaArgentina(unaFases, unosFixtures)
+    }
+    case 'Copa de la Liga Profesional': {
+      return rondasCopaDeLaLiga(unaFases, unosFixtures)
+    }
+    case 'Copa Argentina' : {
+      return rondasCopasNacionales(unaFases, unosFixtures)
+    }
+    case 'Premier League': {
+      return rondasLigaArgentina(unaFases, unosFixtures)
+    }
+    case 'FA Cup':{
+      return rondasCopasNacionales(unaFases, unosFixtures)
+    }
+    case 'UEFA Champions League' : {
+      return rondasUEFAChampions(unaFases, unosFixtures)
+    }
+    case 'UEFA Europa League' : {
+      return rondasUEFA(unaFases, unosFixtures)
+    }
+    case 'UEFA Europa Conference League' : {
+      return rondasUEFA(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL Libertadores' : {
+      return rondasCONMEBOL(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL Sudamericana' : {
+      return rondasCONMEBOL(unaFases, unosFixtures)
+    }
+    case 'CONMEBOL Recopa' : {
+      return rondasFinalesUnicas(unaFases, unosFixtures)
+    }
+    case 'UEFA Super Cup' : {
+      return rondasFinalesUnicas(unaFases, unosFixtures)
+    }
+    case 'Copa America':{
+      return rondasCopaAmerica(unaFases, unosFixtures)
+    }
+    case 'Euro Championship':{
+      return rondasEUROCopa(unaFases, unosFixtures)
+    }
+    default:{
+      const customError = {
+        referenceCustomError: 'Hubo un error filtrando las rondas del fixture :('
+      }
+      throw customError
+    }
+  }
+}
+
 function rondasCopaDeLaLiga (...unFixture) {
   const [fases, fixtures] = unFixture
   const regex = /^1st Phase - (?:[1-9]|1[0-4])$/
@@ -501,59 +555,6 @@ function rondasFinalesUnicas (...unFixture) {
   ]
 
   return [unicaFase]
-}
-
-function rondasFilter (unaLiga, unaFases, unosFixtures) {
-  switch (unaLiga) {
-    case 'Liga Profesional Argentina': {
-      return rondasLigaArgentina(unaFases, unosFixtures)
-    }
-    case 'Copa de la liga Profesional': {
-      return rondasCopaDeLaLiga(unaFases, unosFixtures)
-    }
-    case 'Copa Argentina' : {
-      return rondasCopasNacionales(unaFases, unosFixtures)
-    }
-    case 'Premier League': {
-      return rondasLigaArgentina(unaFases, unosFixtures)
-    }
-    case 'FA Cup':{
-      return rondasCopasNacionales(unaFases, unosFixtures)
-    }
-    case 'UEFA Champions League' : {
-      return rondasUEFAChampions(unaFases, unosFixtures)
-    }
-    case 'UEFA Europa League' : {
-      return rondasUEFA(unaFases, unosFixtures)
-    }
-    case 'UEFA Europa Conference League' : {
-      return rondasUEFA(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL Libertadores' : {
-      return rondasCONMEBOL(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL sudamericana' : {
-      return rondasCONMEBOL(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL Recopa' : {
-      return rondasFinalesUnicas(unaFases, unosFixtures)
-    }
-    case 'UEFA Super Cup' : {
-      return rondasFinalesUnicas(unaFases, unosFixtures)
-    }
-    case 'copa-america':{
-      return rondasCopaAmerica(unaFases, unosFixtures)
-    }
-    case 'Euro Championship':{
-      return rondasEUROCopa(unaFases, unosFixtures)
-    }
-    default:{
-      const customError = {
-        referenceCustomError: 'Hubo un error filtrando las rondas del fixture :('
-      }
-      throw customError
-    }
-  }
 }
 
 module.exports = rondasFilter
