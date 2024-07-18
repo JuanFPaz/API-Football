@@ -56,7 +56,7 @@ async function validateBodyCuky ({ country, league, season, fixture, standing })
     }
   } catch (err) {
     const customError = {
-      refernce: `Ocurrio un error buscando el archivo standing de la ${league}`,
+      reference: `Ocurrio un error buscando el archivo standing de la ${league}`,
       process: 'validateData',
       message: err
     }
@@ -64,11 +64,15 @@ async function validateBodyCuky ({ country, league, season, fixture, standing })
   }
 
   try {
-    await access(PATH_FIXTURE)
-    pathsFormateadas.pathFixture = PATH_FIXTURE
+    if (!fixture) {
+      pathsFormateadas.pathFixture = fixture
+    } else {
+      await access(PATH_FIXTURE)
+      pathsFormateadas.pathFixture = PATH_FIXTURE
+    }
   } catch (err) {
     const customError = {
-      refernce: `Ocurrio un error buscando el archivo fixture de la ${league}`,
+      reference: `Ocurrio un error buscando el archivo fixture de la ${league}`,
       process: 'validateData',
       message: err
     }
@@ -76,11 +80,15 @@ async function validateBodyCuky ({ country, league, season, fixture, standing })
   }
 
   try {
-    await access(PATH_ROUNDS)
-    pathsFormateadas.pathRounds = PATH_ROUNDS
+    if (!fixture) {
+      pathsFormateadas.pathRounds = false
+    } else {
+      await access(PATH_ROUNDS)
+      pathsFormateadas.pathRounds = PATH_ROUNDS
+    }
   } catch (err) {
     const customError = {
-      refernce: `Ocurrio un error buscando el archivo fixture round de la ${league}`,
+      reference: `Ocurrio un error buscando el archivo fixture round de la ${league}`,
       process: 'validateData',
       message: err
     }
