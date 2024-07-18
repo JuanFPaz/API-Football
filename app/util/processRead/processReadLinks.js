@@ -2,8 +2,6 @@
 const { readFile } = require('node:fs/promises')
 const { resolve, join } = require('node:path')
 
-const DATA_PATH = resolve(__dirname, '../../data')
-
 async function processGetLinksArg (path) {
   let dataFile
   try {
