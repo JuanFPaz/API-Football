@@ -1,0 +1,1 @@
+{"get":"fixtures/rounds","parameters":{"league":"4","season":"2012"},"errors":[],"results":6,"paging":{"current":1,"total":1},"response":["Group stage - 1","Group stage - 2","Group stage - 3","Quarter-finals","Semi-finals","Final"]}
