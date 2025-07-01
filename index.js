@@ -13,6 +13,7 @@ const PORT = process.env.PORT ?? 3000
 
 app.use(cors())
 
+// Por aca pasan todes los request (por ahora)
 app.use((req, res, next) => {
   const { method, url } = req
   console.log(' ')
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
   next()
 })
 
+/** Cuando creo recursos  */
 app.post('/:resource', bodyParse)
 
 app.post('/links', validateCreateLinks)
@@ -36,6 +38,8 @@ app.post('/standings', validateCreateFxSt)
 
 app.post('/standings', createStandings)
 
+//* * Para leer recursos */
+
 app.get('/', validateReadLinks)
 
 app.get('/', getLinks)
@@ -43,6 +47,8 @@ app.get('/', getLinks)
 app.get('/:country/:season/:league', validateReadLeague)
 
 app.get('/:country/:season/:league', getDataLeague)
+
+/** Aca llega cuando ninguna request coincide con las URL's Programadas */
 
 app.use((req, res) => {
   const data = {}
@@ -55,5 +61,5 @@ app.use((req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log('Server: http://localhost:' + PORT)
+  console.log(pc.bgGreen(` Server running on http://localhost:${PORT} `))
 })

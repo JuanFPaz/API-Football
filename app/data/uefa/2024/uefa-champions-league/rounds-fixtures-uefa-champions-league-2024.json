@@ -1,0 +1,26 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "2", "season": "2024" },
+  "errors": [],
+  "results": 17,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    "1st Qualifying Round",
+    "2nd Qualifying Round",
+    "3rd Qualifying Round",
+    "Play-offs",
+    "League Stage - 1",
+    "League Stage - 2",
+    "League Stage - 3",
+    "League Stage - 4",
+    "League Stage - 5",
+    "League Stage - 6",
+    "League Stage - 7",
+    "League Stage - 8",
+    "Knockout Round Play-offs",
+    "Round of 16",
+    "Quarter-finals",
+    "Semi-finals",
+    "Final"
+  ]
+}

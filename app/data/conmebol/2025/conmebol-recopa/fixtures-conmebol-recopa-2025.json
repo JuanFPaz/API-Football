@@ -1,0 +1,113 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "541", "season": "2025" },
+  "errors": [],
+  "results": 2,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 1320446,
+        "referee": "F. Alveal",
+        "timezone": "UTC",
+        "date": "2025-02-21T00:30:00+00:00",
+        "timestamp": 1740097800,
+        "periods": { "first": 1740097800, "second": 1740101400 },
+        "venue": {
+          "id": 99,
+          "name": "Estadio Presidente Juan Domingo Perón",
+          "city": "Avellaneda, Provincia de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 541,
+        "name": "CONMEBOL Recopa",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/541.png",
+        "flag": null,
+        "season": 2025,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 436,
+          "name": "Racing Club",
+          "logo": "https://media.api-sports.io/football/teams/436.png",
+          "winner": true
+        },
+        "away": {
+          "id": 120,
+          "name": "Botafogo",
+          "logo": "https://media.api-sports.io/football/teams/120.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1320447,
+        "referee": "J. Valenzuela",
+        "timezone": "UTC",
+        "date": "2025-02-28T00:30:00+00:00",
+        "timestamp": 1740702600,
+        "periods": { "first": 1740702600, "second": 1740706200 },
+        "venue": {
+          "id": 218,
+          "name": "Estádio Olímpico Nilton Santos",
+          "city": "Rio de Janeiro"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
+        }
+      },
+      "league": {
+        "id": 541,
+        "name": "CONMEBOL Recopa",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/541.png",
+        "flag": null,
+        "season": 2025,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 120,
+          "name": "Botafogo",
+          "logo": "https://media.api-sports.io/football/teams/120.png",
+          "winner": false
+        },
+        "away": {
+          "id": 436,
+          "name": "Racing Club",
+          "logo": "https://media.api-sports.io/football/teams/436.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}

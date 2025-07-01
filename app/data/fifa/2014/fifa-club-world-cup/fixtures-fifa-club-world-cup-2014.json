@@ -1,0 +1,1044 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "15", "season": "2014" },
+  "errors": [],
+  "results": 8,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 349636,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-10T19:30:00+00:00",
+        "timestamp": 1418239800,
+        "periods": { "first": 1418239800, "second": 1418243400 },
+        "venue": {
+          "id": null,
+          "name": "Stade Prince Moulay Abdallah (Rabat)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Play-offs",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 965,
+          "name": "Moghreb Tetouan",
+          "logo": "https://media.api-sports.io/football/teams/965.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": 0, "away": 0 },
+        "penalty": { "home": 3, "away": 4 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349629,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-13T16:00:00+00:00",
+        "timestamp": 1418486400,
+        "periods": { "first": 1418486400, "second": 1418490000 },
+        "venue": {
+          "id": null,
+          "name": "Stade Prince Moulay Abdallah (Rabat)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 905,
+          "name": "ES Setif",
+          "logo": "https://media.api-sports.io/football/teams/905.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349630,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-13T19:30:00+00:00",
+        "timestamp": 1418499000,
+        "periods": { "first": 1418499000, "second": 1418502600 },
+        "venue": {
+          "id": null,
+          "name": "Stade Prince Moulay Abdallah (Rabat)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "AET",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2295,
+          "name": "Cruz Azul",
+          "logo": "https://media.api-sports.io/football/teams/2295.png",
+          "winner": true
+        },
+        "away": {
+          "id": 939,
+          "name": "Western Sydney Wanderers",
+          "logo": "https://media.api-sports.io/football/teams/939.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 3, "away": 1 },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349631,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-16T19:30:00+00:00",
+        "timestamp": 1418758200,
+        "periods": { "first": 1418758200, "second": 1418761800 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2295,
+          "name": "Cruz Azul",
+          "logo": "https://media.api-sports.io/football/teams/2295.png",
+          "winner": false
+        },
+        "away": {
+          "id": 541,
+          "name": "Real Madrid",
+          "logo": "https://media.api-sports.io/football/teams/541.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 4 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 4 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349633,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-17T16:30:00+00:00",
+        "timestamp": 1418833800,
+        "periods": { "first": 1418833800, "second": 1418837400 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "5th Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 905,
+          "name": "ES Setif",
+          "logo": "https://media.api-sports.io/football/teams/905.png",
+          "winner": true
+        },
+        "away": {
+          "id": 939,
+          "name": "Western Sydney Wanderers",
+          "logo": "https://media.api-sports.io/football/teams/939.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": 5, "away": 4 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349632,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-17T19:30:00+00:00",
+        "timestamp": 1418844600,
+        "periods": { "first": 1418844600, "second": 1418848200 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "AET",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 460,
+          "name": "San Lorenzo",
+          "logo": "https://media.api-sports.io/football/teams/460.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 2, "away": 1 },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349635,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-20T16:30:00+00:00",
+        "timestamp": 1419093000,
+        "periods": { "first": 1419093000, "second": 1419096600 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "3rd Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2295,
+          "name": "Cruz Azul",
+          "logo": "https://media.api-sports.io/football/teams/2295.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": 2, "away": 4 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 349634,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2014-12-20T19:30:00+00:00",
+        "timestamp": 1419103800,
+        "periods": { "first": 1419103800, "second": 1419107400 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2014,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 541,
+          "name": "Real Madrid",
+          "logo": "https://media.api-sports.io/football/teams/541.png",
+          "winner": true
+        },
+        "away": {
+          "id": 460,
+          "name": "San Lorenzo",
+          "logo": "https://media.api-sports.io/football/teams/460.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 37,
+            "extra": null
+          },
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png"
+          },
+          "player": {
+            "id": 738,
+            "name": "Sergio Ramos"
+          },
+          "assist": {
+            "id": 752,
+            "name": "T. Kroos"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 44,
+            "extra": null
+          },
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png"
+          },
+          "player": {
+            "id": 743,
+            "name": "Marcelo"
+          },
+          "assist": {
+            "id": 41176,
+            "name": "F\u00e1bio Coentr\u00e3o"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 51,
+            "extra": null
+          },
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png"
+          },
+          "player": {
+            "id": 758,
+            "name": "G. Bale"
+          },
+          "assist": {
+            "id": 745,
+            "name": "Isco"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 57,
+            "extra": null
+          },
+          "team": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png"
+          },
+          "player": {
+            "id": 6093,
+            "name": "G. Ver\u00f3n"
+          },
+          "assist": {
+            "id": 75042,
+            "name": "L. Romagnoli"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 61,
+            "extra": null
+          },
+          "team": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png"
+          },
+          "player": {
+            "id": 113989,
+            "name": "M. Yepes"
+          },
+          "assist": {
+            "id": 113845,
+            "name": "M. Cetto"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 68,
+            "extra": null
+          },
+          "team": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png"
+          },
+          "player": {
+            "id": 35579,
+            "name": "M. Cauteruccio"
+          },
+          "assist": {
+            "id": 6041,
+            "name": "M. Matos"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 73,
+            "extra": null
+          },
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png"
+          },
+          "player": {
+            "id": 733,
+            "name": "Daniel Carvajal"
+          },
+          "assist": {
+            "id": 90521,
+            "name": "Arbeloa"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 89,
+            "extra": null
+          },
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png"
+          },
+          "player": {
+            "id": 738,
+            "name": "Sergio Ramos"
+          },
+          "assist": {
+            "id": 742,
+            "name": "R. Varane"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        }
+      ],
+      "lineups": [
+        {
+          "team": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png",
+            "colors": null
+          },
+          "startXI": [
+            {
+              "player": {
+                "id": 367,
+                "name": "Casillas",
+                "number": 1,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 738,
+                "name": "Sergio Ramos",
+                "number": 4,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 373,
+                "name": "Pepe",
+                "number": 3,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 743,
+                "name": "Marcelo",
+                "number": 12,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 733,
+                "name": "Daniel Carvajal",
+                "number": 15,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 758,
+                "name": "G. Bale",
+                "number": 11,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 752,
+                "name": "T. Kroos",
+                "number": 8,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 517,
+                "name": "J. Rodr\u00edguez",
+                "number": 10,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 745,
+                "name": "Isco",
+                "number": 23,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 874,
+                "name": "Cristiano Ronaldo",
+                "number": 7,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 759,
+                "name": "K. Benzema",
+                "number": 9,
+                "pos": null,
+                "grid": null
+              }
+            }
+          ],
+          "substitutes": [
+            {
+              "player": {
+                "id": 41176,
+                "name": "F\u00e1bio Coentr\u00e3o",
+                "number": 5,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 90521,
+                "name": "Arbeloa",
+                "number": 17,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 742,
+                "name": "R. Varane",
+                "number": 2,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 868,
+                "name": "S. Khedira",
+                "number": 6,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 731,
+                "name": "K. Navas",
+                "number": 13,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 2886,
+                "name": "J. Hern\u00e1ndez",
+                "number": 14,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 735,
+                "name": "Nacho",
+                "number": 18,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 1585,
+                "name": "Jes\u00e9",
+                "number": 20,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 47310,
+                "name": "Illarramendi",
+                "number": 24,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 47352,
+                "name": "Pacheco",
+                "number": 25,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 47546,
+                "name": "\u00c1lvaro Medr\u00e1n",
+                "number": 26,
+                "pos": null,
+                "grid": null
+              }
+            }
+          ],
+          "coach": {
+            "id": null,
+            "name": null
+          },
+          "formation": null
+        },
+        {
+          "team": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png",
+            "colors": null
+          },
+          "startXI": [
+            {
+              "player": {
+                "id": 6598,
+                "name": "S. Torrico",
+                "number": 12,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 113989,
+                "name": "M. Yepes",
+                "number": 3,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 5968,
+                "name": "E. M\u00e1s",
+                "number": 21,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 2466,
+                "name": "W. Kannemann",
+                "number": 14,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 35714,
+                "name": "P. Barrientos",
+                "number": 11,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6514,
+                "name": "N. Ortigoza",
+                "number": 20,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6033,
+                "name": "J. Mercier",
+                "number": 5,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6410,
+                "name": "E. Kalinski",
+                "number": 8,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 5971,
+                "name": "J. Buffarini",
+                "number": 7,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 35579,
+                "name": "M. Cauteruccio",
+                "number": 9,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6093,
+                "name": "G. Ver\u00f3n",
+                "number": 30,
+                "pos": null,
+                "grid": null
+              }
+            }
+          ],
+          "substitutes": [
+            {
+              "player": {
+                "id": 75042,
+                "name": "L. Romagnoli",
+                "number": 10,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 113845,
+                "name": "M. Cetto",
+                "number": 2,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6041,
+                "name": "M. Matos",
+                "number": 26,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 113988,
+                "name": "L. Franco",
+                "number": 1,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 5261,
+                "name": "R. Arias",
+                "number": 13,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 2523,
+                "name": "H. Villalba",
+                "number": 15,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6627,
+                "name": "N. Blandi",
+                "number": 22,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6159,
+                "name": "J. Cavallaro",
+                "number": 24,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 36035,
+                "name": "M. Catal\u00e1n",
+                "number": 27,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6336,
+                "name": "F. Fontanini",
+                "number": 29,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6214,
+                "name": "F. Quign\u00f3n",
+                "number": 31,
+                "pos": null,
+                "grid": null
+              }
+            },
+            {
+              "player": {
+                "id": 6595,
+                "name": "J. Devecchi",
+                "number": 33,
+                "pos": null,
+                "grid": null
+              }
+            }
+          ],
+          "coach": {
+            "id": null,
+            "name": null
+          },
+          "formation": null
+        }
+      ]
+    }
+  ]
+}

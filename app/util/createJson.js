@@ -11,7 +11,7 @@ async function createLinks (req, res) {
     const createFile = await processCreateLinks({ ...req.body })
     data.response = createFile.message
     console.log(`${pc.bgCyan('Status:')} ${pc.green(201)}`)
-    console.log(`${pc.bgCyan('Message:')} ${pc.green('Respuesta formateada con exito.')}`)
+    console.log(`${pc.bgCyan('Message:')} ${pc.green(createFile.message)}`)
     res.status(201).json(data)
   } catch (err) {
     return { error: err }
@@ -51,6 +51,7 @@ async function createStandings (req, res) {
     return { error: err }
   }
 }
+
 module.exports = {
   createLinks,
   createFixtures,

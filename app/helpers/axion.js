@@ -15,11 +15,11 @@ async function axionLinks (country) {
 }
 
 async function axionLinksIds (...params) {
-  const [country, ids] = params
+  const [ids] = params
   const arregloDeLinks = await Promise.all(ids.map(async (id) => {
     const config = {
       method: 'get',
-      url: `https://v3.football.api-sports.io/leagues?country=${country}&id=${id}`,
+      url: `https://v3.football.api-sports.io/leagues?&id=${id}`,
       headers: {
         'x-rapidapi-key': API_KEY,
         'x-rapidapi-host': 'v3.football.api-sports.io'

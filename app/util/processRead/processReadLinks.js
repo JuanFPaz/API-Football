@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 const { readFile } = require('node:fs/promises')
-const { resolve, join } = require('node:path')
 
 async function processGetLinksArg (path) {
   let dataFile
@@ -19,8 +18,6 @@ async function processGetLinksArg (path) {
 
   try {
     const { response } = JSON.parse(dataFile)
-    const [, , , , , ligaProfesional, copaArgentina, trofeoCampeones, , superCopa, , copaDeLaLiga] = response
-    const list = [ligaProfesional, copaDeLaLiga, copaArgentina, superCopa, trofeoCampeones]
     const data = {
       country: {
         name: 'Argentina',
@@ -28,7 +25,7 @@ async function processGetLinksArg (path) {
         flag: 'https://media.api-sports.io/flags/ar.svg'
       }
     }
-    const listFormateada = list.map((l) => {
+    const listFormateada = response.map((l) => {
       const { league, seasons } = l
 
       const seasonsFormateada = seasons.map((s) => {
@@ -154,6 +151,6 @@ async function processGetLinksCups (nation, path) {
 
 module.exports = {
   processGetLinksArg,
-  processGetLinksEng,
+  // processGetLinksEng,
   processGetLinksCups
 }

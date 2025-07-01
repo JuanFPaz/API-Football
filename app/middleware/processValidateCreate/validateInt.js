@@ -1,4 +1,9 @@
 async function validateIdLinks ({ id }) {
+  /**
+   * Valida que la proopiedad ID del cuerpo de la solicitud,
+   * cada uno de los elementos sean Numeros,
+   * devuelve el arreglo de ID validados.
+   */
   let idValidados
   try {
     if (id.length === 0) {

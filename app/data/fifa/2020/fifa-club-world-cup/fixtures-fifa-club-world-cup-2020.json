@@ -1,0 +1,373 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "15", "season": "2020" },
+  "errors": [],
+  "results": 7,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 658561,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2021-02-04T14:00:00+00:00",
+        "timestamp": 1612447200,
+        "periods": { "first": 1612447200, "second": 1612450800 },
+        "venue": {
+          "id": null,
+          "name": "Ahmed bin Ali Stadium",
+          "city": "Ar-Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "2nd Round",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2279,
+          "name": "Tigres UANL",
+          "logo": "https://media.api-sports.io/football/teams/2279.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2767,
+          "name": "Ulsan Hyundai FC",
+          "logo": "https://media.api-sports.io/football/teams/2767.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 2, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 658562,
+        "referee": "Mario Escobar, Guatemala",
+        "timezone": "UTC",
+        "date": "2021-02-04T17:30:00+00:00",
+        "timestamp": 1612459800,
+        "periods": { "first": 1612459800, "second": 1612463400 },
+        "venue": {
+          "id": null,
+          "name": "Education City Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "2nd Round",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2904,
+          "name": "Al-Duhail SC",
+          "logo": "https://media.api-sports.io/football/teams/2904.png",
+          "winner": false
+        },
+        "away": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 673782,
+        "referee": "Edina Alves Batista, Brazil",
+        "timezone": "UTC",
+        "date": "2021-02-07T15:00:00+00:00",
+        "timestamp": 1612710000,
+        "periods": { "first": 1612710000, "second": 1612713600 },
+        "venue": {
+          "id": null,
+          "name": "Ahmed bin Ali Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "5th Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2767,
+          "name": "Ulsan Hyundai FC",
+          "logo": "https://media.api-sports.io/football/teams/2767.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2904,
+          "name": "Al-Duhail SC",
+          "logo": "https://media.api-sports.io/football/teams/2904.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 3 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 3 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 673780,
+        "referee": "Danny Desmond Makkelie, Netherlands",
+        "timezone": "UTC",
+        "date": "2021-02-07T18:00:00+00:00",
+        "timestamp": 1612720800,
+        "periods": { "first": 1612720800, "second": 1612724400 },
+        "venue": {
+          "id": null,
+          "name": "Education City Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 121,
+          "name": "Palmeiras",
+          "logo": "https://media.api-sports.io/football/teams/121.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2279,
+          "name": "Tigres UANL",
+          "logo": "https://media.api-sports.io/football/teams/2279.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 673781,
+        "referee": "Mohammaed Abdulla Mohammed, United Arab Emirates",
+        "timezone": "UTC",
+        "date": "2021-02-08T18:00:00+00:00",
+        "timestamp": 1612807200,
+        "periods": { "first": 1612807200, "second": 1612810800 },
+        "venue": {
+          "id": null,
+          "name": "Ahmed bin Ali Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png",
+          "winner": false
+        },
+        "away": {
+          "id": 157,
+          "name": "Bayern Munich",
+          "logo": "https://media.api-sports.io/football/teams/157.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 675013,
+        "referee": "Maguette N'Diaye, Senegal",
+        "timezone": "UTC",
+        "date": "2021-02-11T15:00:00+00:00",
+        "timestamp": 1613055600,
+        "periods": { "first": 1613055600, "second": 1613059200 },
+        "venue": {
+          "id": null,
+          "name": "Education City Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "3rd Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png",
+          "winner": true
+        },
+        "away": {
+          "id": 121,
+          "name": "Palmeiras",
+          "logo": "https://media.api-sports.io/football/teams/121.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": 0, "away": 0 },
+        "penalty": { "home": 3, "away": 2 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 675012,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2021-02-11T18:00:00+00:00",
+        "timestamp": 1613066400,
+        "periods": { "first": 1613066400, "second": 1613070000 },
+        "venue": {
+          "id": null,
+          "name": "Education City Stadium",
+          "city": "Al Rayyan"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2020,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 157,
+          "name": "Bayern Munich",
+          "logo": "https://media.api-sports.io/football/teams/157.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2279,
+          "name": "Tigres UANL",
+          "logo": "https://media.api-sports.io/football/teams/2279.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}

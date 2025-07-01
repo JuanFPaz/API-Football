@@ -1,0 +1,927 @@
+{
+  "get": "/",
+  "timestamp": 1751396371636,
+  "response": [
+    {
+      "country": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "leagues": [
+          {
+            "seasons": [
+              {
+                  "year": 2024,
+                  "start": "2024-05-12",
+                  "end": "2024-12-15",
+                  "current": false,
+                  "link": "http://localhost:3000/arg/2024/liga-profesional-argentina",
+                  "league": {
+                    "id": 128,
+                    "name": "Liga Profesional Argentina",
+                    "type": "League",
+                    "logo": "https://media.api-sports.io/football/leagues/128.png"
+                  }
+              },
+              {
+                "league": {
+                  "id": 128,
+                  "name": "Liga Profesional Argentina",
+                  "type": "League",
+                  "logo": "https://media.api-sports.io/football/leagues/128.png"
+                },
+                "year": 2025,
+                "start": "2025-01-23",
+                "end": "2025-12-14",
+                "current": true,
+                "torneos": [
+                  {
+                    "name": "Torneo Apertura",
+                    "start": "2025-01-23",
+                    "end": "2025-06-01",
+                    "current": true,
+                    "link": "http://localhost:3000/arg/2025/liga-profesional-argentina/apertura"
+                  },
+                  {
+                    "name": "Torneo Clausura",
+                    "start": "2025-07-12",
+                    "end": "2025-12-14",
+                    "current": false,
+                    "link": "http://localhost:3000/arg/2025/liga-profesional-argentina/apertura"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 130,
+              "name": "Copa Argentina",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/130.png"
+            },
+            "seasons": [
+              {
+                "year": 2016,
+                "start": "2016-05-04",
+                "end": "2016-12-15",
+                "current": false,
+                "link": "http://localhost:3000/arg/2016/copa-argentina"
+              },
+              {
+                "year": 2017,
+                "start": "2017-02-02",
+                "end": "2017-12-09",
+                "current": false,
+                "link": "http://localhost:3000/arg/2017/copa-argentina"
+              },
+              {
+                "year": 2018,
+                "start": "2018-01-19",
+                "end": "2018-12-07",
+                "current": false,
+                "link": "http://localhost:3000/arg/2018/copa-argentina"
+              },
+              {
+                "year": 2019,
+                "start": "2019-01-16",
+                "end": "2019-12-14",
+                "current": false,
+                "link": "http://localhost:3000/arg/2019/copa-argentina"
+              },
+              {
+                "year": 2020,
+                "start": "2020-01-15",
+                "end": "2021-12-09",
+                "current": false,
+                "link": "http://localhost:3000/arg/2020/copa-argentina"
+              },
+              {
+                "year": 2022,
+                "start": "2022-02-23",
+                "end": "2022-10-30",
+                "current": false,
+                "link": "http://localhost:3000/arg/2022/copa-argentina"
+              },
+              {
+                "year": 2023,
+                "start": "2023-01-23",
+                "end": "2023-12-06",
+                "current": false,
+                "link": "http://localhost:3000/arg/2023/copa-argentina"
+              },
+              {
+                "year": 2024,
+                "start": "2024-01-25",
+                "end": "2024-12-04",
+                "current": false,
+                "link": "http://localhost:3000/arg/2024/copa-argentina"
+              },
+              {
+                "year": 2025,
+                "start": "2025-01-23",
+                "end": "2025-08-29",
+                "current": true,
+                "link": "http://localhost:3000/arg/2025/copa-argentina"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 906,
+              "name": "Reserve League",
+              "type": "League",
+              "logo": "https://media.api-sports.io/football/leagues/906.png"
+            },
+            "seasons": [
+              {
+                "year": 2022,
+                "start": "2022-02-10",
+                "end": "2022-11-01",
+                "current": false,
+                "link": "http://localhost:3000/arg/2022/reserve-league"
+              },
+              {
+                "year": 2023,
+                "start": "2023-01-26",
+                "end": "2023-12-13",
+                "current": false,
+                "link": "http://localhost:3000/arg/2023/reserve-league"
+              },
+              {
+                "year": 2024,
+                "start": "2024-02-06",
+                "end": "2024-12-17",
+                "current": false,
+                "link": "http://localhost:3000/arg/2024/reserve-league"
+              },
+              {
+                "year": 2025,
+                "start": "2025-02-18",
+                "end": "2025-10-29",
+                "current": true,
+                "link": "http://localhost:3000/arg/2025/reserve-league"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 1032,
+              "name": "Copa de la Liga Profesional",
+              "type": "League",
+              "logo": "https://media.api-sports.io/football/leagues/1032.png"
+            },
+            "seasons": [
+              {
+                "year": 2023,
+                "start": "2023-08-17",
+                "end": "2023-12-16",
+                "current": false,
+                "link": "http://localhost:3000/arg/2023/copa-de-la-liga-profesional"
+              },
+              {
+                "year": 2024,
+                "start": "2024-01-25",
+                "end": "2024-05-05",
+                "current": true,
+                "link": "http://localhost:3000/arg/2024/copa-de-la-liga-profesional"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "FIFA",
+        "code": "FIFA",
+        "flag": "",
+        "leagues": [
+          {
+            "league": {
+              "id": 1,
+              "name": "Copa del Mundo",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/1.png"
+            },
+            "seasons": [
+              {
+                "year": 2010,
+                "start": "2010-06-11",
+                "end": "2010-07-11",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2010/world-cup"
+              },
+              {
+                "year": 2014,
+                "start": "2014-06-12",
+                "end": "2014-07-13",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2014/world-cup"
+              },
+              {
+                "year": 2018,
+                "start": "2018-06-14",
+                "end": "2018-07-15",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2018/world-cup"
+              },
+              {
+                "year": 2022,
+                "start": "2022-11-20",
+                "end": "2022-12-18",
+                "current": true,
+                "link": "http://localhost:3000/fifa/2022/world-cup"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 15,
+              "name": "Mundial de Clubes",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/15.png"
+            },
+            "seasons": [
+              {
+                "year": 2011,
+                "start": "2011-12-08",
+                "end": "2011-12-18",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2011/fifa-club-world-cup"
+              },
+              {
+                "year": 2013,
+                "start": "2013-12-11",
+                "end": "2013-12-21",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2013/fifa-club-world-cup"
+              },
+              {
+                "year": 2014,
+                "start": "2014-12-10",
+                "end": "2014-12-20",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2014/fifa-club-world-cup"
+              },
+              {
+                "year": 2015,
+                "start": "2015-12-10",
+                "end": "2015-12-20",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2015/fifa-club-world-cup"
+              },
+              {
+                "year": 2016,
+                "start": "2016-12-08",
+                "end": "2016-12-18",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2016/fifa-club-world-cup"
+              },
+              {
+                "year": 2017,
+                "start": "2017-12-06",
+                "end": "2017-12-16",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2017/fifa-club-world-cup"
+              },
+              {
+                "year": 2019,
+                "start": "2019-12-11",
+                "end": "2019-12-21",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2019/fifa-club-world-cup"
+              },
+              {
+                "year": 2020,
+                "start": "2021-02-04",
+                "end": "2021-02-11",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2020/fifa-club-world-cup"
+              },
+              {
+                "year": 2021,
+                "start": "2022-02-03",
+                "end": "2022-02-12",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2021/fifa-club-world-cup"
+              },
+              {
+                "year": 2022,
+                "start": "2023-02-01",
+                "end": "2023-02-11",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2022/fifa-club-world-cup"
+              },
+              {
+                "year": 2023,
+                "start": "2023-12-12",
+                "end": "2023-12-22",
+                "current": false,
+                "link": "http://localhost:3000/fifa/2023/fifa-club-world-cup"
+              },
+              {
+                "year": 2025,
+                "start": "2025-06-15",
+                "end": "2025-07-05",
+                "current": true,
+                "link": "http://localhost:3000/fifa/2025/fifa-club-world-cup"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "CONMEBOL",
+        "code": "CONMEBOL",
+        "flag": "https://i.imgur.com/NCAlqtf.png",
+        "leagues": [
+          {
+            "league": {
+              "id": 9,
+              "name": "Copa America",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/9.png"
+            },
+            "seasons": [
+              {
+                "year": 2015,
+                "start": "2015-06-11",
+                "end": "2015-07-04",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2015/copa-america"
+              },
+              {
+                "year": 2016,
+                "start": "2016-06-04",
+                "end": "2016-06-27",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2016/copa-america"
+              },
+              {
+                "year": 2019,
+                "start": "2019-06-15",
+                "end": "2019-07-07",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2019/copa-america"
+              },
+              {
+                "year": 2021,
+                "start": "2021-06-13",
+                "end": "2021-07-11",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2021/copa-america"
+              },
+              {
+                "year": 2024,
+                "start": "2024-06-21",
+                "end": "2024-07-15",
+                "current": true,
+                "link": "http://localhost:3000/conmebol/2024/copa-america"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 11,
+              "name": "CONMEBOL Sudamericana",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/11.png"
+            },
+            "seasons": [
+              {
+                "year": 2019,
+                "start": "2019-02-05",
+                "end": "2019-11-09",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2019/conmebol-sudamericana"
+              },
+              {
+                "year": 2020,
+                "start": "2020-02-04",
+                "end": "2021-01-23",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2020/conmebol-sudamericana"
+              },
+              {
+                "year": 2021,
+                "start": "2021-03-16",
+                "end": "2021-11-20",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2021/conmebol-sudamericana"
+              },
+              {
+                "year": 2022,
+                "start": "2022-03-08",
+                "end": "2022-10-01",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2022/conmebol-sudamericana"
+              },
+              {
+                "year": 2023,
+                "start": "2023-03-06",
+                "end": "2023-10-28",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2023/conmebol-sudamericana"
+              },
+              {
+                "year": 2024,
+                "start": "2024-03-05",
+                "end": "2024-11-23",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2024/conmebol-sudamericana"
+              },
+              {
+                "year": 2025,
+                "start": "2025-03-05",
+                "end": "2025-07-22",
+                "current": true,
+                "link": "http://localhost:3000/conmebol/2025/conmebol-sudamericana"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 13,
+              "name": "CONMEBOL Libertadores",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/13.png"
+            },
+            "seasons": [
+              {
+                "year": 2019,
+                "start": "2019-01-22",
+                "end": "2019-11-23",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2019/conmebol-libertadores"
+              },
+              {
+                "year": 2020,
+                "start": "2020-01-21",
+                "end": "2021-01-30",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2020/conmebol-libertadores"
+              },
+              {
+                "year": 2021,
+                "start": "2021-02-24",
+                "end": "2021-11-27",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2021/conmebol-libertadores"
+              },
+              {
+                "year": 2022,
+                "start": "2022-02-08",
+                "end": "2022-10-29",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2022/conmebol-libertadores"
+              },
+              {
+                "year": 2023,
+                "start": "2023-02-08",
+                "end": "2023-11-04",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2023/conmebol-libertadores"
+              },
+              {
+                "year": 2024,
+                "start": "2024-02-07",
+                "end": "2024-11-30",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2024/conmebol-libertadores"
+              },
+              {
+                "year": 2025,
+                "start": "2025-02-05",
+                "end": "2025-08-19",
+                "current": true,
+                "link": "http://localhost:3000/conmebol/2025/conmebol-libertadores"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 541,
+              "name": "CONMEBOL Recopa",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/541.png"
+            },
+            "seasons": [
+              {
+                "year": 2020,
+                "start": "2020-02-20",
+                "end": "2020-02-27",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2020/conmebol-recopa"
+              },
+              {
+                "year": 2021,
+                "start": "2021-02-10",
+                "end": "2021-03-03",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2021/conmebol-recopa"
+              },
+              {
+                "year": 2022,
+                "start": "2022-02-23",
+                "end": "2022-03-02",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2022/conmebol-recopa"
+              },
+              {
+                "year": 2023,
+                "start": "2023-02-08",
+                "end": "2023-02-15",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2023/conmebol-recopa"
+              },
+              {
+                "year": 2024,
+                "start": "2024-02-21",
+                "end": "2024-02-28",
+                "current": false,
+                "link": "http://localhost:3000/conmebol/2024/conmebol-recopa"
+              },
+              {
+                "year": 2025,
+                "start": "2025-02-19",
+                "end": "2025-02-26",
+                "current": true,
+                "link": "http://localhost:3000/conmebol/2025/conmebol-recopa"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "UEFA",
+        "code": "UEFA",
+        "flag": "https://i.imgur.com/0ts3uoO.png",
+        "leagues": [
+          {
+            "league": {
+              "id": 2,
+              "name": "UEFA Champions League",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/2.png"
+            },
+            "seasons": [
+              {
+                "year": 2011,
+                "start": "2011-06-28",
+                "end": "2012-05-19",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2011/uefa-champions-league"
+              },
+              {
+                "year": 2012,
+                "start": "2012-07-03",
+                "end": "2013-05-25",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2012/uefa-champions-league"
+              },
+              {
+                "year": 2013,
+                "start": "2013-07-02",
+                "end": "2014-05-24",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2013/uefa-champions-league"
+              },
+              {
+                "year": 2014,
+                "start": "2014-07-01",
+                "end": "2015-06-06",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2014/uefa-champions-league"
+              },
+              {
+                "year": 2015,
+                "start": "2015-06-30",
+                "end": "2016-05-28",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2015/uefa-champions-league"
+              },
+              {
+                "year": 2016,
+                "start": "2016-06-28",
+                "end": "2017-06-03",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2016/uefa-champions-league"
+              },
+              {
+                "year": 2017,
+                "start": "2017-06-27",
+                "end": "2018-05-26",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2017/uefa-champions-league"
+              },
+              {
+                "year": 2018,
+                "start": "2018-06-26",
+                "end": "2019-06-01",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2018/uefa-champions-league"
+              },
+              {
+                "year": 2019,
+                "start": "2019-06-25",
+                "end": "2020-08-23",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2019/uefa-champions-league"
+              },
+              {
+                "year": 2020,
+                "start": "2020-08-08",
+                "end": "2021-05-29",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2020/uefa-champions-league"
+              },
+              {
+                "year": 2021,
+                "start": "2021-06-22",
+                "end": "2022-05-28",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2021/uefa-champions-league"
+              },
+              {
+                "year": 2022,
+                "start": "2022-06-21",
+                "end": "2023-06-10",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2022/uefa-champions-league"
+              },
+              {
+                "year": 2023,
+                "start": "2023-06-27",
+                "end": "2024-06-01",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2023/uefa-champions-league"
+              },
+              {
+                "year": 2024,
+                "start": "2024-07-09",
+                "end": "2025-05-31",
+                "current": true,
+                "link": "http://localhost:3000/uefa/2024/uefa-champions-league"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 3,
+              "name": "UEFA Europa League",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/3.png"
+            },
+            "seasons": [
+              {
+                "year": 2014,
+                "start": "2014-07-01",
+                "end": "2015-05-27",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2014/uefa-europa-league"
+              },
+              {
+                "year": 2015,
+                "start": "2015-06-30",
+                "end": "2016-05-18",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2015/uefa-europa-league"
+              },
+              {
+                "year": 2016,
+                "start": "2016-06-28",
+                "end": "2017-05-24",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2016/uefa-europa-league"
+              },
+              {
+                "year": 2017,
+                "start": "2017-06-29",
+                "end": "2018-05-16",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2017/uefa-europa-league"
+              },
+              {
+                "year": 2018,
+                "start": "2018-06-26",
+                "end": "2019-05-29",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2018/uefa-europa-league"
+              },
+              {
+                "year": 2019,
+                "start": "2019-06-27",
+                "end": "2020-08-21",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2019/uefa-europa-league"
+              },
+              {
+                "year": 2020,
+                "start": "2020-08-18",
+                "end": "2021-05-26",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2020/uefa-europa-league"
+              },
+              {
+                "year": 2021,
+                "start": "2021-08-03",
+                "end": "2022-05-18",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2021/uefa-europa-league"
+              },
+              {
+                "year": 2022,
+                "start": "2022-08-04",
+                "end": "2023-05-31",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2022/uefa-europa-league"
+              },
+              {
+                "year": 2023,
+                "start": "2023-08-08",
+                "end": "2024-05-22",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2023/uefa-europa-league"
+              },
+              {
+                "year": 2024,
+                "start": "2024-07-11",
+                "end": "2025-05-21",
+                "current": true,
+                "link": "http://localhost:3000/uefa/2024/uefa-europa-league"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 4,
+              "name": "Euro Championship",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/4.png"
+            },
+            "seasons": [
+              {
+                "year": 2008,
+                "start": "2008-06-07",
+                "end": "2008-06-29",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2008/euro-championship"
+              },
+              {
+                "year": 2012,
+                "start": "2012-06-08",
+                "end": "2012-07-01",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2012/euro-championship"
+              },
+              {
+                "year": 2016,
+                "start": "2016-06-10",
+                "end": "2016-07-10",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2016/euro-championship"
+              },
+              {
+                "year": 2020,
+                "start": "2019-03-21",
+                "end": "2021-07-11",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2020/euro-championship"
+              },
+              {
+                "year": 2024,
+                "start": "2024-06-14",
+                "end": "2024-07-14",
+                "current": true,
+                "link": "http://localhost:3000/uefa/2024/euro-championship"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 848,
+              "name": "UEFA Europa Conference League",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/848.png"
+            },
+            "seasons": [
+              {
+                "year": 2021,
+                "start": "2021-07-06",
+                "end": "2022-05-25",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2021/uefa-europa-conference-league"
+              },
+              {
+                "year": 2022,
+                "start": "2022-07-05",
+                "end": "2023-06-07",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2022/uefa-europa-conference-league"
+              },
+              {
+                "year": 2023,
+                "start": "2023-07-12",
+                "end": "2024-05-29",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2023/uefa-europa-conference-league"
+              },
+              {
+                "year": 2024,
+                "start": "2024-07-10",
+                "end": "2025-05-28",
+                "current": true,
+                "link": "http://localhost:3000/uefa/2024/uefa-europa-conference-league"
+              }
+            ]
+          },
+          {
+            "league": {
+              "id": 531,
+              "name": "UEFA Super Cup",
+              "type": "Cup",
+              "logo": "https://media.api-sports.io/football/leagues/531.png"
+            },
+            "seasons": [
+              {
+                "year": 2016,
+                "start": "2016-08-09",
+                "end": "2016-08-09",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2016/uefa-super-cup"
+              },
+              {
+                "year": 2017,
+                "start": "2017-08-08",
+                "end": "2017-08-08",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2017/uefa-super-cup"
+              },
+              {
+                "year": 2018,
+                "start": "2018-08-15",
+                "end": "2018-08-15",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2018/uefa-super-cup"
+              },
+              {
+                "year": 2019,
+                "start": "2019-08-14",
+                "end": "2019-08-14",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2019/uefa-super-cup"
+              },
+              {
+                "year": 2020,
+                "start": "2020-09-24",
+                "end": "2020-09-24",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2020/uefa-super-cup"
+              },
+              {
+                "year": 2021,
+                "start": "2021-08-11",
+                "end": "2021-08-11",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2021/uefa-super-cup"
+              },
+              {
+                "year": 2022,
+                "start": "2022-08-10",
+                "end": "2022-08-10",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2022/uefa-super-cup"
+              },
+              {
+                "year": 2023,
+                "start": "2023-08-16",
+                "end": "2023-08-16",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2023/uefa-super-cup"
+              },
+              {
+                "year": 2024,
+                "start": "2024-08-14",
+                "end": "2024-08-14",
+                "current": false,
+                "link": "http://localhost:3000/uefa/2024/uefa-super-cup"
+              },
+              {
+                "year": 2025,
+                "start": "2025-08-12",
+                "end": "2025-08-12",
+                "current": true,
+                "link": "http://localhost:3000/uefa/2025/uefa-super-cup"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

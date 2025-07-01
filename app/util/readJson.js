@@ -1,4 +1,4 @@
-const { processGetLinksArg, processGetLinksEng, processGetLinksCups } = require('./processRead/processReadLinks')
+const { processGetLinksArg, processGetLinksCups } = require('./processRead/processReadLinks')
 const { processGetStanding } = require('./processRead/processReadStandings')
 const { processGetFixtures } = require('./processRead/processReadFixtures')
 const pc = require('picocolors')
@@ -24,9 +24,8 @@ async function getDataLeague (req, res) {
     res.status(500).json(data)
   }
 }
-
 async function getLinks (req, res) {
-  const { pathArg, pathEng, pathNation, pathUEFA, pathCONMEBOL } = JSON.parse(req.cookies)
+  const { pathArg, pathUEFA, pathNation, pathCONMEBOL } = JSON.parse(req.cookies)
   const data = {}
   console.log(`${pc.bgGreen('Procesando la respuesta')}`)
   try {
@@ -34,8 +33,8 @@ async function getLinks (req, res) {
     data.timestamp = Date.now()
     const response = await Promise.all([
       processGetLinksArg(pathArg),
-      processGetLinksEng(pathEng),
-      processGetLinksCups('nations', pathNation),
+      // processGetLinksEng(pathEng),
+      processGetLinksCups('fifa', pathNation),
       processGetLinksCups('conmebol', pathCONMEBOL),
       processGetLinksCups('uefa', pathUEFA)
     ])

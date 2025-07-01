@@ -5,6 +5,15 @@ const validateCountryLinks = require('./processValidateCreate/validateCountryLin
 const pc = require('picocolors')
 
 async function validateCreateLinks (req, res, next) {
+  /**
+   * Valida el cuerpo de la solicitud antes de la creacion del nuevo recurso.
+   * Retorna el cuerpo de la solicitud con la ruta del archivo para el nuevo recurso:
+   * {
+   *  id:[1,2,3,4],
+   *  country:["fifa"],
+   *  path:[RUTA_DEL_ARCHIVO]
+   * }
+   */
   try {
     validateBodyLinks({ ...req.body })
     const idValidados = await validateIdLinks({ ...req.body })

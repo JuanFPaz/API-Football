@@ -1,0 +1,425 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "15", "season": "2013" },
+  "errors": [],
+  "results": 8,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 253404,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-11T19:30:00+00:00",
+        "timestamp": 1386790200,
+        "periods": { "first": 1386790200, "second": 1386793800 },
+        "venue": {
+          "id": null,
+          "name": "Stade d'Agadir (Agadir)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Play-offs",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 976,
+          "name": "Raja Casablanca",
+          "logo": "https://media.api-sports.io/football/teams/976.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253397,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-14T16:00:00+00:00",
+        "timestamp": 1387036800,
+        "periods": { "first": 1387036800, "second": 1387040400 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 832,
+          "name": "Guangzhou Evergrande FC",
+          "logo": "https://media.api-sports.io/football/teams/832.png",
+          "winner": true
+        },
+        "away": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253398,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-14T19:30:00+00:00",
+        "timestamp": 1387049400,
+        "periods": { "first": 1387049400, "second": 1387053000 },
+        "venue": {
+          "id": null,
+          "name": "Stade d'Agadir (Agadir)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "AET",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 976,
+          "name": "Raja Casablanca",
+          "logo": "https://media.api-sports.io/football/teams/976.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2282,
+          "name": "Monterrey",
+          "logo": "https://media.api-sports.io/football/teams/2282.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 2, "away": 1 },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253399,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-17T19:30:00+00:00",
+        "timestamp": 1387308600,
+        "periods": { "first": 1387308600, "second": 1387312200 },
+        "venue": {
+          "id": null,
+          "name": "Stade d'Agadir (Agadir)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 832,
+          "name": "Guangzhou Evergrande FC",
+          "logo": "https://media.api-sports.io/football/teams/832.png",
+          "winner": false
+        },
+        "away": {
+          "id": 157,
+          "name": "Bayern Munich",
+          "logo": "https://media.api-sports.io/football/teams/157.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 3 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 3 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253401,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-18T16:30:00+00:00",
+        "timestamp": 1387384200,
+        "periods": { "first": 1387384200, "second": 1387387800 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "5th Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 1577,
+          "name": "Al Ahly",
+          "logo": "https://media.api-sports.io/football/teams/1577.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2282,
+          "name": "Monterrey",
+          "logo": "https://media.api-sports.io/football/teams/2282.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 5 },
+      "score": {
+        "halftime": { "home": 1, "away": 4 },
+        "fulltime": { "home": 1, "away": 5 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253400,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-18T19:30:00+00:00",
+        "timestamp": 1387395000,
+        "periods": { "first": 1387395000, "second": 1387398600 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 976,
+          "name": "Raja Casablanca",
+          "logo": "https://media.api-sports.io/football/teams/976.png",
+          "winner": true
+        },
+        "away": {
+          "id": 1062,
+          "name": "Atletico-MG",
+          "logo": "https://media.api-sports.io/football/teams/1062.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 3, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253402,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-21T16:30:00+00:00",
+        "timestamp": 1387643400,
+        "periods": { "first": 1387643400, "second": 1387647000 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "3rd Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 832,
+          "name": "Guangzhou Evergrande FC",
+          "logo": "https://media.api-sports.io/football/teams/832.png",
+          "winner": false
+        },
+        "away": {
+          "id": 1062,
+          "name": "Atletico-MG",
+          "logo": "https://media.api-sports.io/football/teams/1062.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 2, "away": 3 },
+      "score": {
+        "halftime": { "home": 2, "away": 2 },
+        "fulltime": { "home": 2, "away": 3 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253403,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2013-12-21T19:30:00+00:00",
+        "timestamp": 1387654200,
+        "periods": { "first": 1387654200, "second": 1387657800 },
+        "venue": {
+          "id": null,
+          "name": "Stade de Marrakech (Marrakech)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2013,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 157,
+          "name": "Bayern Munich",
+          "logo": "https://media.api-sports.io/football/teams/157.png",
+          "winner": true
+        },
+        "away": {
+          "id": 976,
+          "name": "Raja Casablanca",
+          "logo": "https://media.api-sports.io/football/teams/976.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "15", "season": "2011" },
+  "errors": [],
+  "results": 8,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 253412,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-08T10:45:00+00:00",
+        "timestamp": 1323341100,
+        "periods": { "first": 1323341100, "second": 1323344700 },
+        "venue": {
+          "id": null,
+          "name": "Toyota Stadium (Toyota)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Play-off",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 281,
+          "name": "Kashiwa Reysol",
+          "logo": "https://media.api-sports.io/football/teams/281.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2537,
+          "name": "Auckland City",
+          "logo": "https://media.api-sports.io/football/teams/2537.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253405,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-11T07:00:00+00:00",
+        "timestamp": 1323586800,
+        "periods": { "first": 1323586800, "second": 1323590400 },
+        "venue": {
+          "id": null,
+          "name": "Toyota Stadium (Toyota)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 980,
+          "name": "Esperance Tunis",
+          "logo": "https://media.api-sports.io/football/teams/980.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2895,
+          "name": "Al Sadd",
+          "logo": "https://media.api-sports.io/football/teams/2895.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253406,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-11T10:30:00+00:00",
+        "timestamp": 1323599400,
+        "periods": { "first": 1323599400, "second": 1323603000 },
+        "venue": {
+          "id": null,
+          "name": "Toyota Stadium (Toyota)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Quarter-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 281,
+          "name": "Kashiwa Reysol",
+          "logo": "https://media.api-sports.io/football/teams/281.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2282,
+          "name": "Monterrey",
+          "logo": "https://media.api-sports.io/football/teams/2282.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": 1, "away": 1 },
+        "penalty": { "home": 4, "away": 3 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253407,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-14T07:30:00+00:00",
+        "timestamp": 1323847800,
+        "periods": { "first": 1323847800, "second": 1323851400 },
+        "venue": {
+          "id": null,
+          "name": "Toyota Stadium (Toyota)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "5th Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2282,
+          "name": "Monterrey",
+          "logo": "https://media.api-sports.io/football/teams/2282.png",
+          "winner": true
+        },
+        "away": {
+          "id": 980,
+          "name": "Esperance Tunis",
+          "logo": "https://media.api-sports.io/football/teams/980.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 2 },
+      "score": {
+        "halftime": { "home": 2, "away": 1 },
+        "fulltime": { "home": 3, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253408,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-14T10:30:00+00:00",
+        "timestamp": 1323858600,
+        "periods": { "first": 1323858600, "second": 1323862200 },
+        "venue": {
+          "id": null,
+          "name": "Toyota Stadium (Toyota)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 281,
+          "name": "Kashiwa Reysol",
+          "logo": "https://media.api-sports.io/football/teams/281.png",
+          "winner": false
+        },
+        "away": {
+          "id": 128,
+          "name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 3 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 1, "away": 3 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253409,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-15T10:30:00+00:00",
+        "timestamp": 1323945000,
+        "periods": { "first": 1323945000, "second": 1323948600 },
+        "venue": {
+          "id": null,
+          "name": "Nissan Stadium (Yokohama)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Semi-finals",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 2895,
+          "name": "Al Sadd",
+          "logo": "https://media.api-sports.io/football/teams/2895.png",
+          "winner": false
+        },
+        "away": {
+          "id": 529,
+          "name": "Barcelona",
+          "logo": "https://media.api-sports.io/football/teams/529.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 4 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 4 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253410,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-18T07:30:00+00:00",
+        "timestamp": 1324193400,
+        "periods": { "first": 1324193400, "second": 1324197000 },
+        "venue": {
+          "id": null,
+          "name": "Nissan Stadium (Yokohama)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "3rd Place Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 281,
+          "name": "Kashiwa Reysol",
+          "logo": "https://media.api-sports.io/football/teams/281.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2895,
+          "name": "Al Sadd",
+          "logo": "https://media.api-sports.io/football/teams/2895.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": 3, "away": 5 }
+      }
+    },
+    {
+      "fixture": {
+        "id": 253411,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2011-12-18T10:30:00+00:00",
+        "timestamp": 1324204200,
+        "periods": { "first": 1324204200, "second": 1324207800 },
+        "venue": {
+          "id": null,
+          "name": "Nissan Stadium (Yokohama)",
+          "city": null
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/15.png",
+        "flag": null,
+        "season": 2011,
+        "round": "Final",
+        "standings": false
+      },
+      "teams": {
+        "home": {
+          "id": 128,
+          "name": "Santos",
+          "logo": "https://media.api-sports.io/football/teams/128.png",
+          "winner": false
+        },
+        "away": {
+          "id": 529,
+          "name": "Barcelona",
+          "logo": "https://media.api-sports.io/football/teams/529.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 4 },
+      "score": {
+        "halftime": { "home": 0, "away": 3 },
+        "fulltime": { "home": 0, "away": 4 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}

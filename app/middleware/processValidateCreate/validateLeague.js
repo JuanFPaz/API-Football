@@ -41,6 +41,8 @@ async function validateLeague ({ country, league, season }) {
         throw new Error('Ocurrio un error filtrando las ligas. El ID ' + l + ' no es valido para el country ' + country[0] + '.')
       }
       const [liga] = lf
+      console.log(liga)
+
       const { league: { name }, seasons } = liga
       const seasonFilter = await Promise.all(season.map(async (s) => {
         const sf = seasons.filter(se => se.year === s)
@@ -51,6 +53,7 @@ async function validateLeague ({ country, league, season }) {
         const { year, coverage: { fixtures, standings } } = temporada
         return { year, fixtures, standings }
       }))
+
       return { name: name.toLowerCase().replace(/\s/g, '-'), seasons: seasonFilter }
     }))
   } catch (err) {

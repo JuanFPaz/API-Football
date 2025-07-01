@@ -4,6 +4,7 @@ async function validateURL ({ country, league, season }) {
   let getCountry
   let getLeague
   const _league = league.toLowerCase().replace(/-/g, '_')
+
   try {
     getCountry = liga[country]
     if (!getCountry) {
@@ -12,7 +13,7 @@ async function validateURL ({ country, league, season }) {
   } catch (err) {
     const customError = {
       middReference: 'validateURL',
-      process: 'helper',
+      process: 'validateRead',
       message: err.message
     }
     throw customError
@@ -25,7 +26,7 @@ async function validateURL ({ country, league, season }) {
   } catch (err) {
     const customError = {
       middReference: 'validateURL',
-      process: 'helper',
+      process: 'validateRead',
       message: err.message
     }
     throw customError

@@ -3,7 +3,7 @@ const { axionLinksIds } = require('../../helpers/axion')
 
 async function processCreateLinks ({ country, id, path }) {
   try {
-    const arregloDeLinks = await axionLinksIds(country, id)
+    const arregloDeLinks = await axionLinksIds(id)
     const arregloParameters = arregloDeLinks.map(lk => {
       const { parameters } = lk
       return parameters
@@ -23,7 +23,7 @@ async function processCreateLinks ({ country, id, path }) {
     }
 
     await writeFile(path, JSON.stringify(data))
-    return { message: 'Recurso creado correctamente, ponele (?' }
+    return { message: `Los datos solicitados de ${country[0]} fueron creados correctamente.` }
   } catch (err) {
     console.log(err)
   }

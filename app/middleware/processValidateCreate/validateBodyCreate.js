@@ -1,10 +1,17 @@
 function validateBodyLinks ({ id, country }) {
+  /**
+   * Valida que el cuerpo de la Solicitud contenga:
+   * {
+   *  id:[numeros],
+   *  country:["unPais"]
+   * }
+   */
   try {
     if (!Array.isArray(id)) {
       throw Error('Esperabamos un arreglo, ID no es un arreglo')
     }
     if (!Array.isArray(country)) {
-      throw Error('Esperabamos un arreglo, COUNTRY no es un arreglo')
+      throw Error('Esperabamos un arreglo, COUNTRY no es un arreglo, ctm')
     }
   } catch (err) {
     const customError = {

@@ -1,6 +1,6 @@
 const validateURL = require('./proccesValidateRead/validateUrl')
 const validateBodyCuky = require('./proccesValidateRead/validateBodyCuky')
-const { validateLinksArg, validateLinksEng, validateLinksCups } = require('./proccesValidateRead/validateLinks')
+const { validateLinksArg, validateLinksCups } = require('./proccesValidateRead/validateLinks')
 const pc = require('picocolors')
 
 async function validateReadLeague (req, res, next) {
@@ -25,13 +25,12 @@ async function validateReadLeague (req, res, next) {
 async function validateReadLinks (req, res, next) {
   try {
     const pathArg = await validateLinksArg()
-    const pathEng = await validateLinksEng()
-    const pathNation = await validateLinksCups('nations')
+    // const pathEng = await validateLinksEng()
+    const pathNation = await validateLinksCups('fifa')
     const pathUEFA = await validateLinksCups('uefa')
     const pathCONMEBOL = await validateLinksCups('conmebol')
     const pathFiles = {
       pathArg,
-      pathEng,
       pathNation,
       pathUEFA,
       pathCONMEBOL

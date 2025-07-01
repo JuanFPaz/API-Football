@@ -24,7 +24,7 @@ async function processGetStanding (pathStanding) {
       // y la liga es arreglo con 1 tabla
       // Podria crear un standing.length === 1, evitar hacer el siguiente MAP, pero no veo porque no lo puede hacer
       const standingFormateada = standing.map((equipo) => {
-        const { group, team, points, goalsDiff, all, home, away } = equipo
+        const { group, team, points, goalsDiff, all, home, away, form } = equipo
         return {
           group,
           team,
@@ -32,7 +32,8 @@ async function processGetStanding (pathStanding) {
           goalsDiff,
           all,
           home,
-          away
+          away,
+          form
         }
       })
 

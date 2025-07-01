@@ -2,24 +2,33 @@ POST http://localhost:3000/links
 Content-Type: application/json
 
 {
-    "id": [],
-    "country": ["world",""]
+    "id":[128,130,906,1032],
+    "country":["argentina"]
 }
+###
+POST http://localhost:3000/links
+Content-Type: application/json
+
+{
+    "id":[1,15],
+    "country":["fifa"]
+}
+
 ### copa america & euro, con los nuevos validates, podemos 
 POST http://localhost:3000/fixtures
 Content-Type: application/json
 
 {
-    "league": [4,9],
+    "league": [2],
     "season": [2024],
-    "country": ["nations"]
+    "country": ["conmebol"]
 }
 ###
 POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
-    "league": [128],
-    "season": [2015,2016,2017,2018,2019,2020,2021,2022],
-    "country": ["argentina"]
+    "league": [3],
+    "season": [2024],
+    "country": ["uefa"]
 }

@@ -1,27 +1,28 @@
 {
   "get": "leagues",
   "parameters": [
-    { "country": "World", "id": "13" },
+    { "country": "World", "id": "9" },
     { "country": "World", "id": "11" },
+    { "country": "World", "id": "13" },
     { "country": "World", "id": "541" }
   ],
   "errors": [],
-  "results": 3,
+  "results": 4,
   "paging": { "current": 1, "total": 1 },
   "response": [
     {
       "league": {
-        "id": 13,
-        "name": "CONMEBOL Libertadores",
+        "id": 9,
+        "name": "Copa America",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/13.png"
+        "logo": "https://media.api-sports.io/football/leagues/9.png"
       },
       "country": { "name": "World", "code": null, "flag": null },
       "seasons": [
         {
-          "year": 2019,
-          "start": "2019-01-22",
-          "end": "2019-11-23",
+          "year": 2015,
+          "start": "2015-06-11",
+          "end": "2015-07-04",
           "current": false,
           "coverage": {
             "fixtures": {
@@ -30,7 +31,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -41,9 +42,31 @@
           }
         },
         {
-          "year": 2020,
-          "start": "2020-01-21",
-          "end": "2021-01-30",
+          "year": 2016,
+          "start": "2016-06-04",
+          "end": "2016-06-27",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2019,
+          "start": "2019-06-15",
+          "end": "2019-07-07",
           "current": false,
           "coverage": {
             "fixtures": {
@@ -64,52 +87,8 @@
         },
         {
           "year": 2021,
-          "start": "2021-02-24",
-          "end": "2021-11-27",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        },
-        {
-          "year": 2022,
-          "start": "2022-02-08",
-          "end": "2022-10-29",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        },
-        {
-          "year": 2023,
-          "start": "2023-02-08",
-          "end": "2023-11-04",
+          "start": "2021-06-13",
+          "end": "2021-07-11",
           "current": false,
           "coverage": {
             "fixtures": {
@@ -130,8 +109,8 @@
         },
         {
           "year": 2024,
-          "start": "2024-02-07",
-          "end": "2024-05-31",
+          "start": "2024-06-21",
+          "end": "2024-07-15",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -147,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -274,7 +253,29 @@
         {
           "year": 2024,
           "start": "2024-03-05",
-          "end": "2024-05-31",
+          "end": "2024-11-23",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2025,
+          "start": "2025-03-05",
+          "end": "2025-07-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -290,7 +291,172 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 13,
+        "name": "CONMEBOL Libertadores",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/13.png"
+      },
+      "country": { "name": "World", "code": null, "flag": null },
+      "seasons": [
+        {
+          "year": 2019,
+          "start": "2019-01-22",
+          "end": "2019-11-23",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2020,
+          "start": "2020-01-21",
+          "end": "2021-01-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2021,
+          "start": "2021-02-24",
+          "end": "2021-11-27",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2022,
+          "start": "2022-02-08",
+          "end": "2022-10-29",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2023,
+          "start": "2023-02-08",
+          "end": "2023-11-04",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2024,
+          "start": "2024-02-07",
+          "end": "2024-11-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-08-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -396,6 +562,28 @@
           "year": 2024,
           "start": "2024-02-21",
           "end": "2024-02-28",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        },
+        {
+          "year": 2025,
+          "start": "2025-02-19",
+          "end": "2025-02-26",
           "current": true,
           "coverage": {
             "fixtures": {

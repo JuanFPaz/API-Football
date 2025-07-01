@@ -14,13 +14,7 @@ const liga = {
       fixture: true
     }
   },
-  eng: {
-    country: 'england',
-    premier_league: {
-      standing: true,
-      fixture: true
-    }
-  },
+
   conmebol: {
     country: 'conmebol',
     conmebol_libertadores: {
@@ -34,10 +28,20 @@ const liga = {
     conmebol_recopa: {
       standing: false,
       fixture: true
+    },
+    copa_america: {
+      id: 9,
+      standing: true,
+      fixture: true
     }
   },
   uefa: {
     country: 'uefa',
+    euro_championship: {
+      id: 4,
+      standing: true,
+      fixture: true
+    },
     uefa_champions_league: {
       standing: true,
       fixture: true
@@ -52,19 +56,6 @@ const liga = {
     },
     uefa_super_cup: {
       standing: false,
-      fixture: true
-    }
-  },
-  nations: {
-    country: 'nations',
-    copa_america: {
-      id: 9,
-      standing: true,
-      fixture: true
-    },
-    euro_championship: {
-      id: 4,
-      standing: true,
       fixture: true
     }
   }
