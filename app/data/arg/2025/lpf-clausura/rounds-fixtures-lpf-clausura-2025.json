@@ -1,0 +1,46 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "128", "season": "2025", "dates": "true" },
+  "errors": [],
+  "results": 36,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "round": "2nd Phase - 1",
+      "dates": [
+        "2025-07-11",
+        "2025-07-12",
+        "2025-07-13",
+        "2025-07-14",
+        "2025-07-15"
+      ]
+    },
+    {
+      "round": "2nd Phase - 2",
+      "dates": [
+        "2025-07-18",
+        "2025-07-19",
+        "2025-07-20",
+        "2025-07-21",
+        "2025-07-22"
+      ]
+    },
+    {
+      "round": "2nd Phase - 3",
+      "dates": ["2025-07-25", "2025-07-26", "2025-07-27", "2025-07-28"]
+    },
+    { "round": "2nd Phase - 4", "dates": ["2025-08-10"] },
+    { "round": "2nd Phase - 5", "dates": ["2025-08-17"] },
+    { "round": "2nd Phase - 6", "dates": ["2025-08-24"] },
+    { "round": "2nd Phase - 7", "dates": ["2025-08-31"] },
+    { "round": "2nd Phase - 8", "dates": ["2025-09-14"] },
+    { "round": "2nd Phase - 9", "dates": ["2025-09-21"] },
+    { "round": "2nd Phase - 10", "dates": ["2025-09-28"] },
+    { "round": "2nd Phase - 11", "dates": ["2025-10-05"] },
+    { "round": "2nd Phase - 12", "dates": ["2025-10-12"] },
+    { "round": "2nd Phase - 13", "dates": ["2025-10-19"] },
+    { "round": "2nd Phase - 14", "dates": ["2025-11-02"] },
+    { "round": "2nd Phase - 15", "dates": ["2025-11-09"] },
+    { "round": "2nd Phase - 16", "dates": ["2025-11-16"] }
+  ]
+}

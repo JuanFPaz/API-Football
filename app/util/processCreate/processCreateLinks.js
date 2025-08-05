@@ -1,7 +1,7 @@
 const { writeFile } = require('node:fs/promises')
 const { axionLinksIds } = require('../../helpers/axion')
 
-async function processCreateLinks ({ country, id, path }) {
+async function processCreateLinks ({ country, code, id, path }) {
   try {
     const arregloDeLinks = await axionLinksIds(id)
     const arregloParameters = arregloDeLinks.map(lk => {
@@ -9,8 +9,10 @@ async function processCreateLinks ({ country, id, path }) {
       return parameters
     })
     const arregloResponse = arregloDeLinks.map(lk => {
-      const { response: [link] } = lk
-      return link
+      const { response: [dataLeagues] } = lk
+      dataLeagues.country.name = country[0]
+      dataLeagues.country.code = code[0].toUpperCase()
+      return dataLeagues
     })
     const data = {
       get: arregloDeLinks[0].get,

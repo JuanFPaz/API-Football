@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 9,
+    "type": "Cup",
+    "name": "Copa America",
+    "codeLeague": "copa-america",
+    "code": "CONMEBOL",
+    "country": "Sudamerica",
+    "logo": "https://media.api-sports.io/football/leagues/9.png",
+    "flag": null,
+    "season": 2024,
+    "start": "2024-06-21",
+    "end": "2024-07-15",
+    "current": true
+  }
+}

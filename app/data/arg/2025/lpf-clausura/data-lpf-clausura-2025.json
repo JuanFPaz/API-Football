@@ -1,0 +1,17 @@
+{
+  "dataLeague": {
+    "id": 128,
+    "type": "League",
+    "name": "Liga Profesional Argentina - Clausura",
+    "codeLeague": "lpf-clausura",
+    "code": "arg",
+    "country": "Argentina",
+    "logo": "https://media.api-sports.io/football/leagues/128.png",
+    "flag": "https://media.api-sports.io/flags/ar.svg",
+    "season": 2025,
+    "start": "2025-07-11",
+    "end": "2025-12-14",
+    "current": true,
+    "link": "http://localhost:3000/arg/2025/lpf-clausura"
+  }
+}

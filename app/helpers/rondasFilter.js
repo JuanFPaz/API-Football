@@ -1,560 +1,329 @@
-function rondasFilter (unaLiga, unaFases, unosFixtures) {
-  console.log(unaLiga)
-  switch (unaLiga) {
-    case 'Liga Profesional Argentina': {
-      return rondasLigaArgentina(unaFases, unosFixtures)
+const { fasesFilter } = require('./fasesFilter')
+
+function rondasFilter ({ id, fases, fixtures, standings }) {
+  switch (id) {
+    case 128: {
+      return rondasLigaArgentina({ fases, fixtures, standings })
     }
-    case 'Copa de la Liga Profesional': {
-      return rondasCopaDeLaLiga(unaFases, unosFixtures)
+    case 71:
+    case 34: {
+      // Eliminatorias: 34
+      // Brasil: 71
+      return rondasLigasClasicas({ fases, fixtures, standings })
     }
-    case 'Copa Argentina' : {
-      return rondasCopasNacionales(unaFases, unosFixtures)
+    case 130:
+    case 541: {
+      return rondasCopasNacionales({ fases, fixtures, standings })
     }
-    case 'Premier League': {
-      return rondasLigaArgentina(unaFases, unosFixtures)
+    case 11:
+    case 13: {
+      // Sudamericana: 11
+      // Libertadores: 13
+      return rondasCopaDeSudamerica({ fases, fixtures, standings })
     }
-    case 'FA Cup':{
-      return rondasCopasNacionales(unaFases, unosFixtures)
+    case 1:
+    case 9:
+    case 15:{
+      return rondasCopasDeSelecciones({ fases, fixtures, standings })
     }
-    case 'UEFA Champions League' : {
-      return rondasUEFAChampions(unaFases, unosFixtures)
-    }
-    case 'UEFA Europa League' : {
-      return rondasUEFA(unaFases, unosFixtures)
-    }
-    case 'UEFA Europa Conference League' : {
-      return rondasUEFA(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL Libertadores' : {
-      return rondasCONMEBOL(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL Sudamericana' : {
-      return rondasCONMEBOL(unaFases, unosFixtures)
-    }
-    case 'CONMEBOL Recopa' : {
-      return rondasFinalesUnicas(unaFases, unosFixtures)
-    }
-    case 'UEFA Super Cup' : {
-      return rondasFinalesUnicas(unaFases, unosFixtures)
-    }
-    case 'Copa America':{
-      return rondasCopaAmerica(unaFases, unosFixtures)
-    }
-    case 'Euro Championship':{
-      return rondasEUROCopa(unaFases, unosFixtures)
-    }
-    default:{
+    default: {
       const customError = {
-        referenceCustomError: 'Hubo un error filtrando las rondas del fixture :('
+        referenceCustomError:
+          'Hubo un error filtrando las rondas del fixture :('
       }
       throw customError
     }
   }
 }
 
-function rondasCopaDeLaLiga (...unFixture) {
-  const [fases, fixtures] = unFixture
-  const regex = /^1st Phase - (?:[1-9]|1[0-4])$/
-  const regexNew = /^Fecha (?:[1-9]|1[0-4])$/
-
-  const fixtureFormateado = fases.map((f, indice) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
-    })
-    return {
-      fixtureName: regex.test(f) ? `Fecha ${indice + 1}` : f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
-
-  const primeraFaseFormateada = fixtureFormateado.filter(f => regexNew.test(f.fixtureName))
-  const segundaFaseFormateada = fixtureFormateado.filter(f => !regexNew.test(f.fixtureName))
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase Regular',
-      phaseLength: primeraFaseFormateada.length,
-      phaseFixtures: primeraFaseFormateada
-    }
-  ]
-
-  const segundaFase = [
-    {
-      phaseName: 'Fase Final',
-      phaseLength: segundaFaseFormateada.length,
-      phaseFixtures: segundaFaseFormateada
-    }
-  ]
-  return [primeraFase, segundaFase]
+function rondasCopasNacionales ({ fases, fixtures }) {
+  const asd = fasesFilter({ fases, fixtures })
+  return { faseCopaArgentina: asd }
 }
 
-function rondasCopasNacionales (...unFixture) {
-  const [fases, fixtures] = unFixture
+function rondasLigasClasicas ({ fases, fixtures }) {
+  const faseRegular = fases.map((fase, indice, sameArray) => {
+    const fechaRound = fase.round
+    const diasRound = fase.dates
+    const matchs = fixtures.filter((fx) => {
+      const fixRound = fx.league.round
+      if (fixRound === fechaRound) {
+        return true
+      }
+      return false
+    }).map(mt => {
+      const hora = new Date(mt.fixture.date).getHours()
+      const minutos = new Date(mt.fixture.date).getMinutes() < 10 ? `0${new Date(mt.fixture.date).getMinutes()}` : new Date(mt.fixture.date).getMinutes()
+      mt.fixture.dateToString = `${hora} : ${minutos} (Hora de Argentina)`
 
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
+      return mt
     })
+    const dias = diasRound.map((dia) => {
+      const dateDia = new Date(dia)
+      const dd = dateDia.getDate()
+      const mm = dateDia.getMonth() + 1
+      const yyyy = dateDia.getFullYear()
 
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
+      const diaFinal = `${dd}-${mm}-${yyyy}`
+      return diaFinal
+    })
+    // const fixture = diasRound.map((d) => {
+    //   const dateDia = new Date(d)
+    //   const partidosFiltradoxDia = matchs.filter((mt) => {
+    //     const dateFixtureMatch = new Date(mt.fixture.date)
+    //     const diasIguales =
+    //         dateDia.getUTCDate() === dateFixtureMatch.getDate()
+    //     const mesesIguales =
+    //         dateDia.getUTCMonth() === dateFixtureMatch.getMonth()
+    //     const añosIguales =
+    //         dateDia.getUTCFullYear() === dateFixtureMatch.getFullYear()
+
+    //     if (diasIguales && mesesIguales && añosIguales) {
+    //       return true
+    //     }
+
+    //     if (mt.fixture.status.short === 'TBD') {
+    //       return true
+    //     }
+    //     return false
+    //   })
+    //   return { dia: d, partidos: partidosFiltradoxDia }
+    // }).filter((fx) => fx.partidos.length > 0)
+
+    const current = () => {
+      const diaDeHoy = new Date()
+      const diaUno = new Date(diasRound[0])
+      const diaDos = new Date(diasRound[diasRound.length - 1])
+      const __fases = sameArray
+
+      const estamosUltimaFechaRegular = () => {
+        return (indice + 1 > __fases.length - 1) && (estamosEntreLosDias() || estamosEntreFechas())
+      }
+
+      const estamosEntreLosDias = () => {
+        return (diaDeHoy.getTime() >= diaUno.getTime() - 86400000 && diaDeHoy <= diaDos.getTime()) && !hayPartidoPostergado()
+      }
+
+      const estamosEntreFechas = () => {
+        try {
+          const diasFechaSiguiente = __fases[indice + 1].dates
+          const diaUnoFechaSiguiente = new Date(diasFechaSiguiente[0])
+          return (diaDeHoy.getTime() >= diaDos.getTime() && diaDeHoy.getTime() <= diaUnoFechaSiguiente.getTime() - 86400000)
+        } catch (error) {
+          return false
+        }
+      }
+
+      const hayPartidoPostergado = () => {
+        try {
+          const diasFechaSiguiente = __fases[indice + 1].dates
+          const diaUnoFechaSiguiente = new Date(diasFechaSiguiente[0])
+          return diaDos.getTime() > diaUnoFechaSiguiente.getTime()
+        } catch (error) {
+          return false
+        }
+      }
+      if (estamosUltimaFechaRegular()) return true
+      if (estamosEntreLosDias()) return true
+      if (estamosEntreFechas()) return true
+
+      return false
     }
+    return { fecha: fase.round, current: current(), dias, fixture: matchs }
   })
 
-  const unicaFase = [
-    {
-      phaseName: 'Fase Unica/Eliminacion Directa',
-      phaseLength: fixtureFormateado.length,
-      phaseFixtures: fixtureFormateado
-    }
-  ]
+  const chequeandoFaseRegular = () => faseRegular.every((e) => e.current === false)
 
-  return [unicaFase]
+  if (chequeandoFaseRegular()) {
+    faseRegular[faseRegular.length - 1].current = true
+  }
+
+  return { faseRegular }
 }
 
-function rondasLigaArgentina (...unFixture) {
-  const [fases, fixtures] = unFixture
+function rondasLigaArgentina ({ fases, fixtures }) {
+  const season = fixtures[0].league.season
 
-  const fixtureFormateado = fases.map((f, indice) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
-    })
+  if (season === 2025) {
+    // Apertura y Clausura 2025
+    const asd = fases.map((fase, indice, sameArray) => {
+      const fechaRound = fase.round
+      const diasRound = fase.dates
+      const matchs = fixtures.filter((fx) => {
+        const fixRound = fx.league.round
+        if (fixRound === fechaRound) {
+          return true
+        }
+        return false
+      }).map(mt => {
+        const hora = new Date(mt.fixture.date).getHours()
+        const minutos = new Date(mt.fixture.date).getMinutes() < 10 ? `0${new Date(mt.fixture.date).getMinutes()}` : new Date(mt.fixture.date).getMinutes()
+        mt.fixture.dateToString = `${hora} : ${minutos}`
 
-    return {
-      fixtureName: `Fecha ${indice + 1}`,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
-
-  const faseRegular = [
-    {
-      phaseName: 'Fase Regular',
-      phaseLength: fixtureFormateado.length,
-      phaseFixtures: fixtureFormateado
-    }
-  ]
-
-  return [faseRegular]
-}
-
-function rondasUEFAChampions (...unFixture) {
-  const [fases, fixtures] = unFixture
-  const regexPrevPhase =
-    /\b(1st Qualifying Round|2nd Qualifying Round|3rd Qualifying Round|Play-offs)\b/
-  const regexGroupPhase = /Group/
-  const regexFinalPhase =
-    /\b(Knockout Round Play-offs|Round of 16|Quarter-finals|Semi-finals|Final)\b/
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures
-      .filter((fx) => fx.league.round === f)
-      .map((fx) => {
-        const {
-          fixture: { id, date, venue, status },
-          teams,
-          goals,
-          score
-        } = fx
-        return { id, date, venue, status, teams, goals, score }
+        return mt
       })
 
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
+      const dias = diasRound.map((dia) => {
+        const dateDia = new Date(dia)
+        const dd = dateDia.getDate()
+        const mm = dateDia.getMonth() + 1
+        const yyyy = dateDia.getFullYear()
 
-  const regexFirstDate = /Group [A-H] - 1/
-  const regexSecondDate = /Group [A-H] - 2/
-  const regexThirdDate = /Group [A-H] - 3/
-  const regexFourDate = /Group [A-H] - 4/
-  const regexFiveDate = /Group [A-H] - 5/
-  const regexSixDate = /Group [A-H] - 6/
-
-  const primeraFaseFormateada = fixtureFormateado.filter((f) =>
-    regexPrevPhase.test(f.fixtureName)
-  )
-  const segundaFaseFormateada = fixtureFormateado
-    .filter((f) => regexGroupPhase.test(f.fixtureName))
-
-  const prueba = [
-    {
-      fixtureName: 'Group Stage 1',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 2',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 3',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 4',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 5',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 6',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    }
-  ]
-
-  /* Fue la mejor forma de juntar los fixtures de la champions (y euro) como los de los demas
-      ¿Porque no pueden ser como lalibertadoreeees? (:
-  */
-  segundaFaseFormateada.filter(f => {
-    return regexFirstDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[0].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  segundaFaseFormateada.filter(f => {
-    return regexSecondDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[1].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  segundaFaseFormateada.filter(f => {
-    return regexThirdDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[2].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  segundaFaseFormateada.filter(f => {
-    return regexFourDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[3].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  segundaFaseFormateada.filter(f => {
-    return regexFiveDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[4].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  segundaFaseFormateada.filter(f => {
-    return regexSixDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[5].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-
-  prueba[0].fixtureLength = prueba[0].fixtureMatchs.length
-  prueba[1].fixtureLength = prueba[1].fixtureMatchs.length
-  prueba[2].fixtureLength = prueba[2].fixtureMatchs.length
-  prueba[3].fixtureLength = prueba[3].fixtureMatchs.length
-  prueba[4].fixtureLength = prueba[4].fixtureMatchs.length
-  prueba[5].fixtureLength = prueba[5].fixtureMatchs.length
-  // Podemos hacer un map aca y filtrar los regex de la fase de grupo, y guardar los en group stage 1 - 6
-
-  const terceraFaseFormateada = fixtureFormateado.filter((f) =>
-    regexFinalPhase.test(f.fixtureName)
-  )
-
-  // Ajustar la fase de grupos para tener un fixtureLength de 16 y un fixtureName formateado
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase Previa/Eliminacion',
-      phaseLength: primeraFaseFormateada.length,
-      phaseFixtures: primeraFaseFormateada
-    }
-  ]
-
-  const segundaFase = [
-    {
-      phaseName: 'Fase de Grupos',
-      phaseLength: prueba.length,
-      phaseFixtures: prueba
-    }
-  ]
-
-  const terceraFase = [
-    {
-      phaseName: 'Fase Final',
-      phaseLength: terceraFaseFormateada.length,
-      phaseFixtures: terceraFaseFormateada
-    }
-  ]
-  return [primeraFase, segundaFase, terceraFase]
-}
-
-function rondasUEFA (...unFixture) {
-  const [fases, fixtures] = unFixture
-  const regexPrevPhase = /\b(1st Qualifying Round|2nd Qualifying Round|3rd Qualifying Round|Play-offs)\b/
-  const regexGroupPhase = /Group Stage - /
-  const regexFinalPhase = /\b(Knockout Round Play-offs|Round of 16|Quarter-finals|Semi-finals|Final)\b/
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
-    })
-
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
-
-  const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
-  const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
-  const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase Previa/Eliminacion',
-      phaseLength: primeraFaseFormateada.length,
-      phaseFixtures: primeraFaseFormateada
-    }
-  ]
-
-  const segundaFase = [
-    {
-      phaseName: 'Fase de Grupos',
-      phaseLength: segundaFaseFormateada.length,
-      phaseFixtures: segundaFaseFormateada
-    }
-  ]
-
-  const terceraFase = [
-    {
-      phaseName: 'Fase Final',
-      phaseLength: terceraFaseFormateada.length,
-      phaseFixtures: terceraFaseFormateada
-    }
-  ]
-  return [primeraFase, segundaFase, terceraFase]
-}
-
-function rondasEUROCopa (...unFixture) {
-  const [fases, fixtures] = unFixture
-
-  const regexGroupPhase = /Group/
-  const regexFinalPhase = /Round of 16|Quarter-finals|Semi-finals|Final/
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures
-      .filter((fx) => fx.league.round === f)
-      .map((fx) => {
-        const {
-          fixture: { id, date, venue, status },
-          teams,
-          goals,
-          score
-        } = fx
-        return { id, date, venue, status, teams, goals, score }
+        const diaFinal = `${dd}-${mm}-${yyyy}`
+        return diaFinal
       })
 
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
+      // const fixture = diasRound.map((d, idx) => {
+      //   const dateDia = new Date(d)
+      //   const partidosFiltradoxDia = matchs.filter((mt) => {
+      //     const dateFixtureMatch = new Date(mt.fixture.date)
+      //     const diasIguales =
+      //         dateDia.getUTCDate() === dateFixtureMatch.getDate()
+      //     const mesesIguales =
+      //         dateDia.getUTCMonth() === dateFixtureMatch.getMonth()
+      //     const añosIguales =
+      //         dateDia.getUTCFullYear() === dateFixtureMatch.getFullYear()
+
+      //     if (diasIguales && mesesIguales && añosIguales) {
+      //       return true
+      //     }
+
+      //     if (mt.fixture.status.short === 'TBD') {
+      //       return true
+      //     }
+      //     return false
+      //   })
+      //   return { dia: dias[idx], partidos: partidosFiltradoxDia }
+      // }).filter((fx) => fx.partidos.length > 0)
+
+      const current = () => {
+        const diaDeHoy = new Date()
+        const diaUno = new Date(diasRound[0])
+        const diaDos = new Date(diasRound[diasRound.length - 1])
+
+        const __fases = sameArray
+
+        const estamosEntreLosDias = () => {
+          return (diaDeHoy.getTime() >= diaUno.getTime() - 86400000 && diaDeHoy <= diaDos.getTime()) && !hayPartidoPostergado()
+        }
+
+        const estamosEntreFechas = () => {
+          try {
+            const diasFechaSiguiente = __fases[indice + 1].dates
+            const diaUnoFechaSiguiente = new Date(diasFechaSiguiente[0])
+            return (diaDeHoy.getTime() >= diaDos.getTime() && diaDeHoy.getTime() <= diaUnoFechaSiguiente.getTime() - 86400000)
+          } catch (error) {
+            return false
+          }
+        }
+
+        const hayPartidoPostergado = () => {
+          try {
+            const diasFechaSiguiente = __fases[indice + 1].dates
+            const diaUnoFechaSiguiente = new Date(diasFechaSiguiente[0])
+            return diaDos.getTime() > diaUnoFechaSiguiente.getTime()
+          } catch (error) {
+            const diasFechaSiguiente = __fases[indice].dates
+            const diaUnoFechaSiguiente = new Date(diasFechaSiguiente[0])
+            return diaDos.getTime() > diaUnoFechaSiguiente.getTime()
+          }
+        }
+        if (estamosEntreLosDias()) return true
+        if (estamosEntreFechas()) return true
+
+        return false
+      }
+      return { fecha: fase.round, current: current(), dias, fixture: matchs }
+    })
+    const regexFaseRegular = /^(1st|2nd) Phase - (?:[1-9]|1[0-6])$/i
+    const regexFaseFinal = /^(1st|2nd) Phase - (?:8th Finals|Quarter[- ]?finals|Semi[- ]?finals|Final)$/i
+    const faseRegular = asd.filter((fases) => regexFaseRegular.test(fases.fecha))
+    const faseFinal = asd.filter((fases) => regexFaseFinal.test(fases.fecha))
+
+    const chequeandoFaseRegular = () => faseRegular.every((e) => e.current === false)
+
+    if (chequeandoFaseRegular()) {
+      faseRegular[faseRegular.length - 1].current = true
     }
+
+    return { faseRegular, faseFinal }
+  }
+}
+function rondasCopaDeSudamerica ({ fases, fixtures, standings }) {
+  // Primero leemos la tabla
+  const asd = fasesFilter({ fases, fixtures, standings })
+
+  const regexFasePreliminar = /^\d+(st|nd|rd|th) Round$/i
+  const regexFaseGrupo = /^Group Stage - [1-6]$/i
+  const regexFaseFinal = /^(Round\s*of\s*16|Quarter[- ]?finals|Semi[- ]?finals|Final)$/i
+  const fasePremilinar = asd.filter((fases) => regexFasePreliminar.test(fases.fecha))
+  const faseGrupos = asd.filter((fases) => regexFaseGrupo.test(fases.fecha))
+  const faseFinal = asd.filter((fases) => regexFaseFinal.test(fases.fecha))
+
+  const grupoName = ['Grupo A', 'Grupo B', 'Grupo C', 'Grupo D', 'Grupo E', 'Grupo F', 'Grupo G', 'Grupo H']
+  const nuevaFaseGrupos = standings.map((standing, idx) => {
+  // COMENZAMOS EL RECORRIDO EN EL PRIMER INDICE DE FASE DE GRUPOS:
+  // cada tabla : standings[0]
+  // cada equipo: standings[0][0]
+    const equipoA = standing[0].team
+    const equipoB = standing[1].team
+    const equipoC = standing[2].team
+    const equipoD = standing[3].team
+    //   const fixtureFiltrado = faseGrupos[0].fixture.filter(({ teams: { home, away } }) => (home.id === equipoA.id || home.id === equipoB.id || away.id === equipoA.id || away.id === equipoB.id))
+    const grupo = faseGrupos.map(unaFecha => {
+      const fixtureFiltrado = unaFecha.fixture.filter(fixture => {
+        const { teams: { home, away } } = fixture
+
+        if (home.id === equipoA.id || away.id === equipoA.id || home.id === equipoC.id || away.id === equipoC.id) return true
+        if (home.id === equipoB.id || away.id === equipoB.id || home.id === equipoD.id || away.id === equipoD.id) return true
+
+        return false
+      })
+      return { fecha: `${unaFecha.fecha} - ${grupoName[idx]}`, dias: unaFecha.dias, fixture: fixtureFiltrado }
+    })
+    return grupo.reverse()
   })
+  console.log('Listo')
 
-  const regexFirstDate = /Group [A-H] - 1/
-  const regexSecondDate = /Group [A-H] - 2/
-  const regexThirdDate = /Group [A-H] - 3/
-
-  const primeraFaseFormateada = fixtureFormateado.filter((f) => regexGroupPhase.test(f.fixtureName))
-
-  const segundaFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
-
-  /* Fue la mejor forma de juntar los fixtures de la champions (y euro) como los de los demas
-      ¿Porque no pueden ser como lalibertadoreeees? (:
-  */
-  const prueba = [
-    {
-      fixtureName: 'Group Stage 1',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 2',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    },
-    {
-      fixtureName: 'Group Stage 3',
-      fixtureLength: 0,
-      fixtureMatchs: []
-    }
-  ]
-  primeraFaseFormateada.filter(f => {
-    return regexFirstDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[0].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  primeraFaseFormateada.filter(f => {
-    return regexSecondDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[1].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-  primeraFaseFormateada.filter(f => {
-    return regexThirdDate.test(f.fixtureName)
-  }).forEach(f => {
-    const { fixtureMatchs: [matchUno, matchDos] } = f
-    prueba[2].fixtureMatchs.push(matchUno, matchDos)
-    return f
-  })
-
-  prueba[0].fixtureLength = prueba[0].fixtureMatchs.length
-  prueba[1].fixtureLength = prueba[1].fixtureMatchs.length
-  prueba[2].fixtureLength = prueba[2].fixtureMatchs.length
-
-  // Podemos hacer un map aca y filtrar los regex de la fase de grupo, y guardar los en group stage 1 - 6
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase de Grupos',
-      phaseLength: prueba.length,
-      phaseFixtures: prueba
-    }
-  ]
-
-  const segundaFase = [
-    {
-      phaseName: 'Fase Final',
-      phaseLength: segundaFaseFormateada.length,
-      phaseFixtures: segundaFaseFormateada
-    }
-  ]
-
-  return [primeraFase, segundaFase]
+  return { fasePremilinar, faseGrupos: nuevaFaseGrupos, faseFinal }
 }
 
-function rondasCopaAmerica (...unFixture) {
-  const [fases, fixtures] = unFixture
-  const regexGroupPhase = /Group Stage - [1-3]/
+function rondasCopasDeSelecciones ({ fases, fixtures, standings }) {
+  // Primero leemos la tabla
+  const asd = fasesFilter({ fases, fixtures, standings })
 
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
+  const regexFaseGrupo = /^Group Stage - [1-3]$/i
+  const regexFaseFinal = /^(Round\s*of\s*16|Quarter[- ]?finals|Semi[- ]?finals|Final)$/i
+  const faseGrupos = asd.filter((fases) => regexFaseGrupo.test(fases.fecha))
+  const faseFinal = asd.filter((fases) => regexFaseFinal.test(fases.fecha))
+
+  const grupoName = ['Grupo A', 'Grupo B', 'Grupo C', 'Grupo D', 'Grupo E', 'Grupo F', 'Grupo G', 'Grupo H']
+  const nuevaFaseGrupos = standings.map((standing, idx) => {
+  // COMENZAMOS EL RECORRIDO EN EL PRIMER INDICE DE FASE DE GRUPOS:
+  // cada tabla : standings[0]
+  // cada equipo: standings[0][0]
+    const equipoA = standing[0].team
+    const equipoB = standing[1].team
+    const equipoC = standing[2].team
+    const equipoD = standing[3].team
+    //   const fixtureFiltrado = faseGrupos[0].fixture.filter(({ teams: { home, away } }) => (home.id === equipoA.id || home.id === equipoB.id || away.id === equipoA.id || away.id === equipoB.id))
+    const grupo = faseGrupos.map(unaFecha => {
+      const fixtureFiltrado = unaFecha.fixture.filter(fixture => {
+        const { teams: { home, away } } = fixture
+
+        if (home.id === equipoA.id || away.id === equipoA.id || home.id === equipoC.id || away.id === equipoC.id) return true
+        if (home.id === equipoB.id || away.id === equipoB.id || home.id === equipoD.id || away.id === equipoD.id) return true
+
+        return false
+      })
+
+      return { fecha: `${unaFecha.fecha} - ${grupoName[idx]}`, dias: unaFecha.dias, fixture: fixtureFiltrado }
     })
-
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
+    return grupo.reverse()
   })
+  console.log('Listo')
 
-  const primeraFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase de Grupos',
-      phasesLength: primeraFaseFormateada.length,
-      phaseFixtures: primeraFaseFormateada
-    }
-  ]
-
-  return [primeraFase]
-}
-
-function rondasCONMEBOL (...unFixture) {
-  const [fases, fixtures] = unFixture
-  const regexPrevPhase = /\b(1st Round|2nd Round|3rd Round)\b/
-  const regexGroupPhase = /Group Stage - [1-6]/
-  const regexFinalPhase = /\b(Round of 32|Round of 16|Quarter-finals|Semi-finals|Final)\b/
-
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
-    })
-
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
-
-  const primeraFaseFormateada = fixtureFormateado.filter(f => regexPrevPhase.test(f.fixtureName))
-  const segundaFaseFormateada = fixtureFormateado.filter(f => regexGroupPhase.test(f.fixtureName))
-  const terceraFaseFormateada = fixtureFormateado.filter(f => regexFinalPhase.test(f.fixtureName))
-
-  const primeraFase = [
-    {
-      phaseName: 'Fase Previa/Eliminacion',
-      phasesLength: primeraFaseFormateada.length,
-      phaseFixtures: primeraFaseFormateada
-    }
-  ]
-
-  const segundaFase = [
-    {
-      phaseName: 'Fase de Grupos',
-      phasesLength: segundaFaseFormateada.length,
-      phaseFixtures: segundaFaseFormateada
-    }
-  ]
-
-  const terceraFase = [
-    {
-      phaseName: 'Fase Final',
-      phaseLength: terceraFaseFormateada.length,
-      phaseFixtures: terceraFaseFormateada
-    }
-  ]
-  return [primeraFase, segundaFase, terceraFase]
-}
-
-function rondasFinalesUnicas (...unFixture) {
-  const [fases, fixtures] = unFixture
-
-  const fixtureFormateado = fases.map((f) => {
-    const fixtureFiltrado = fixtures.filter(fx => fx.league.round === f).map(fx => {
-      const { fixture: { id, date, venue, status }, teams, goals, score } = fx
-      return { id, date, venue, status, teams, goals, score }
-    })
-
-    return {
-      fixtureName: f,
-      fixtureLength: fixtureFiltrado.length,
-      fixtureMatchs: fixtureFiltrado
-    }
-  })
-
-  const unicaFase = [
-    {
-      phaseName: 'Final Unica',
-      phaseLength: fixtureFormateado.length,
-      phaseFixtures: fixtureFormateado
-    }
-  ]
-
-  return [unicaFase]
+  return { faseGrupos: nuevaFaseGrupos, faseFinal }
 }
 
 module.exports = rondasFilter

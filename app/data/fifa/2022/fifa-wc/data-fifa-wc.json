@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 1,
+    "name": "Copa del Mundo - Qatar 2022",
+    "type": "Cup",
+    "codeLeague": "fifa-wc",
+    "country": "Internacional",
+    "code": "fifa",
+    "logo": "https://media.api-sports.io/football/leagues/1.png",
+    "flag": null,
+    "season": 2022,
+    "start": "2025-01-23",
+    "end": "2025-08-30",
+    "current": true
+  }
+}

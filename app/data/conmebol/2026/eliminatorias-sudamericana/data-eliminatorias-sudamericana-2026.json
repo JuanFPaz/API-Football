@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 34,
+    "type": "Cup",
+    "name": "Eliminatorias Sudamericana",
+    "codeLeague": "eliminatorias-sudamericana",
+    "code": "CONMEBOL",
+    "country": "Sudamerica",
+    "logo": "https://media.api-sports.io/football/leagues/34.png",
+    "flag": null,
+    "season": 2026,
+    "start": "2023-09-07",
+    "end": "2025-09-14",
+    "current": true
+  }
+}

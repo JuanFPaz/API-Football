@@ -1,0 +1,218 @@
+{
+  "response": [
+    {
+      "country": {
+        "name": "Argentina",
+        "code": "ARG",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "items": [
+          {
+            "id": 1,
+            "name": "Torneo Apertura",
+            "type": "League",
+            "dataLeague": {
+              "league": {
+                "id": 128,
+                "name": "Liga Profesional Argentina - Apertura",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/128.png"
+              },
+              "season": {
+                "year": 2025,
+                "start": "2025-01-23",
+                "end": "2025-06-01",
+                "current": false,
+                "link": "http://localhost:3000/arg/2025/lpf-apertura"
+              }
+            }
+          },
+          {
+            "id": 2,
+            "name": "Torneo Clausura",
+            "type": "League",
+            "dataLeague": {
+              "league": {
+                "id": 128,
+                "name": "Liga Profesional Argentina - Clausura",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/128.png",
+              },
+              "season": {
+                "year": 2025,
+                "start": "2025-07-13",
+                "end": "2025-12-14",
+                "current": true,
+                "link": "http://localhost:3000/arg/2025/lpf-clausura"
+              }
+            }
+          },
+          {
+            "id": 3,
+            "name": "Trofeo de Campeones",
+            "type": "Cup",
+            "link": "http://localhost:3000/arg/2025/trofeo-de-campeones"
+          },
+          {
+            "id": 4,
+            "name": "Copa Argentina",
+            "type": "Cup",
+            "link": "http://localhost:3000/arg/2025/copa-argentina"
+          },
+          {
+            "id": 5,
+            "name": "Supercopa Argentina",
+            "type": "Cup",
+            "link": "http://localhost:3000/arg/2025/supercopa-argentina"
+          },
+          {
+            "id": 6,
+            "name": "Supercopa Internacional",
+            "type": "Cup",
+            "link": "http://localhost:3000/arg/2025/supercopa-internacional"
+          },
+          {
+            "id": 7,
+            "name": "Palmarés (Ligas y Copas Nac.)",
+            "type": "Stadistics",
+            "link": "http://localhost:3000/arg/palmares"
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "Internacional",
+        "code": "FIFA",
+        "flag": "http://localhost:5173/mundo.webp",
+        "items": [
+          {
+            "id": 8,
+            "name": "Copa del Mundo",
+            "type": "Cup",
+            "link": "http://localhost:3000/fifa/2022/world-cup"
+          },
+          {
+            "id": 9,
+            "name": "Mundial de Clubes",
+            "type": "Cup",
+            "link": "http://localhost:3000/fifa/2022/fifa-club-world-cup"
+          },
+          {
+            "id": 10,
+            "name": "Palmarés",
+            "type": "Stadistics",
+            "link": "http://localhost:3000/fifa/palmares"
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "Sudamerica",
+        "code": "CONMEBOL",
+        "flag": "http://localhost:5173/sud.webp",
+        "items": [
+          {
+            "id": 11,
+            "name": "Eliminatorias Sudamericana",
+            "type": "League",
+            "link": null
+          },
+          {
+            "id": 12,
+            "name": "Copa America",
+            "type": "Cup",
+            "link": "http://localhost:3000/conmebol/2024/copa-america"
+          },
+          {
+            "id": 13,
+            "name": "Copa Libertadores",
+            "type": "Cup",
+            "link": "http://localhost:3000/conmebol/2025/conmebol-libertadores"
+          },
+          {
+            "id": 14,
+            "name": "Copa Sudamericana",
+            "type": "Cup",
+            "link": "http://localhost:3000/conmebol/2025/conmebol-sudamericana"
+          },
+          {
+            "id": 15,
+            "name": "Recopa Sudamericana",
+            "type": "Cup",
+            "link": "http://localhost:3000/conmebol/2025/conmebol-recopa"
+          },
+          {
+            "id": 16,
+            "name": "Palmarés",
+            "type": "Stadistics",
+            "link": "http://localhost:3000/conmebol/palmares"
+          }
+        ]
+      }
+    },
+    {
+      "country": {
+        "name": "Europa",
+        "code": "UEFA",
+        "flag": "http://localhost:5173/euro.webp",
+        "items": [
+          {
+            "id": 17,
+            "name": "Eliminatorias Europeas (Mundial)",
+            "type": "League",
+            "link": null
+          },
+          {
+            "id": 18,
+            "name": "Eliminatorias Eurocopa",
+            "type": "League",
+            "link": null
+          },
+          {
+            "id": 19,
+            "name": "Natios League",
+            "type": "League",
+            "link": null
+          },
+          {
+            "id": 20,
+            "name": "Eurocopa",
+            "type": "Cup",
+            "link": "http://localhost:3000/uefa/2024/euro-championship"
+          },
+          {
+            "id": 21,
+            "name": "Champions League",
+            "type": "Cup",
+            "link": "http://localhost:3000/uefa/2024/uefa-champions-league"
+          },
+          {
+            "id": 22,
+            "name": "Europa League",
+            "type": "Cup",
+            "link": "http://localhost:3000/uefa/2024/uefa-europa-league"
+          },
+          {
+            "id": 23,
+            "name": "Conference League",
+            "type": "Cup",
+            "link": "http://localhost:3000/uefa/2024/uefa-europa-conference-league"
+          },
+          {
+            "id": 24,
+            "name": "Supercopa UEFA",
+            "type": "Cup",
+            "link": "http://localhost:3000/uefa/2025/uefa-super-cup"
+          },
+          {
+            "id": 25,
+            "name": "Palmarés",
+            "type": "Stadistics",
+            "link": "http://localhost:3000/uefa/palmares"
+          }
+        ]
+      }
+    }
+  ]
+}

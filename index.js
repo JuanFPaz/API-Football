@@ -2,9 +2,9 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const { validateCreateLinks, validateCreateFxSt } = require('./app/middleware/validateCreate')
-const { validateReadLeague, validateReadLinks } = require('./app/middleware/validateRead')
-const { createLinks, createFixtures, createStandings } = require('./app/util/createJson')
+const { validateCreatePais, validateCreateFixture, validateCreateStanding, validateCreateDataLeague } = require('./app/middleware/validateCreate')
+const { validateReadLeague } = require('./app/middleware/validateRead')
+const { createPais, createDataLeague, createFixtures, createStandings } = require('./app/util/createJson')
 const { getDataLeague, getLinks } = require('./app/util/readJson')
 const bodyParse = require('./app/helpers/bodyParser')
 const pc = require('picocolors')
@@ -26,21 +26,24 @@ app.use((req, res, next) => {
 /** Cuando creo recursos  */
 app.post('/:resource', bodyParse)
 
-app.post('/links', validateCreateLinks)
+/** Nota, editar funciones a validateCreatePaises y createPaises */
+app.post('/paises', validateCreatePais)
 
-app.post('/links', createLinks)
+app.post('/paises', createPais)
+/** 7/7/2025 */
+app.post('/data-league', validateCreateDataLeague)
+app.post('/data-league', createDataLeague)
 
-app.post('/fixtures', validateCreateFxSt)
+/** */
+app.post('/fixtures', validateCreateFixture)
 
 app.post('/fixtures', createFixtures)
 
-app.post('/standings', validateCreateFxSt)
+app.post('/standings', validateCreateStanding)
 
 app.post('/standings', createStandings)
 
 //* * Para leer recursos */
-
-app.get('/', validateReadLinks)
 
 app.get('/', getLinks)
 
@@ -49,7 +52,6 @@ app.get('/:country/:season/:league', validateReadLeague)
 app.get('/:country/:season/:league', getDataLeague)
 
 /** Aca llega cuando ninguna request coincide con las URL's Programadas */
-
 app.use((req, res) => {
   const data = {}
   data.url = req.url

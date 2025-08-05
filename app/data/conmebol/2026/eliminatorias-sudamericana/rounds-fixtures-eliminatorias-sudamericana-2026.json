@@ -1,0 +1,39 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "34", "season": "2026", "dates": "true" },
+  "errors": [],
+  "results": 18,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "round": "Group Stage - 1",
+      "dates": ["2023-09-07", "2023-09-08", "2023-09-09"]
+    },
+    { "round": "Group Stage - 2", "dates": ["2023-09-12", "2023-09-13"] },
+    { "round": "Group Stage - 3", "dates": ["2023-10-12", "2023-10-13"] },
+    { "round": "Group Stage - 4", "dates": ["2023-10-17", "2023-10-18"] },
+    { "round": "Group Stage - 5", "dates": ["2023-11-16", "2023-11-17"] },
+    { "round": "Group Stage - 6", "dates": ["2023-11-21", "2023-11-22"] },
+    {
+      "round": "Group Stage - 7",
+      "dates": ["2024-09-05", "2024-09-06", "2024-09-07"]
+    },
+    { "round": "Group Stage - 8", "dates": ["2024-09-10", "2024-09-11"] },
+    {
+      "round": "Group Stage - 9",
+      "dates": ["2024-10-10", "2024-10-11", "2024-10-12"]
+    },
+    { "round": "Group Stage - 10", "dates": ["2024-10-15", "2024-10-16"] },
+    {
+      "round": "Group Stage - 11",
+      "dates": ["2024-11-14", "2024-11-15", "2024-11-16"]
+    },
+    { "round": "Group Stage - 12", "dates": ["2024-11-19", "2024-11-20"] },
+    { "round": "Group Stage - 13", "dates": ["2025-03-20", "2025-03-21"] },
+    { "round": "Group Stage - 14", "dates": ["2025-03-25", "2025-03-26"] },
+    { "round": "Group Stage - 15", "dates": ["2025-06-05", "2025-06-06"] },
+    { "round": "Group Stage - 16", "dates": ["2025-06-10", "2025-06-11"] },
+    { "round": "Group Stage - 17", "dates": ["2025-09-09"] },
+    { "round": "Group Stage - 18", "dates": ["2025-09-14"] }
+  ]
+}

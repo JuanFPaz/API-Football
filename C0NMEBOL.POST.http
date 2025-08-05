@@ -1,0 +1,136 @@
+POST http://localhost:3000/paises
+Content-Type: application/json
+
+{
+    "id": [9,34,11,13,541],
+    "country":["Sudamerica"],
+    "code":["CONMEBOL"]
+}
+###
+POST http://localhost:3000/data-league
+Content-Type: application/json
+
+{
+    "id":[13],
+    "season": [2025],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Sudamericana"],
+    "leagueCode": ["copa-sudamericana"]
+}
+###
+###
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[13],
+    "season": [2024],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Libertadores"],
+    "leagueCode": ["copa-libertadores"],
+    "roundsUpdate": [true]
+}
+###
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[11],
+    "season": [2025],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Sudamericana"],
+    "leagueCode": ["copa-sudamericana"],
+    "roundsUpdate": [true]
+}
+
+###
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[541],
+    "season": [2025],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Recopa"],
+    "leagueCode": ["recopa-sudamericana"],
+    "roundsUpdate": [true]
+}
+
+###
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[9],
+    "season": [2024],
+    "country": ["Sudamerica"],
+    "code": ["CONMEBOL"],
+    "leagueName": ["Copa America"],
+    "leagueCode": ["copa-america"],
+    "roundsUpdate": [true]
+}
+###
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[34],
+    "season": [2026],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["Eliminatorias Sudamericana"],
+    "leagueCode": ["eliminatorias-sudamericana"],
+    "roundsUpdate": [true]
+}
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[34],
+    "season": [2026],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["Eliminatorias Sudamericana"],
+    "leagueCode": ["eliminatorias-sudamericana"]
+}
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[9],
+    "season": [2024],
+    "country": ["Sudamerica"],
+    "code": ["CONMEBOL"],
+    "leagueName": ["Copa America"],
+    "leagueCode": ["copa-america"]
+}
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[13],
+    "season": [2024],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Libertadores"],
+    "leagueCode": ["copa-libertadores"]
+}
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[13],
+    "season": [2025],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Sudamericana"],
+    "leagueCode": ["copa-sudamericana"]
+}

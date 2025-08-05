@@ -1,38 +1,25 @@
-const liga = require('../../helpers/validateReq')
+const { access } = require('node:fs/promises')
+const { resolve, join } = require('node:path')
 
-async function validateURL ({ country, league, season }) {
-  let getCountry
-  let getLeague
-  const _league = league.toLowerCase().replace(/-/g, '_')
+const DATA_PATH = resolve(__dirname, '../../data')
+
+async function validarReqParams ({ country, season, league }) {
+  const rutaUno = join(DATA_PATH, country)
+  const rutaDos = join(rutaUno, season)
+  const rutaTres = join(rutaDos, league)
 
   try {
-    getCountry = liga[country]
-    if (!getCountry) {
-      throw Error(`Ocurrio un error leyendo los params: El valor /${country} no es un segmento valido.`)
-    }
+    await access(rutaUno)
+    await access(rutaDos)
+    await access(rutaTres)
   } catch (err) {
     const customError = {
-      middReference: 'validateURL',
-      process: 'validateRead',
+      reference: 'Ocurrio un error leyendo los request params. Se ve que un segmento no es valido.',
+      process: 'validarReqParams',
       message: err.message
     }
     throw customError
   }
-  try {
-    getLeague = getCountry[_league]
-    if (!getLeague) {
-      throw Error(`Ocurrio un error leyendo los params: El valor /${league} no es un segmento valido.`)
-    }
-  } catch (err) {
-    const customError = {
-      middReference: 'validateURL',
-      process: 'validateRead',
-      message: err.message
-    }
-    throw customError
-  }
-
-  return { country: getCountry.country, season, league, standing: getLeague.standing, fixture: getLeague.fixture }
 }
 
-module.exports = validateURL
+module.exports = validarReqParams

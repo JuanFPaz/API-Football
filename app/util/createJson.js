@@ -1,9 +1,10 @@
 const { processCreateLinks } = require('./processCreate/processCreateLinks')
 const { processCreateFixtures } = require('./processCreate/processCreateFixtures')
 const { processCreateStandings } = require('./processCreate/processCreateStandings')
+const { proccesCreateDataLeague } = require('./processCreate/processCreateDataLeague')
 const pc = require('picocolors')
 
-async function createLinks (req, res) {
+async function createPais (req, res) {
   const data = {}
   try {
     data.post = req.url
@@ -52,8 +53,23 @@ async function createStandings (req, res) {
   }
 }
 
+async function createDataLeague (req, res) {
+  const data = {}
+  try {
+    data.post = req.url
+    data.timestamp = Date.now()
+    const createFile = await proccesCreateDataLeague({ ...req.body })
+    data.response = createFile.message
+    console.log(`${pc.bgCyan('Status:')} ${pc.green(201)}`)
+    console.log(`${pc.bgCyan('Message:')} ${pc.green('Respuesta formateada con exito.')}`)
+    res.status(201).json(data)
+  } catch (err) {
+    return { error: err }
+  }
+}
 module.exports = {
-  createLinks,
+  createPais,
+  createDataLeague,
   createFixtures,
   createStandings
 }

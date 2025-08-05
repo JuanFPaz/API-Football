@@ -1,34 +1,133 @@
-POST http://localhost:3000/links
+###
+POST http://localhost:3000/data-league
 Content-Type: application/json
 
 {
-    "id":[128,130,906,1032],
-    "country":["argentina"]
+    "id":[9],
+    "season": [2024],
+    "country": ["Sudamerica"],
+    "code": ["CONMEBOL"],
+    "leagueName": ["Copa America"],
+    "leagueCode": ["copa-america"]
 }
 ###
-POST http://localhost:3000/links
+POST http://localhost:3000/prueba
+Content-Type: application/json
+
+{
+    "country":["Argentina"],
+    "code":["arg"]
+}
+###
+POST http://localhost:3000/paises
 Content-Type: application/json
 
 {
     "id":[1,15],
-    "country":["fifa"]
+    "country":["Internacional"],
+    "code":["fifa"]
 }
 
-### copa america & euro, con los nuevos validates, podemos 
+###
 POST http://localhost:3000/fixtures
 Content-Type: application/json
 
 {
-    "league": [2],
-    "season": [2024],
-    "country": ["conmebol"]
+    "id":[34],
+    "season": [2026],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["Eliminatorias Sudamericana"],
+    "leagueCode": ["eliminatorias-sudamericana"],
+    "roundsUpdate": [true]
 }
 ###
 POST http://localhost:3000/standings
 Content-Type: application/json
 
 {
-    "league": [3],
-    "season": [2024],
-    "country": ["uefa"]
+    "id":[13],
+    "season": [2025],
+    "code": ["CONMEBOL"],
+    "country": ["Sudamerica"],
+    "leagueName": ["CONMEBOL Libertadores"],
+    "leagueCode": ["copa-libertadores"]
+}
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[128],
+    "season": [2025],
+    "code": ["arg"],
+    "country": ["Argentina"],
+    "leagueName": ["Liga Profesional Argentina - Clausura"],
+    "leagueCode": ["lpf-clausura"]
+}
+###
+
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[128],
+    "season": [2025],
+    "code": ["arg"],
+    "country": ["Argentina"],
+    "leagueName": ["Liga Profesional Argentina - Clausura"],
+    "leagueCode": ["lpf-clausura"],
+    "roundsUpdate": [false],
+    "date":["2025-07-11","2025-12-14"]
+}
+###
+
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[130],
+    "season": [2025],
+    "code": ["arg"],
+    "country": ["Argentina"],
+    "leagueName": ["Copa Argentina"],
+    "leagueCode": ["copa-argentina"]
+    }
+###
+POST http://localhost:3000/standings
+Content-Type: application/json
+
+{
+    "id":[71],
+    "season": [2025],
+    "code": ["bra"],
+    "country": ["Brasil"],
+    "leagueName": ["Brasileirao Serie "],
+    "leagueCode": ["bra-serie-a"]
+}
+###
+
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[71],
+    "season": [2025],
+    "code": ["bra"],
+    "country": ["Brasil"],
+    "leagueName": ["Brasileirao Serie "],
+    "leagueCode": ["bra-serie-a"],
+    "roundsUpdate": [false]
+}
+### copa america & euro, con los nuevos validates, podemos 
+POST http://localhost:3000/fixtures
+Content-Type: application/json
+
+{
+    "id":[15],
+    "season": [2025],
+    "code": ["fifa"],
+    "country": ["Internacional"],
+    "leagueName": ["Mundial de Clubes"],
+    "leagueCode": ["mdc"]
 }

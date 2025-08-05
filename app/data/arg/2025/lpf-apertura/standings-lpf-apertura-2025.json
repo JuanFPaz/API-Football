@@ -1,0 +1,3271 @@
+{
+  "get": "standings",
+  "parameters": { "league": "128", "season": "2025" },
+  "errors": [],
+  "results": 1,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "league": {
+        "id": 128,
+        "name": "Liga Profesional Argentina - Apertura",
+        "codeLeague": "lpf-apertura",
+        "country": "Argentina",
+        "code": "arg",
+        "logo": "https://media.api-sports.io/football/leagues/128.png",
+        "flag": "https://media.api-sports.io/flags/ar.svg",
+        "season": 2025,
+        "standings": [
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 437,
+                "name": "Rosario Central",
+                "logo": "https://media.api-sports.io/football/teams/437.png"
+              },
+              "points": 35,
+              "goalsDiff": 14,
+              "group": "Anual 2025",
+              "form": "LWWWW",
+              "status": "same",
+              "description": "Copa Libertadores",
+              "all": {
+                "played": 16,
+                "win": 10,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 22, "against": 8 }
+              },
+              "home": {
+                "played": 9,
+                "win": 8,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 16, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 8, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 458,
+                "name": "Argentinos JRS",
+                "logo": "https://media.api-sports.io/football/teams/458.png"
+              },
+              "points": 33,
+              "goalsDiff": 15,
+              "group": "Anual 2025",
+              "form": "DWWDW",
+              "status": "same",
+              "description": "Copa Libertadores",
+              "all": {
+                "played": 16,
+                "win": 9,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 24, "against": 9 }
+              },
+              "home": {
+                "played": 9,
+                "win": 6,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 16, "against": 4 }
+              },
+              "away": {
+                "played": 7,
+                "win": 3,
+                "draw": 4,
+                "lose": 0,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 451,
+                "name": "Boca Juniors",
+                "logo": "https://media.api-sports.io/football/teams/451.png"
+              },
+              "points": 33,
+              "goalsDiff": 13,
+              "group": "Anual 2025",
+              "form": "LDDLW",
+              "status": "same",
+              "description": "Copa Libertadores",
+              "all": {
+                "played": 16,
+                "win": 10,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 24, "against": 11 }
+              },
+              "home": {
+                "played": 8,
+                "win": 7,
+                "draw": 1,
+                "lose": 0,
+                "goals": { "for": 14, "against": 2 }
+              },
+              "away": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 435,
+                "name": "River Plate",
+                "logo": "https://media.api-sports.io/football/teams/435.png"
+              },
+              "points": 31,
+              "goalsDiff": 12,
+              "group": "Anual 2025",
+              "form": "DWWWW",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 7,
+                "lose": 1,
+                "goals": { "for": 21, "against": 9 }
+              },
+              "home": {
+                "played": 11,
+                "win": 7,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 18, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 2,
+                "draw": 5,
+                "lose": 0,
+                "goals": { "for": 7, "against": 2 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 453,
+                "name": "Independiente",
+                "logo": "https://media.api-sports.io/football/teams/453.png"
+              },
+              "points": 29,
+              "goalsDiff": 11,
+              "group": "Anual 2025",
+              "form": "DWWLL",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 5,
+                "lose": 3,
+                "goals": { "for": 23, "against": 12 }
+              },
+              "home": {
+                "played": 10,
+                "win": 7,
+                "draw": 3,
+                "lose": 0,
+                "goals": { "for": 17, "against": 2 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 8, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 436,
+                "name": "Racing Club",
+                "logo": "https://media.api-sports.io/football/teams/436.png"
+              },
+              "points": 28,
+              "goalsDiff": 10,
+              "group": "Anual 2025",
+              "form": "LWWWW",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 9,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 26, "against": 16 }
+              },
+              "home": {
+                "played": 7,
+                "win": 5,
+                "draw": 0,
+                "lose": 2,
+                "goals": { "for": 14, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 4,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 12, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 445,
+                "name": "Huracan",
+                "logo": "https://media.api-sports.io/football/teams/445.png"
+              },
+              "points": 27,
+              "goalsDiff": 7,
+              "group": "Anual 2025",
+              "form": "LDWWL",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 19, "against": 12 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 11, "against": 5 }
+              },
+              "away": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 8, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 452,
+                "name": "Tigre",
+                "logo": "https://media.api-sports.io/football/teams/452.png"
+              },
+              "points": 27,
+              "goalsDiff": 6,
+              "group": "Anual 2025",
+              "form": "LDDDL",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 3,
+                "lose": 5,
+                "goals": { "for": 18, "against": 12 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "away": {
+                "played": 8,
+                "win": 4,
+                "draw": 1,
+                "lose": 3,
+                "goals": { "for": 10, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 460,
+                "name": "San Lorenzo",
+                "logo": "https://media.api-sports.io/football/teams/460.png"
+              },
+              "points": 27,
+              "goalsDiff": 4,
+              "group": "Anual 2025",
+              "form": "LDWDL",
+              "status": "same",
+              "description": "Copa Sudamericana",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 14, "against": 10 }
+              },
+              "home": {
+                "played": 10,
+                "win": 5,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 473,
+                "name": "Independ. Rivadavia",
+                "logo": "https://media.api-sports.io/football/teams/473.png"
+              },
+              "points": 27,
+              "goalsDiff": 3,
+              "group": "Anual 2025",
+              "form": "LWWWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 20, "against": 17 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 12, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 8, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 2432,
+                "name": "Barracas Central",
+                "logo": "https://media.api-sports.io/football/teams/2432.png"
+              },
+              "points": 26,
+              "goalsDiff": 2,
+              "group": "Anual 2025",
+              "form": "LWWLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 5,
+                "lose": 4,
+                "goals": { "for": 20, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 5,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 7, "against": 8 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 476,
+                "name": "Deportivo Riestra",
+                "logo": "https://media.api-sports.io/football/teams/476.png"
+              },
+              "points": 24,
+              "goalsDiff": 6,
+              "group": "Anual 2025",
+              "form": "LWDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 9,
+                "lose": 2,
+                "goals": { "for": 13, "against": 7 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 6,
+                "lose": 0,
+                "goals": { "for": 5, "against": 1 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": 1064,
+                "name": "Platense",
+                "logo": "https://media.api-sports.io/football/teams/1064.png"
+              },
+              "points": 23,
+              "goalsDiff": 2,
+              "group": "Anual 2025",
+              "form": "WWDWL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 6,
+                "draw": 5,
+                "lose": 5,
+                "goals": { "for": 13, "against": 11 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 7, "against": 5 }
+              },
+              "away": {
+                "played": 12,
+                "win": 6,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 10, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": 450,
+                "name": "Estudiantes L.P.",
+                "logo": "https://media.api-sports.io/football/teams/450.png"
+              },
+              "points": 21,
+              "goalsDiff": -1,
+              "group": "Anual 2025",
+              "form": "LLDLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 6,
+                "lose": 5,
+                "goals": { "for": 18, "against": 19 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 10, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 1,
+                "draw": 4,
+                "lose": 4,
+                "goals": { "for": 8, "against": 14 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": 446,
+                "name": "Lanus",
+                "logo": "https://media.api-sports.io/football/teams/446.png"
+              },
+              "points": 20,
+              "goalsDiff": 2,
+              "group": "Anual 2025",
+              "form": "DLWDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 8,
+                "lose": 4,
+                "goals": { "for": 13, "against": 11 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 9, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 1,
+                "draw": 5,
+                "lose": 3,
+                "goals": { "for": 4, "against": 6 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": 457,
+                "name": "Newells Old Boys",
+                "logo": "https://media.api-sports.io/football/teams/457.png"
+              },
+              "points": 19,
+              "goalsDiff": -3,
+              "group": "Anual 2025",
+              "form": "LWDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 4,
+                "lose": 7,
+                "goals": { "for": 12, "against": 15 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 6, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 17,
+              "team": {
+                "id": 442,
+                "name": "Defensa Y Justicia",
+                "logo": "https://media.api-sports.io/football/teams/442.png"
+              },
+              "points": 19,
+              "goalsDiff": -4,
+              "group": "Anual 2025",
+              "form": "LLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 4,
+                "lose": 7,
+                "goals": { "for": 18, "against": 22 }
+              },
+              "home": {
+                "played": 7,
+                "win": 2,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 7 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 12, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 18,
+              "team": {
+                "id": 1065,
+                "name": "Central Cordoba de Santiago",
+                "logo": "https://media.api-sports.io/football/teams/1065.png"
+              },
+              "points": 18,
+              "goalsDiff": -1,
+              "group": "Anual 2025",
+              "form": "LLLLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 3,
+                "lose": 8,
+                "goals": { "for": 21, "against": 22 }
+              },
+              "home": {
+                "played": 9,
+                "win": 4,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 12, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 1,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 14 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 19,
+              "team": {
+                "id": 478,
+                "name": "Instituto Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/478.png"
+              },
+              "points": 18,
+              "goalsDiff": -4,
+              "group": "Anual 2025",
+              "form": "LWDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 3,
+                "lose": 8,
+                "goals": { "for": 16, "against": 20 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 11, "against": 3 }
+              },
+              "away": {
+                "played": 10,
+                "win": 1,
+                "draw": 1,
+                "lose": 8,
+                "goals": { "for": 6, "against": 20 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 20,
+              "team": {
+                "id": 440,
+                "name": "Belgrano Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/440.png"
+              },
+              "points": 17,
+              "goalsDiff": -10,
+              "group": "Anual 2025",
+              "form": "DDDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 8,
+                "lose": 5,
+                "goals": { "for": 13, "against": 23 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 4,
+                "lose": 3,
+                "goals": { "for": 4, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 21,
+              "team": {
+                "id": 439,
+                "name": "Godoy Cruz",
+                "logo": "https://media.api-sports.io/football/teams/439.png"
+              },
+              "points": 17,
+              "goalsDiff": -10,
+              "group": "Anual 2025",
+              "form": "LWLDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 8,
+                "lose": 5,
+                "goals": { "for": 8, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 3, "against": 5 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 22,
+              "team": {
+                "id": 455,
+                "name": "Atletico Tucuman",
+                "logo": "https://media.api-sports.io/football/teams/455.png"
+              },
+              "points": 16,
+              "goalsDiff": -4,
+              "group": "Anual 2025",
+              "form": "WWLLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 1,
+                "lose": 10,
+                "goals": { "for": 17, "against": 21 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 0,
+                "lose": 4,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 23,
+              "team": {
+                "id": 434,
+                "name": "Gimnasia L.P.",
+                "logo": "https://media.api-sports.io/football/teams/434.png"
+              },
+              "points": 16,
+              "goalsDiff": -9,
+              "group": "Anual 2025",
+              "form": "WLLDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 4,
+                "lose": 8,
+                "goals": { "for": 9, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 7, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 2, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 24,
+              "team": {
+                "id": 474,
+                "name": "Sarmiento Junin",
+                "logo": "https://media.api-sports.io/football/teams/474.png"
+              },
+              "points": 15,
+              "goalsDiff": -8,
+              "group": "Anual 2025",
+              "form": "DDLWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 9,
+                "lose": 5,
+                "goals": { "for": 11, "against": 19 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 6, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 3,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 25,
+              "team": {
+                "id": 463,
+                "name": "Aldosivi",
+                "logo": "https://media.api-sports.io/football/teams/463.png"
+              },
+              "points": 15,
+              "goalsDiff": -10,
+              "group": "Anual 2025",
+              "form": "WWLLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 3,
+                "lose": 9,
+                "goals": { "for": 18, "against": 28 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 9, "against": 18 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 26,
+              "team": {
+                "id": 449,
+                "name": "Banfield",
+                "logo": "https://media.api-sports.io/football/teams/449.png"
+              },
+              "points": 14,
+              "goalsDiff": -5,
+              "group": "Anual 2025",
+              "form": "WLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 5,
+                "lose": 8,
+                "goals": { "for": 14, "against": 19 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 27,
+              "team": {
+                "id": 441,
+                "name": "Union Santa Fe",
+                "logo": "https://media.api-sports.io/football/teams/441.png"
+              },
+              "points": 14,
+              "goalsDiff": -6,
+              "group": "Anual 2025",
+              "form": "DLDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 5,
+                "lose": 8,
+                "goals": { "for": 11, "against": 17 }
+              },
+              "home": {
+                "played": 9,
+                "win": 3,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 8, "against": 6 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 3, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 28,
+              "team": {
+                "id": 438,
+                "name": "Velez Sarsfield",
+                "logo": "https://media.api-sports.io/football/teams/438.png"
+              },
+              "points": 14,
+              "goalsDiff": -15,
+              "group": "Anual 2025",
+              "form": "LWWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 2,
+                "lose": 10,
+                "goals": { "for": 7, "against": 22 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 2, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 5, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 29,
+              "team": {
+                "id": 456,
+                "name": "Talleres Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/456.png"
+              },
+              "points": 13,
+              "goalsDiff": -4,
+              "group": "Anual 2025",
+              "form": "LLLDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 7,
+                "lose": 7,
+                "goals": { "for": 11, "against": 15 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 7, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 5,
+                "lose": 2,
+                "goals": { "for": 4, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 30,
+              "team": {
+                "id": 461,
+                "name": "San Martin S.J.",
+                "logo": "https://media.api-sports.io/football/teams/461.png"
+              },
+              "points": 9,
+              "goalsDiff": -13,
+              "group": "Anual 2025",
+              "form": "LLWLL",
+              "status": "same",
+              "description": "Relegation",
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 3,
+                "lose": 11,
+                "goals": { "for": 5, "against": 18 }
+              },
+              "home": {
+                "played": 9,
+                "win": 2,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 1, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 458,
+                "name": "Argentinos JRS",
+                "logo": "https://media.api-sports.io/football/teams/458.png"
+              },
+              "points": 33,
+              "goalsDiff": 15,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "DWWDW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 9,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 24, "against": 9 }
+              },
+              "home": {
+                "played": 11,
+                "win": 7,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 20, "against": 6 }
+              },
+              "away": {
+                "played": 7,
+                "win": 3,
+                "draw": 4,
+                "lose": 0,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 451,
+                "name": "Boca Juniors",
+                "logo": "https://media.api-sports.io/football/teams/451.png"
+              },
+              "points": 33,
+              "goalsDiff": 13,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LDDLW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 10,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 24, "against": 11 }
+              },
+              "home": {
+                "played": 10,
+                "win": 7,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 14, "against": 3 }
+              },
+              "away": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 436,
+                "name": "Racing Club",
+                "logo": "https://media.api-sports.io/football/teams/436.png"
+              },
+              "points": 28,
+              "goalsDiff": 10,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LWWWW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 9,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 26, "against": 16 }
+              },
+              "home": {
+                "played": 8,
+                "win": 5,
+                "draw": 0,
+                "lose": 3,
+                "goals": { "for": 14, "against": 6 }
+              },
+              "away": {
+                "played": 9,
+                "win": 4,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 12, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 445,
+                "name": "Huracan",
+                "logo": "https://media.api-sports.io/football/teams/445.png"
+              },
+              "points": 27,
+              "goalsDiff": 7,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LDWWL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 19, "against": 12 }
+              },
+              "home": {
+                "played": 10,
+                "win": 5,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 14, "against": 8 }
+              },
+              "away": {
+                "played": 10,
+                "win": 4,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 452,
+                "name": "Tigre",
+                "logo": "https://media.api-sports.io/football/teams/452.png"
+              },
+              "points": 27,
+              "goalsDiff": 6,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LDDDL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 3,
+                "lose": 5,
+                "goals": { "for": 18, "against": 12 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 4,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 473,
+                "name": "Independ. Rivadavia",
+                "logo": "https://media.api-sports.io/football/teams/473.png"
+              },
+              "points": 27,
+              "goalsDiff": 3,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LWWWD",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 20, "against": 17 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 12, "against": 10 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 8, "against": 8 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 2432,
+                "name": "Barracas Central",
+                "logo": "https://media.api-sports.io/football/teams/2432.png"
+              },
+              "points": 26,
+              "goalsDiff": 2,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LWWLW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 5,
+                "lose": 4,
+                "goals": { "for": 20, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 5,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 9,
+                "win": 2,
+                "draw": 4,
+                "lose": 3,
+                "goals": { "for": 7, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 450,
+                "name": "Estudiantes L.P.",
+                "logo": "https://media.api-sports.io/football/teams/450.png"
+              },
+              "points": 21,
+              "goalsDiff": -1,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LLDLD",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 6,
+                "lose": 5,
+                "goals": { "for": 18, "against": 19 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 10, "against": 5 }
+              },
+              "away": {
+                "played": 10,
+                "win": 1,
+                "draw": 4,
+                "lose": 5,
+                "goals": { "for": 8, "against": 16 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 457,
+                "name": "Newells Old Boys",
+                "logo": "https://media.api-sports.io/football/teams/457.png"
+              },
+              "points": 19,
+              "goalsDiff": -3,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LWDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 4,
+                "lose": 7,
+                "goals": { "for": 12, "against": 15 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 6, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 442,
+                "name": "Defensa Y Justicia",
+                "logo": "https://media.api-sports.io/football/teams/442.png"
+              },
+              "points": 19,
+              "goalsDiff": -4,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 4,
+                "lose": 7,
+                "goals": { "for": 18, "against": 22 }
+              },
+              "home": {
+                "played": 7,
+                "win": 2,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 7 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 12, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 1065,
+                "name": "Central Cordoba de Santiago",
+                "logo": "https://media.api-sports.io/football/teams/1065.png"
+              },
+              "points": 18,
+              "goalsDiff": -1,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "LLLLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 3,
+                "lose": 8,
+                "goals": { "for": 21, "against": 22 }
+              },
+              "home": {
+                "played": 9,
+                "win": 4,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 12, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 1,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 14 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 440,
+                "name": "Belgrano Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/440.png"
+              },
+              "points": 17,
+              "goalsDiff": -10,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "DDDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 8,
+                "lose": 5,
+                "goals": { "for": 13, "against": 23 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 4,
+                "lose": 3,
+                "goals": { "for": 4, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": 463,
+                "name": "Aldosivi",
+                "logo": "https://media.api-sports.io/football/teams/463.png"
+              },
+              "points": 15,
+              "goalsDiff": -10,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "WWLLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 3,
+                "lose": 9,
+                "goals": { "for": 18, "against": 28 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 9, "against": 18 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": 449,
+                "name": "Banfield",
+                "logo": "https://media.api-sports.io/football/teams/449.png"
+              },
+              "points": 14,
+              "goalsDiff": -5,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "WLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 5,
+                "lose": 8,
+                "goals": { "for": 14, "against": 19 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": 441,
+                "name": "Union Santa Fe",
+                "logo": "https://media.api-sports.io/football/teams/441.png"
+              },
+              "points": 14,
+              "goalsDiff": -6,
+              "group": "Primera LPF 2025, Apertura, Group A",
+              "form": "DLDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 5,
+                "lose": 8,
+                "goals": { "for": 11, "against": 17 }
+              },
+              "home": {
+                "played": 9,
+                "win": 3,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 8, "against": 6 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 3, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 437,
+                "name": "Rosario Central",
+                "logo": "https://media.api-sports.io/football/teams/437.png"
+              },
+              "points": 35,
+              "goalsDiff": 14,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LWWWW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 10,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 22, "against": 8 }
+              },
+              "home": {
+                "played": 9,
+                "win": 8,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 16, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 8, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 435,
+                "name": "River Plate",
+                "logo": "https://media.api-sports.io/football/teams/435.png"
+              },
+              "points": 31,
+              "goalsDiff": 12,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "DWWWW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 7,
+                "lose": 1,
+                "goals": { "for": 21, "against": 9 }
+              },
+              "home": {
+                "played": 11,
+                "win": 7,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 18, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 2,
+                "draw": 5,
+                "lose": 0,
+                "goals": { "for": 7, "against": 2 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 453,
+                "name": "Independiente",
+                "logo": "https://media.api-sports.io/football/teams/453.png"
+              },
+              "points": 29,
+              "goalsDiff": 11,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "DWWLL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 8,
+                "draw": 5,
+                "lose": 3,
+                "goals": { "for": 23, "against": 12 }
+              },
+              "home": {
+                "played": 10,
+                "win": 7,
+                "draw": 3,
+                "lose": 0,
+                "goals": { "for": 17, "against": 2 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 8, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 460,
+                "name": "San Lorenzo",
+                "logo": "https://media.api-sports.io/football/teams/460.png"
+              },
+              "points": 27,
+              "goalsDiff": 4,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LDWDL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 7,
+                "draw": 6,
+                "lose": 3,
+                "goals": { "for": 14, "against": 10 }
+              },
+              "home": {
+                "played": 10,
+                "win": 5,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 476,
+                "name": "Deportivo Riestra",
+                "logo": "https://media.api-sports.io/football/teams/476.png"
+              },
+              "points": 24,
+              "goalsDiff": 6,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LWDDL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 9,
+                "lose": 2,
+                "goals": { "for": 13, "against": 7 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 6,
+                "lose": 0,
+                "goals": { "for": 5, "against": 1 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 1064,
+                "name": "Platense",
+                "logo": "https://media.api-sports.io/football/teams/1064.png"
+              },
+              "points": 23,
+              "goalsDiff": 2,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "WWDWL",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 6,
+                "draw": 5,
+                "lose": 5,
+                "goals": { "for": 13, "against": 11 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 7, "against": 5 }
+              },
+              "away": {
+                "played": 12,
+                "win": 6,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 10, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 446,
+                "name": "Lanus",
+                "logo": "https://media.api-sports.io/football/teams/446.png"
+              },
+              "points": 20,
+              "goalsDiff": 2,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "DLWDD",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 8,
+                "lose": 4,
+                "goals": { "for": 13, "against": 11 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 9, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 1,
+                "draw": 5,
+                "lose": 3,
+                "goals": { "for": 4, "against": 6 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 478,
+                "name": "Instituto Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/478.png"
+              },
+              "points": 18,
+              "goalsDiff": -4,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LWDLW",
+              "status": "same",
+              "description": "Playoffs",
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 3,
+                "lose": 8,
+                "goals": { "for": 16, "against": 20 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 11, "against": 3 }
+              },
+              "away": {
+                "played": 10,
+                "win": 1,
+                "draw": 1,
+                "lose": 8,
+                "goals": { "for": 6, "against": 20 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 439,
+                "name": "Godoy Cruz",
+                "logo": "https://media.api-sports.io/football/teams/439.png"
+              },
+              "points": 17,
+              "goalsDiff": -10,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LWLDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 3,
+                "draw": 8,
+                "lose": 5,
+                "goals": { "for": 8, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 3, "against": 5 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 455,
+                "name": "Atletico Tucuman",
+                "logo": "https://media.api-sports.io/football/teams/455.png"
+              },
+              "points": 16,
+              "goalsDiff": -4,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "WWLLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 5,
+                "draw": 1,
+                "lose": 10,
+                "goals": { "for": 17, "against": 21 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 0,
+                "lose": 4,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 434,
+                "name": "Gimnasia L.P.",
+                "logo": "https://media.api-sports.io/football/teams/434.png"
+              },
+              "points": 16,
+              "goalsDiff": -9,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "WLLDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 4,
+                "lose": 8,
+                "goals": { "for": 9, "against": 18 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 7, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 2, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 474,
+                "name": "Sarmiento Junin",
+                "logo": "https://media.api-sports.io/football/teams/474.png"
+              },
+              "points": 15,
+              "goalsDiff": -8,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "DDLWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 9,
+                "lose": 5,
+                "goals": { "for": 11, "against": 19 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 6, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 3,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": 438,
+                "name": "Velez Sarsfield",
+                "logo": "https://media.api-sports.io/football/teams/438.png"
+              },
+              "points": 14,
+              "goalsDiff": -15,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LWWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 4,
+                "draw": 2,
+                "lose": 10,
+                "goals": { "for": 7, "against": 22 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 2, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 5, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": 456,
+                "name": "Talleres Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/456.png"
+              },
+              "points": 13,
+              "goalsDiff": -4,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LLLDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 7,
+                "lose": 7,
+                "goals": { "for": 11, "against": 15 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 7, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 5,
+                "lose": 2,
+                "goals": { "for": 4, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": 461,
+                "name": "San Martin S.J.",
+                "logo": "https://media.api-sports.io/football/teams/461.png"
+              },
+              "points": 9,
+              "goalsDiff": -13,
+              "group": "Primera LPF 2025, Apertura, Group B",
+              "form": "LLWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": 2,
+                "draw": 3,
+                "lose": 11,
+                "goals": { "for": 5, "against": 18 }
+              },
+              "home": {
+                "played": 9,
+                "win": 2,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 1, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 435,
+                "name": "River Plate",
+                "logo": "https://media.api-sports.io/football/teams/435.png"
+              },
+              "points": 186,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DWWWW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 11,
+                "win": 7,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 18, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 2,
+                "draw": 5,
+                "lose": 0,
+                "goals": { "for": 7, "against": 2 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 451,
+                "name": "Boca Juniors",
+                "logo": "https://media.api-sports.io/football/teams/451.png"
+              },
+              "points": 162,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LDDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 10,
+                "win": 7,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 14, "against": 3 }
+              },
+              "away": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 436,
+                "name": "Racing Club",
+                "logo": "https://media.api-sports.io/football/teams/436.png"
+              },
+              "points": 158,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWWWW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 5,
+                "draw": 0,
+                "lose": 3,
+                "goals": { "for": 14, "against": 6 }
+              },
+              "away": {
+                "played": 9,
+                "win": 4,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 12, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 456,
+                "name": "Talleres Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/456.png"
+              },
+              "points": 152,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LLLDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 7, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 5,
+                "lose": 2,
+                "goals": { "for": 4, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 437,
+                "name": "Rosario Central",
+                "logo": "https://media.api-sports.io/football/teams/437.png"
+              },
+              "points": 147,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWWWW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 9,
+                "win": 8,
+                "draw": 0,
+                "lose": 1,
+                "goals": { "for": 16, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 8, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 450,
+                "name": "Estudiantes L.P.",
+                "logo": "https://media.api-sports.io/football/teams/450.png"
+              },
+              "points": 146,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LLDLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 10, "against": 5 }
+              },
+              "away": {
+                "played": 10,
+                "win": 1,
+                "draw": 4,
+                "lose": 5,
+                "goals": { "for": 8, "against": 16 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 439,
+                "name": "Godoy Cruz",
+                "logo": "https://media.api-sports.io/football/teams/439.png"
+              },
+              "points": 144,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWLDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 3, "against": 5 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 458,
+                "name": "Argentinos JRS",
+                "logo": "https://media.api-sports.io/football/teams/458.png"
+              },
+              "points": 143,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DWWDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 11,
+                "win": 7,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 20, "against": 6 }
+              },
+              "away": {
+                "played": 7,
+                "win": 3,
+                "draw": 4,
+                "lose": 0,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 453,
+                "name": "Independiente",
+                "logo": "https://media.api-sports.io/football/teams/453.png"
+              },
+              "points": 143,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DWWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 10,
+                "win": 7,
+                "draw": 3,
+                "lose": 0,
+                "goals": { "for": 17, "against": 2 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 8, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 445,
+                "name": "Huracan",
+                "logo": "https://media.api-sports.io/football/teams/445.png"
+              },
+              "points": 140,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LDWWL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 10,
+                "win": 5,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 14, "against": 8 }
+              },
+              "away": {
+                "played": 10,
+                "win": 4,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 438,
+                "name": "Velez Sarsfield",
+                "logo": "https://media.api-sports.io/football/teams/438.png"
+              },
+              "points": 139,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWWLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 2, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 5, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 460,
+                "name": "San Lorenzo",
+                "logo": "https://media.api-sports.io/football/teams/460.png"
+              },
+              "points": 136,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LDWDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 10,
+                "win": 5,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 5,
+                "lose": 1,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 13,
+              "team": {
+                "id": 446,
+                "name": "Lanus",
+                "logo": "https://media.api-sports.io/football/teams/446.png"
+              },
+              "points": 136,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DLWDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 9, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 1,
+                "draw": 5,
+                "lose": 3,
+                "goals": { "for": 4, "against": 6 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 14,
+              "team": {
+                "id": 442,
+                "name": "Defensa Y Justicia",
+                "logo": "https://media.api-sports.io/football/teams/442.png"
+              },
+              "points": 135,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 7,
+                "win": 2,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 7 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 12, "against": 15 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": 1064,
+                "name": "Platense",
+                "logo": "https://media.api-sports.io/football/teams/1064.png"
+              },
+              "points": 134,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "WWDWL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 4,
+                "lose": 1,
+                "goals": { "for": 7, "against": 5 }
+              },
+              "away": {
+                "played": 12,
+                "win": 6,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 10, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 16,
+              "team": {
+                "id": 473,
+                "name": "Independ. Rivadavia",
+                "logo": "https://media.api-sports.io/football/teams/473.png"
+              },
+              "points": 73,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWWWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 57,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 3,
+                "lose": 1,
+                "goals": { "for": 12, "against": 10 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 8, "against": 8 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 17,
+              "team": {
+                "id": 2432,
+                "name": "Barracas Central",
+                "logo": "https://media.api-sports.io/football/teams/2432.png"
+              },
+              "points": 124,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWWLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 5,
+                "draw": 1,
+                "lose": 2,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 9,
+                "win": 2,
+                "draw": 4,
+                "lose": 3,
+                "goals": { "for": 7, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 18,
+              "team": {
+                "id": 476,
+                "name": "Deportivo Riestra",
+                "logo": "https://media.api-sports.io/football/teams/476.png"
+              },
+              "points": 72,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 57,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 6,
+                "lose": 0,
+                "goals": { "for": 5, "against": 1 }
+              },
+              "away": {
+                "played": 9,
+                "win": 3,
+                "draw": 3,
+                "lose": 3,
+                "goals": { "for": 10, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 19,
+              "team": {
+                "id": 478,
+                "name": "Instituto Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/478.png"
+              },
+              "points": 123,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 7,
+                "win": 4,
+                "draw": 2,
+                "lose": 1,
+                "goals": { "for": 11, "against": 3 }
+              },
+              "away": {
+                "played": 10,
+                "win": 1,
+                "draw": 1,
+                "lose": 8,
+                "goals": { "for": 6, "against": 20 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 20,
+              "team": {
+                "id": 440,
+                "name": "Belgrano Cordoba",
+                "logo": "https://media.api-sports.io/football/teams/440.png"
+              },
+              "points": 123,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DDDLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 4,
+                "lose": 3,
+                "goals": { "for": 4, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 21,
+              "team": {
+                "id": 457,
+                "name": "Newells Old Boys",
+                "logo": "https://media.api-sports.io/football/teams/457.png"
+              },
+              "points": 121,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LWDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 6, "against": 4 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 6, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 22,
+              "team": {
+                "id": 455,
+                "name": "Atletico Tucuman",
+                "logo": "https://media.api-sports.io/football/teams/455.png"
+              },
+              "points": 120,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "WWLLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 0,
+                "lose": 4,
+                "goals": { "for": 13, "against": 10 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 23,
+              "team": {
+                "id": 441,
+                "name": "Union Santa Fe",
+                "logo": "https://media.api-sports.io/football/teams/441.png"
+              },
+              "points": 120,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DLDDW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 9,
+                "win": 3,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 8, "against": 6 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 3, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 24,
+              "team": {
+                "id": 452,
+                "name": "Tigre",
+                "logo": "https://media.api-sports.io/football/teams/452.png"
+              },
+              "points": 113,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LDDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 4,
+                "draw": 2,
+                "lose": 2,
+                "goals": { "for": 8, "against": 5 }
+              },
+              "away": {
+                "played": 9,
+                "win": 4,
+                "draw": 1,
+                "lose": 4,
+                "goals": { "for": 11, "against": 9 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 25,
+              "team": {
+                "id": 434,
+                "name": "Gimnasia L.P.",
+                "logo": "https://media.api-sports.io/football/teams/434.png"
+              },
+              "points": 109,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "WLLDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 3,
+                "draw": 3,
+                "lose": 2,
+                "goals": { "for": 7, "against": 7 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 2, "against": 11 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 26,
+              "team": {
+                "id": 1065,
+                "name": "Central Cordoba de Santiago",
+                "logo": "https://media.api-sports.io/football/teams/1065.png"
+              },
+              "points": 108,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LLLLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 9,
+                "win": 4,
+                "draw": 2,
+                "lose": 3,
+                "goals": { "for": 12, "against": 8 }
+              },
+              "away": {
+                "played": 7,
+                "win": 1,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 14 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 27,
+              "team": {
+                "id": 449,
+                "name": "Banfield",
+                "logo": "https://media.api-sports.io/football/teams/449.png"
+              },
+              "points": 108,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "WLDDL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 4,
+                "lose": 2,
+                "goals": { "for": 9, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 28,
+              "team": {
+                "id": 474,
+                "name": "Sarmiento Junin",
+                "logo": "https://media.api-sports.io/football/teams/474.png"
+              },
+              "points": 96,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "DDLWD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 98,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 1,
+                "draw": 6,
+                "lose": 1,
+                "goals": { "for": 6, "against": 6 }
+              },
+              "away": {
+                "played": 8,
+                "win": 1,
+                "draw": 3,
+                "lose": 4,
+                "goals": { "for": 5, "against": 13 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 29,
+              "team": {
+                "id": 463,
+                "name": "Aldosivi",
+                "logo": "https://media.api-sports.io/football/teams/463.png"
+              },
+              "points": 15,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "WWLLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 16,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 8,
+                "win": 2,
+                "draw": 2,
+                "lose": 4,
+                "goals": { "for": 9, "against": 18 }
+              },
+              "away": {
+                "played": 8,
+                "win": 2,
+                "draw": 1,
+                "lose": 5,
+                "goals": { "for": 9, "against": 10 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            },
+            {
+              "rank": 30,
+              "team": {
+                "id": 461,
+                "name": "San Martin S.J.",
+                "logo": "https://media.api-sports.io/football/teams/461.png"
+              },
+              "points": 9,
+              "goalsDiff": 0,
+              "group": "Promedios 2025",
+              "form": "LLWLL",
+              "status": "same",
+              "description": "Relegation",
+              "all": {
+                "played": 16,
+                "win": null,
+                "draw": null,
+                "lose": null,
+                "goals": { "for": 0, "against": 0 }
+              },
+              "home": {
+                "played": 9,
+                "win": 2,
+                "draw": 1,
+                "lose": 6,
+                "goals": { "for": 4, "against": 11 }
+              },
+              "away": {
+                "played": 7,
+                "win": 0,
+                "draw": 2,
+                "lose": 5,
+                "goals": { "for": 1, "against": 7 }
+              },
+              "update": "2025-06-02T00:00:00+00:00"
+            }
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 541,
+    "type": "Cup",
+    "name": "CONMEBOL Recopa",
+    "codeLeague": "recopa-sudamericana",
+    "code": "CONMEBOL",
+    "country": "Sudamerica",
+    "logo": "https://media.api-sports.io/football/leagues/541.png",
+    "flag": null,
+    "season": 2025,
+    "start": "2025-02-19",
+    "end": "2025-02-26",
+    "current": true
+  }
+}

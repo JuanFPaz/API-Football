@@ -1,0 +1,8 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "541", "season": "2025", "dates": "true" },
+  "errors": [],
+  "results": 1,
+  "paging": { "current": 1, "total": 1 },
+  "response": [{ "round": "Final", "dates": ["2025-02-21", "2025-02-28"] }]
+}

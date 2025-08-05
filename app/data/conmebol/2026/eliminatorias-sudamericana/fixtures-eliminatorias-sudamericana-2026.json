@@ -1,0 +1,4845 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "34", "season": "2026" },
+  "errors": [],
+  "results": 90,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": {
+        "id": 1100233,
+        "referee": "Dario Herrera, Argentina",
+        "timezone": "UTC",
+        "date": "2023-09-08T23:00:00+00:00",
+        "timestamp": 1694214000,
+        "periods": { "first": 1694214000, "second": 1694217600 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 1 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 3, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100234,
+        "referee": "Juan Gabriel Benitez, Paraguay",
+        "timezone": "UTC",
+        "date": "2023-09-09T00:45:00+00:00",
+        "timestamp": 1694220300,
+        "periods": { "first": 1694220300, "second": 1694223900 },
+        "venue": {
+          "id": 262,
+          "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
+          "city": "Belém, Pará"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 5, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 5, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100235,
+        "referee": "Andres Matonte, Uruguay",
+        "timezone": "UTC",
+        "date": "2023-09-07T22:30:00+00:00",
+        "timestamp": 1694125800,
+        "periods": { "first": 1694125800, "second": 1694129400 },
+        "venue": {
+          "id": 1213,
+          "name": "Estadio Antonio Aranda",
+          "city": "Ciudad del Este"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100236,
+        "referee": "Anderson Daronco, Brazil",
+        "timezone": "UTC",
+        "date": "2023-09-07T23:00:00+00:00",
+        "timestamp": 1694127600,
+        "periods": { "first": 1694127600, "second": 1694131200 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100237,
+        "referee": "W. Roldán",
+        "timezone": "UTC",
+        "date": "2023-09-08T00:00:00+00:00",
+        "timestamp": 1694131200,
+        "periods": { "first": 1694131200, "second": 1694134800 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100238,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2023-09-12T20:00:00+00:00",
+        "timestamp": 1694548800,
+        "periods": { "first": 1694548800, "second": 1694552400 },
+        "venue": {
+          "id": 198,
+          "name": "Estadio Hernando Siles",
+          "city": "La Paz"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 2",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 3 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 3 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100239,
+        "referee": "Jesus Valenzuela, Venezuela",
+        "timezone": "UTC",
+        "date": "2023-09-13T00:30:00+00:00",
+        "timestamp": 1694565000,
+        "periods": { "first": 1694565000, "second": 1694568600 },
+        "venue": {
+          "id": 319,
+          "name": "Estadio Monumental David Arellano",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 2",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100240,
+        "referee": "Wilton Pereira Sampaio, Brazil",
+        "timezone": "UTC",
+        "date": "2023-09-12T21:00:00+00:00",
+        "timestamp": 1694552400,
+        "periods": { "first": 1694552400, "second": 1694556000 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 2",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100241,
+        "referee": "Andres Rojas, Colombia",
+        "timezone": "UTC",
+        "date": "2023-09-13T22:00:00+00:00",
+        "timestamp": 1694642400,
+        "periods": { "first": 1694642400, "second": 1694646000 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 2",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100242,
+        "referee": "Fernando Rapallini, Argentina",
+        "timezone": "UTC",
+        "date": "2023-09-13T02:00:00+00:00",
+        "timestamp": 1694570400,
+        "periods": { "first": 1694570400, "second": 1694574000 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 2",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100243,
+        "referee": "Cristian Garay, Chile",
+        "timezone": "UTC",
+        "date": "2023-10-12T23:00:00+00:00",
+        "timestamp": 1697151600,
+        "periods": { "first": 1697151600, "second": 1697155200 },
+        "venue": {
+          "id": 198,
+          "name": "Estadio Hernando Siles",
+          "city": "La Paz"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 3",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100244,
+        "referee": "Raphael Claus, Brazil",
+        "timezone": "UTC",
+        "date": "2023-10-12T23:00:00+00:00",
+        "timestamp": 1697151600,
+        "periods": { "first": 1697151600, "second": 1697155200 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 3",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100245,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2023-10-12T20:30:00+00:00",
+        "timestamp": 1697142600,
+        "periods": { "first": 1697142600, "second": 1697146200 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 3",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 2, "away": 2 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100246,
+        "referee": "Wilmar Roldan, Colombia",
+        "timezone": "UTC",
+        "date": "2023-10-13T00:00:00+00:00",
+        "timestamp": 1697155200,
+        "periods": { "first": 1697155200, "second": 1697158800 },
+        "venue": {
+          "id": 319,
+          "name": "Estadio Monumental David Arellano",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 3",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100247,
+        "referee": "Carlos Ortega, Colombia",
+        "timezone": "UTC",
+        "date": "2023-10-13T00:30:00+00:00",
+        "timestamp": 1697157000,
+        "periods": { "first": 1697157000, "second": 1697160600 },
+        "venue": {
+          "id": 235,
+          "name": "Arena Pantanal",
+          "city": "Cuiabá, Mato Grosso"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 3",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100248,
+        "referee": "Facundo Tello, Argentina",
+        "timezone": "UTC",
+        "date": "2023-10-17T23:30:00+00:00",
+        "timestamp": 1697585400,
+        "periods": { "first": 1697585400, "second": 1697589000 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 4",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100249,
+        "referee": "Flavio Rodrigues De Souza, Brazil",
+        "timezone": "UTC",
+        "date": "2023-10-17T21:00:00+00:00",
+        "timestamp": 1697576400,
+        "periods": { "first": 1697576400, "second": 1697580000 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 4",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 3, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100250,
+        "referee": "Gustavo Tejera, Uruguay",
+        "timezone": "UTC",
+        "date": "2023-10-18T22:30:00+00:00",
+        "timestamp": 1697668200,
+        "periods": { "first": 1697668200, "second": 1697671800 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 4",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100251,
+        "referee": "Alexis Herrera, Venezuela",
+        "timezone": "UTC",
+        "date": "2023-10-18T00:00:00+00:00",
+        "timestamp": 1697587200,
+        "periods": { "first": 1697587200, "second": 1697590800 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 4",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100252,
+        "referee": "Jesus Valenzuela, Venezuela",
+        "timezone": "UTC",
+        "date": "2023-10-18T02:00:00+00:00",
+        "timestamp": 1697594400,
+        "periods": { "first": 1697594400, "second": 1697598000 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 4",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100253,
+        "referee": "Guillermo Enrique Guerrero Alcivar, Ecuador",
+        "timezone": "UTC",
+        "date": "2023-11-16T20:00:00+00:00",
+        "timestamp": 1700164800,
+        "periods": { "first": 1700164800, "second": 1700168400 },
+        "venue": {
+          "id": 198,
+          "name": "Estadio Hernando Siles",
+          "city": "La Paz"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 5",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100254,
+        "referee": "Juan Gabriel Benitez, Paraguay",
+        "timezone": "UTC",
+        "date": "2023-11-16T22:00:00+00:00",
+        "timestamp": 1700172000,
+        "periods": { "first": 1700172000, "second": 1700175600 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 5",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100255,
+        "referee": "Andres Matonte, Uruguay",
+        "timezone": "UTC",
+        "date": "2023-11-17T00:00:00+00:00",
+        "timestamp": 1700179200,
+        "periods": { "first": 1700179200, "second": 1700182800 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 5",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": true
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100256,
+        "referee": "Wilmar Roldan, Colombia",
+        "timezone": "UTC",
+        "date": "2023-11-17T00:00:00+00:00",
+        "timestamp": 1700179200,
+        "periods": { "first": 1700179200, "second": 1700182800 },
+        "venue": {
+          "id": 46,
+          "name": "Estadio Alberto José Armando",
+          "city": "Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 5",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": false
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100257,
+        "referee": "Fernando Rapallini, Argentina",
+        "timezone": "UTC",
+        "date": "2023-11-17T00:30:00+00:00",
+        "timestamp": 1700181000,
+        "periods": { "first": 1700181000, "second": 1700184600 },
+        "venue": {
+          "id": 319,
+          "name": "Estadio Monumental David Arellano",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 5",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100258,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2023-11-22T00:30:00+00:00",
+        "timestamp": 1700613000,
+        "periods": { "first": 1700613000, "second": 1700616600 },
+        "venue": {
+          "id": null,
+          "name": "Estádio do Maracanã",
+          "city": "Rio de Janeiro"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 6",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": false
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100259,
+        "referee": "Anderson Daronco, Brazil",
+        "timezone": "UTC",
+        "date": "2023-11-21T23:30:00+00:00",
+        "timestamp": 1700609400,
+        "periods": { "first": 1700609400, "second": 1700613000 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 6",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100260,
+        "referee": "Jesus Valenzuela, Venezuela",
+        "timezone": "UTC",
+        "date": "2023-11-21T23:00:00+00:00",
+        "timestamp": 1700607600,
+        "periods": { "first": 1700607600, "second": 1700611200 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 6",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": false
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100261,
+        "referee": "Kevin Ortega, Peru",
+        "timezone": "UTC",
+        "date": "2023-11-21T23:30:00+00:00",
+        "timestamp": 1700609400,
+        "periods": { "first": 1700609400, "second": 1700613000 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 6",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 3, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100262,
+        "referee": "Dario Herrera, Argentina",
+        "timezone": "UTC",
+        "date": "2023-11-22T02:00:00+00:00",
+        "timestamp": 1700618400,
+        "periods": { "first": 1700618400, "second": 1700622000 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 6",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100263,
+        "referee": "Wilmar Roldan, Colombia",
+        "timezone": "UTC",
+        "date": "2024-09-05T20:00:00+00:00",
+        "timestamp": 1725566400,
+        "periods": { "first": 1725566400, "second": 1725570000 },
+        "venue": {
+          "id": 2487,
+          "name": "Estadio Municipal El Alto",
+          "city": "El Alto"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 7",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 4, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100264,
+        "referee": "Dario Herrera, Argentina",
+        "timezone": "UTC",
+        "date": "2024-09-06T23:30:00+00:00",
+        "timestamp": 1725665400,
+        "periods": { "first": 1725665400, "second": 1725669000 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 7",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100265,
+        "referee": "J. Valenzuela",
+        "timezone": "UTC",
+        "date": "2024-09-06T00:00:00+00:00",
+        "timestamp": 1725580800,
+        "periods": { "first": 1725580800, "second": 1725584400 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 7",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 3, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100266,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-09-07T01:30:00+00:00",
+        "timestamp": 1725672600,
+        "periods": { "first": 1725672600, "second": 1725676200 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 7",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100267,
+        "referee": "Facundo Tello, Argentina",
+        "timezone": "UTC",
+        "date": "2024-09-07T01:00:00+00:00",
+        "timestamp": 1725670800,
+        "periods": { "first": 1725670800, "second": 1725674400 },
+        "venue": {
+          "id": 230,
+          "name": "Estádio Major Antônio Couto Pereira",
+          "city": "Curitiba, Paraná"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 7",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100268,
+        "referee": "Andres Rojas, Colombia",
+        "timezone": "UTC",
+        "date": "2024-09-10T21:00:00+00:00",
+        "timestamp": 1726002000,
+        "periods": { "first": 1726002000, "second": 1726005600 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 8",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100269,
+        "referee": "Raphael Claus, Brazil",
+        "timezone": "UTC",
+        "date": "2024-09-11T22:00:00+00:00",
+        "timestamp": 1726092000,
+        "periods": { "first": 1726092000, "second": 1726095600 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 8",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100270,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2024-09-10T20:30:00+00:00",
+        "timestamp": 1726000200,
+        "periods": { "first": 1726000200, "second": 1726003800 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 8",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": true
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100271,
+        "referee": "Andres Matonte, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-09-11T00:30:00+00:00",
+        "timestamp": 1726014600,
+        "periods": { "first": 1726014600, "second": 1726018200 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 8",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100272,
+        "referee": "Juan Gabriel Benitez, Paraguay",
+        "timezone": "UTC",
+        "date": "2024-09-10T21:00:00+00:00",
+        "timestamp": 1726002000,
+        "periods": { "first": 1726002000, "second": 1726005600 },
+        "venue": {
+          "id": 316,
+          "name": "Estadio Nacional Julio Martínez Prádanos",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 8",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 2 },
+      "score": {
+        "halftime": { "home": 1, "away": 2 },
+        "fulltime": { "home": 1, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100273,
+        "referee": "Wilton Pereira Sampaio, Brazil",
+        "timezone": "UTC",
+        "date": "2024-10-10T20:00:00+00:00",
+        "timestamp": 1728590400,
+        "periods": { "first": 1728590400, "second": 1728594000 },
+        "venue": {
+          "id": 2487,
+          "name": "Estadio Municipal El Alto",
+          "city": "El Alto"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 9",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": true
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100274,
+        "referee": "Raphael Claus, Brazil",
+        "timezone": "UTC",
+        "date": "2024-10-10T21:00:00+00:00",
+        "timestamp": 1728594000,
+        "periods": { "first": 1728594000, "second": 1728597600 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 9",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100275,
+        "referee": "Gustavo Tejera, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-10-10T21:00:00+00:00",
+        "timestamp": 1728594000,
+        "periods": { "first": 1728594000, "second": 1728597600 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 9",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100276,
+        "referee": "Dario Herrera, Argentina",
+        "timezone": "UTC",
+        "date": "2024-10-11T00:00:00+00:00",
+        "timestamp": 1728604800,
+        "periods": { "first": 1728604800, "second": 1728608400 },
+        "venue": {
+          "id": 316,
+          "name": "Estadio Nacional Julio Martínez Prádanos",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 9",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 1, "away": 2 },
+      "score": {
+        "halftime": { "home": 1, "away": 1 },
+        "fulltime": { "home": 1, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100277,
+        "referee": "Facundo Tello, Argentina",
+        "timezone": "UTC",
+        "date": "2024-10-12T01:30:00+00:00",
+        "timestamp": 1728696600,
+        "periods": { "first": 1728696600, "second": 1728700200 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 9",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": true
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100278,
+        "referee": "Cristian Marcelo Garay Reyes, Chile",
+        "timezone": "UTC",
+        "date": "2024-10-15T23:30:00+00:00",
+        "timestamp": 1729035000,
+        "periods": { "first": 1729035000, "second": 1729038600 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 10",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100279,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2024-10-15T23:00:00+00:00",
+        "timestamp": 1729033200,
+        "periods": { "first": 1729033200, "second": 1729036800 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 10",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100280,
+        "referee": "Jesus Valenzuela, Venezuela",
+        "timezone": "UTC",
+        "date": "2024-10-15T20:30:00+00:00",
+        "timestamp": 1729024200,
+        "periods": { "first": 1729024200, "second": 1729027800 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 10",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 4, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100281,
+        "referee": "Kevin Paolo Ortega, Peru",
+        "timezone": "UTC",
+        "date": "2024-10-16T00:00:00+00:00",
+        "timestamp": 1729036800,
+        "periods": { "first": 1729036800, "second": 1729040400 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 2
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 10",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 6, "away": 0 },
+      "score": {
+        "halftime": { "home": 3, "away": 0 },
+        "fulltime": { "home": 6, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100282,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-10-16T00:45:00+00:00",
+        "timestamp": 1729039500,
+        "periods": { "first": 1729039500, "second": 1729043100 },
+        "venue": {
+          "id": null,
+          "name": "Estadio Nacional Mane Garrincha",
+          "city": "Brasilia"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 3
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 10",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 4, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100283,
+        "referee": "Anderson Daronco, Brazil",
+        "timezone": "UTC",
+        "date": "2024-11-14T23:30:00+00:00",
+        "timestamp": 1731627000,
+        "periods": { "first": 1731627000, "second": 1731630600 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 11",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100284,
+        "referee": "Kevin Ortega, Peru",
+        "timezone": "UTC",
+        "date": "2024-11-16T00:00:00+00:00",
+        "timestamp": 1731715200,
+        "periods": { "first": 1731715200, "second": 1731718800 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 14
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 11",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 2 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 3, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100285,
+        "referee": "Andres Rojas, Colombia",
+        "timezone": "UTC",
+        "date": "2024-11-14T21:00:00+00:00",
+        "timestamp": 1731618000,
+        "periods": { "first": 1731618000, "second": 1731621600 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 11",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100286,
+        "referee": "Maximiliano Ramirez, Argentina",
+        "timezone": "UTC",
+        "date": "2024-11-15T00:00:00+00:00",
+        "timestamp": 1731628800,
+        "periods": { "first": 1731628800, "second": 1731632400 },
+        "venue": {
+          "id": 466,
+          "name": "Estadio Monumental Banco Pichincha",
+          "city": "Guayaquil"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 11",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 4, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100287,
+        "referee": "Wilton Pereira Sampaio, Brazil",
+        "timezone": "UTC",
+        "date": "2024-11-16T01:30:00+00:00",
+        "timestamp": 1731720600,
+        "periods": { "first": 1731720600, "second": 1731724200 },
+        "venue": { "id": 1242, "name": "Estadio Monumental", "city": "Lima" },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 11
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 11",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100288,
+        "referee": "Andres Matonte, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-11-19T20:00:00+00:00",
+        "timestamp": 1732046400,
+        "periods": { "first": 1732046400, "second": 1732050000 },
+        "venue": {
+          "id": 2487,
+          "name": "Estadio Municipal El Alto",
+          "city": "El Alto"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 12",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 2, "away": 2 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100289,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2024-11-19T23:00:00+00:00",
+        "timestamp": 1732057200,
+        "periods": { "first": 1732057200, "second": 1732060800 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 12",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": false
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100290,
+        "referee": "Wilmar Roldan, Colombia",
+        "timezone": "UTC",
+        "date": "2024-11-20T00:00:00+00:00",
+        "timestamp": 1732060800,
+        "periods": { "first": 1732060800, "second": 1732064400 },
+        "venue": {
+          "id": 46,
+          "name": "Estadio Alberto José Armando",
+          "city": "Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 12",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100291,
+        "referee": "Facundo Tello, Argentina",
+        "timezone": "UTC",
+        "date": "2024-11-20T00:00:00+00:00",
+        "timestamp": 1732060800,
+        "periods": { "first": 1732060800, "second": 1732064400 },
+        "venue": {
+          "id": 316,
+          "name": "Estadio Nacional Julio Martínez Prádanos",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 12",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 2 },
+      "score": {
+        "halftime": { "home": 3, "away": 2 },
+        "fulltime": { "home": 4, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100292,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2024-11-20T00:45:00+00:00",
+        "timestamp": 1732063500,
+        "periods": { "first": 1732063500, "second": 1732067100 },
+        "venue": { "id": null, "name": "Arena Fonte Nova", "city": "Salvador" },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 12",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100293,
+        "referee": "Abel, Ramon Abatti, Brazil",
+        "timezone": "UTC",
+        "date": "2025-03-21T21:00:00+00:00",
+        "timestamp": 1742590800,
+        "periods": { "first": 1742590800, "second": 1742594400 },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 13",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100294,
+        "referee": "Raphael Claus, Brazil",
+        "timezone": "UTC",
+        "date": "2025-03-20T23:00:00+00:00",
+        "timestamp": 1742511600,
+        "periods": { "first": 1742511600, "second": 1742515200 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 13",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100295,
+        "referee": "A. Herrera",
+        "timezone": "UTC",
+        "date": "2025-03-21T00:45:00+00:00",
+        "timestamp": 1742517900,
+        "periods": { "first": 1742517900, "second": 1742521500 },
+        "venue": {
+          "id": null,
+          "name": "Arena BRB Mané Garrincha",
+          "city": "Brasília, Distrito Federal"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 14
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 13",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 1 },
+      "score": {
+        "halftime": { "home": 1, "away": 1 },
+        "fulltime": { "home": 2, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100296,
+        "referee": "Y. Falcón",
+        "timezone": "UTC",
+        "date": "2025-03-21T01:30:00+00:00",
+        "timestamp": 1742520600,
+        "periods": { "first": 1742520600, "second": 1742524200 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 13",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 3, "away": 1 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 3, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100297,
+        "referee": "Juan Gabriel Benitez, Paraguay",
+        "timezone": "UTC",
+        "date": "2025-03-21T23:30:00+00:00",
+        "timestamp": 1742599800,
+        "periods": { "first": 1742599800, "second": 1742603400 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 13",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": false
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100298,
+        "referee": "Aragon Bautista, Augusto Bergelio, Ecuador",
+        "timezone": "UTC",
+        "date": "2025-03-25T20:00:00+00:00",
+        "timestamp": 1742932800,
+        "periods": { "first": 1742932800, "second": 1742936400 },
+        "venue": {
+          "id": 2487,
+          "name": "Estadio Municipal El Alto",
+          "city": "El Alto"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 14",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100299,
+        "referee": "Cristian Garay, Chile",
+        "timezone": "UTC",
+        "date": "2025-03-26T00:00:00+00:00",
+        "timestamp": 1742947200,
+        "periods": { "first": 1742947200, "second": 1742950800 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 14",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": true
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100300,
+        "referee": "Facundo Raul Tello Figueroa, Argentina",
+        "timezone": "UTC",
+        "date": "2025-03-26T00:00:00+00:00",
+        "timestamp": 1742947200,
+        "periods": { "first": 1742947200, "second": 1742950800 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 12
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 14",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 2, "away": 2 },
+      "score": {
+        "halftime": { "home": 2, "away": 1 },
+        "fulltime": { "home": 2, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100301,
+        "referee": "Andres Rojas, Colombia",
+        "timezone": "UTC",
+        "date": "2025-03-26T00:00:00+00:00",
+        "timestamp": 1742947200,
+        "periods": { "first": 1742947200, "second": 1742950800 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 14",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 4, "away": 1 },
+      "score": {
+        "halftime": { "home": 3, "away": 1 },
+        "fulltime": { "home": 4, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100302,
+        "referee": "Gustavo Tejera, Uruguay",
+        "timezone": "UTC",
+        "date": "2025-03-26T00:00:00+00:00",
+        "timestamp": 1742947200,
+        "periods": { "first": 1742947200, "second": 1742950800 },
+        "venue": {
+          "id": 316,
+          "name": "Estadio Nacional Julio Martínez Prádanos",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 14",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100303,
+        "referee": "Piero Maza, Chile",
+        "timezone": "UTC",
+        "date": "2025-06-05T23:00:00+00:00",
+        "timestamp": 1749164400,
+        "periods": { "first": 1749164400, "second": 1749168000 },
+        "venue": {
+          "id": 466,
+          "name": "Estadio Monumental Banco Pichincha",
+          "city": "Guayaquil"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 15",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100304,
+        "referee": "Dario Herrera, Argentina",
+        "timezone": "UTC",
+        "date": "2025-06-05T23:00:00+00:00",
+        "timestamp": 1749164400,
+        "periods": { "first": 1749164400, "second": 1749168000 },
+        "venue": {
+          "id": 20705,
+          "name": "Estadio ueno Defensores del Chaco",
+          "city": "Asunción"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 15",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": true
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100305,
+        "referee": "Jesús Valenzuela, Venezuela",
+        "timezone": "UTC",
+        "date": "2025-06-06T01:00:00+00:00",
+        "timestamp": 1749171600,
+        "periods": { "first": 1749171600, "second": 1749175200 },
+        "venue": {
+          "id": 316,
+          "name": "Estadio Nacional Julio Martínez Prádanos",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 15",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": true
+        }
+      },
+      "goals": { "home": 0, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 0, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100306,
+        "referee": "Wilton Pereira Sampaio, Brazil",
+        "timezone": "UTC",
+        "date": "2025-06-06T20:30:00+00:00",
+        "timestamp": 1749241800,
+        "periods": { "first": 1749241800, "second": 1749245400 },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 15",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100307,
+        "referee": "Yael Falcon Perez, Argentina",
+        "timezone": "UTC",
+        "date": "2025-06-06T22:00:00+00:00",
+        "timestamp": 1749247200,
+        "periods": { "first": 1749247200, "second": 1749250800 },
+        "venue": {
+          "id": 1660,
+          "name": "Estadio Monumental de Maturín",
+          "city": "Maturín"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 15",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100308,
+        "referee": "Esteban Ostojich, Uruguay",
+        "timezone": "UTC",
+        "date": "2025-06-10T20:00:00+00:00",
+        "timestamp": 1749585600,
+        "periods": { "first": 1749585600, "second": 1749589200 },
+        "venue": {
+          "id": 2487,
+          "name": "Estadio Municipal El Alto",
+          "city": "El Alto"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 16",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100309,
+        "referee": "Raphael Claus, Brazil",
+        "timezone": "UTC",
+        "date": "2025-06-10T23:00:00+00:00",
+        "timestamp": 1749596400,
+        "periods": { "first": 1749596400, "second": 1749600000 },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 16",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 2, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 2, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100310,
+        "referee": "Juan Gabriel Benitez, Paraguay",
+        "timezone": "UTC",
+        "date": "2025-06-11T00:00:00+00:00",
+        "timestamp": 1749600000,
+        "periods": { "first": 1749600000, "second": 1749603600 },
+        "venue": {
+          "id": 19570,
+          "name": "Estadio Mâs Monumental",
+          "city": "Capital Federal, Ciudad de Buenos Aires"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 16",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 1, "away": 1 },
+      "score": {
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 1 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100311,
+        "referee": "Facundo Raul Tello Figueroa, Argentina",
+        "timezone": "UTC",
+        "date": "2025-06-11T00:45:00+00:00",
+        "timestamp": 1749602700,
+        "periods": { "first": 1749602700, "second": 1749606300 },
+        "venue": {
+          "id": 11531,
+          "name": "Neo Química Arena",
+          "city": "São Paulo, São Paulo"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 16",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": true
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": false
+        }
+      },
+      "goals": { "home": 1, "away": 0 },
+      "score": {
+        "halftime": { "home": 1, "away": 0 },
+        "fulltime": { "home": 1, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100312,
+        "referee": "Andres Rojas, Colombia",
+        "timezone": "UTC",
+        "date": "2025-06-11T01:30:00+00:00",
+        "timestamp": 1749605400,
+        "periods": { "first": 1749605400, "second": 1749609000 },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 16",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": 0, "away": 0 },
+      "score": {
+        "halftime": { "home": 0, "away": 0 },
+        "fulltime": { "home": 0, "away": 0 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100313,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-09T00:00:00+00:00",
+        "timestamp": 1757376000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 366,
+          "name": "Estadio Metropolitano Roberto Meléndez",
+          "city": "Barranquilla"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 17",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100314,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-09T00:00:00+00:00",
+        "timestamp": 1757376000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 1624,
+          "name": "Estadio Centenario",
+          "city": "Montevideo"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 17",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100315,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-09T00:00:00+00:00",
+        "timestamp": 1757376000,
+        "periods": { "first": null, "second": null },
+        "venue": { "id": null, "name": null, "city": null },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 17",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100316,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-09T00:00:00+00:00",
+        "timestamp": 1757376000,
+        "periods": { "first": null, "second": null },
+        "venue": { "id": null, "name": null, "city": null },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 17",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100317,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-09T00:00:00+00:00",
+        "timestamp": 1757376000,
+        "periods": { "first": null, "second": null },
+        "venue": { "id": null, "name": null, "city": null },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 17",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100318,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-14T00:00:00+00:00",
+        "timestamp": 1757808000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 198,
+          "name": "Estadio Hernando Siles",
+          "city": "La Paz"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 18",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2381,
+          "name": "Bolivia",
+          "logo": "https://media.api-sports.io/football/teams/2381.png",
+          "winner": null
+        },
+        "away": {
+          "id": 6,
+          "name": "Brazil",
+          "logo": "https://media.api-sports.io/football/teams/6.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100319,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-14T00:00:00+00:00",
+        "timestamp": 1757808000,
+        "periods": { "first": null, "second": null },
+        "venue": { "id": null, "name": null, "city": null },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 18",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2379,
+          "name": "Venezuela",
+          "logo": "https://media.api-sports.io/football/teams/2379.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100320,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-14T00:00:00+00:00",
+        "timestamp": 1757808000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 471,
+          "name": "Estadio Rodrigo Paz Delgado",
+          "city": "Quito"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 18",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2382,
+          "name": "Ecuador",
+          "logo": "https://media.api-sports.io/football/teams/2382.png",
+          "winner": null
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100321,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-14T00:00:00+00:00",
+        "timestamp": 1757808000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 319,
+          "name": "Estadio Monumental David Arellano",
+          "city": "Santiago de Chile"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 18",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 2383,
+          "name": "Chile",
+          "logo": "https://media.api-sports.io/football/teams/2383.png",
+          "winner": null
+        },
+        "away": {
+          "id": 7,
+          "name": "Uruguay",
+          "logo": "https://media.api-sports.io/football/teams/7.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1100322,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-09-14T00:00:00+00:00",
+        "timestamp": 1757808000,
+        "periods": { "first": null, "second": null },
+        "venue": {
+          "id": 1228,
+          "name": "Estadio Nacional de Lima",
+          "city": "Lima"
+        },
+        "status": {
+          "long": "Time to be defined",
+          "short": "TBD",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "Eliminatorias Sudamericana",
+        "country": "Sudamerica",
+        "logo": "https://media.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 18",
+        "standings": true,
+        "codeLeague": "eliminatorias-sudamericana",
+        "code": "CONMEBOL"
+      },
+      "teams": {
+        "home": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media.api-sports.io/football/teams/30.png",
+          "winner": null
+        },
+        "away": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media.api-sports.io/football/teams/2380.png",
+          "winner": null
+        }
+      },
+      "goals": { "home": null, "away": null },
+      "score": {
+        "halftime": { "home": null, "away": null },
+        "fulltime": { "home": null, "away": null },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    }
+  ]
+}

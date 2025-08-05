@@ -1,8 +1,0 @@
-{
-  "get": "fixtures/rounds",
-  "parameters": { "league": "531", "season": "2023" },
-  "errors": [],
-  "results": 1,
-  "paging": { "current": 1, "total": 1 },
-  "response": ["Final"]
-}

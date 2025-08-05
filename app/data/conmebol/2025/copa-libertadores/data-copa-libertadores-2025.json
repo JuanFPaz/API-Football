@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 13,
+    "type": "Cup",
+    "name": "CONMEBOL Libertadores",
+    "codeLeague": "copa-libertadores",
+    "code": "CONMEBOL",
+    "country": "Sudamerica",
+    "logo": "https://media.api-sports.io/football/leagues/11.png",
+    "flag": null,
+    "season": 2025,
+    "start": "2025-03-05",
+    "end": "2025-07-22",
+    "current": true
+  }
+}

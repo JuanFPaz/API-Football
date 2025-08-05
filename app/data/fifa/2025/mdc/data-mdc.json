@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 15,
+    "type":"Cup",
+    "name": "Mundial de Clubes",
+    "country": "Internacional",
+    "logo": "https://media.api-sports.io/football/leagues/15.png",
+    "flag": null,
+    "season": 2025,
+    "codeLeague": "mdc",
+    "code": "fifa",
+    "start": "2025-06-15",
+    "end": "2025-07-09",
+    "current": true
+  }
+}

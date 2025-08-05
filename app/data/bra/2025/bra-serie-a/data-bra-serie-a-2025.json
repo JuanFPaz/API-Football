@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 71,
+    "type": "League",
+    "country": "Brasil",
+    "name": "Brasileirao Serie A",
+    "codeLeague": "bra-serie-a",
+    "code": "BRA",
+    "flag": "https://media.api-sports.io/flags/br.svg",
+    "logo": "https://media.api-sports.io/football/leagues/71.png",
+    "season": 2025,
+    "start": "2025-03-29",
+    "end": "2025-12-21",
+    "current": true
+  }
+}

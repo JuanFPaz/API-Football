@@ -1,0 +1,16 @@
+{
+  "dataLeague": {
+    "id": 130,
+    "type": "Cup",
+    "name": "Copa Argentina",
+    "codeLeague": "copa-argentina",
+    "code": "arg",
+    "country": "Argentina",
+    "logo": "https://media.api-sports.io/football/leagues/130.png",
+    "flag": "https://media.api-sports.io/flags/ar.svg",
+    "season": 2025,
+    "start": "2025-01-23",
+    "end": "2025-08-30",
+    "current": true
+  }
+}

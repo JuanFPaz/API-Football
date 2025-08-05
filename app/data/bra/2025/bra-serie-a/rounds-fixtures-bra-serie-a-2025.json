@@ -1,0 +1,77 @@
+{
+  "get": "fixtures/rounds",
+  "parameters": { "league": "71", "season": "2025", "dates": "true" },
+  "errors": [],
+  "results": 38,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "round": "Regular Season - 1",
+      "dates": ["2025-03-29", "2025-03-30", "2025-03-31"]
+    },
+    { "round": "Regular Season - 2", "dates": ["2025-04-05", "2025-04-06"] },
+    { "round": "Regular Season - 3", "dates": ["2025-04-12", "2025-04-13"] },
+    {
+      "round": "Regular Season - 4",
+      "dates": ["2025-04-16", "2025-04-17", "2025-04-18"]
+    },
+    {
+      "round": "Regular Season - 5",
+      "dates": ["2025-04-19", "2025-04-20", "2025-04-21"]
+    },
+    { "round": "Regular Season - 6", "dates": ["2025-04-26", "2025-04-27"] },
+    {
+      "round": "Regular Season - 7",
+      "dates": ["2025-05-03", "2025-05-04", "2025-05-05"]
+    },
+    {
+      "round": "Regular Season - 8",
+      "dates": ["2025-05-10", "2025-05-11", "2025-05-12"]
+    },
+    { "round": "Regular Season - 9", "dates": ["2025-05-17", "2025-05-18"] },
+    {
+      "round": "Regular Season - 10",
+      "dates": ["2025-05-24", "2025-05-25", "2025-05-26", "2025-06-04"]
+    },
+    { "round": "Regular Season - 11", "dates": ["2025-05-31", "2025-06-01"] },
+    {
+      "round": "Regular Season - 12",
+      "dates": ["2025-06-11", "2025-06-12", "2025-06-13"]
+    },
+    {
+      "round": "Regular Season - 13",
+      "dates": ["2025-07-12", "2025-07-13", "2025-07-14"]
+    },
+    {
+      "round": "Regular Season - 14",
+      "dates": ["2025-07-16", "2025-07-17", "2025-07-29"]
+    },
+    { "round": "Regular Season - 15", "dates": ["2025-07-19", "2025-07-20"] },
+    { "round": "Regular Season - 16", "dates": ["2025-07-23", "2025-07-24"] },
+    { "round": "Regular Season - 17", "dates": ["2025-07-26", "2025-07-27"] },
+    {
+      "round": "Regular Season - 18",
+      "dates": ["2025-08-02", "2025-08-03", "2025-08-04"]
+    },
+    { "round": "Regular Season - 19", "dates": ["2025-08-09"] },
+    { "round": "Regular Season - 20", "dates": ["2025-08-16"] },
+    { "round": "Regular Season - 21", "dates": ["2025-08-23"] },
+    { "round": "Regular Season - 22", "dates": ["2025-08-30"] },
+    { "round": "Regular Season - 23", "dates": ["2025-09-13"] },
+    { "round": "Regular Season - 24", "dates": ["2025-09-20"] },
+    { "round": "Regular Season - 25", "dates": ["2025-09-27"] },
+    { "round": "Regular Season - 26", "dates": ["2025-10-01"] },
+    { "round": "Regular Season - 27", "dates": ["2025-10-16"] },
+    { "round": "Regular Season - 28", "dates": ["2025-10-25"] },
+    { "round": "Regular Season - 29", "dates": ["2025-11-05"] },
+    { "round": "Regular Season - 30", "dates": ["2025-11-19"] },
+    { "round": "Regular Season - 31", "dates": ["2025-11-22"] },
+    { "round": "Regular Season - 32", "dates": ["2025-11-29"] },
+    { "round": "Regular Season - 33", "dates": ["2025-12-03"] },
+    { "round": "Regular Season - 34", "dates": ["2025-12-06"] },
+    { "round": "Regular Season - 35", "dates": ["2025-12-10"] },
+    { "round": "Regular Season - 36", "dates": ["2025-12-13"] },
+    { "round": "Regular Season - 37", "dates": ["2025-12-17"] },
+    { "round": "Regular Season - 38", "dates": ["2025-12-21"] }
+  ]
+}

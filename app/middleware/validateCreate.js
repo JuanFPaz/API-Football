@@ -1,45 +1,17 @@
-const { validateBodyLinks, validateBodyFxSt } = require('./processValidateCreate/validateBodyCreate')
-const { validateIdLinks, validateLeagueFxSt, validateSeasonFxSt } = require('./processValidateCreate/validateInt')
-const validateLeague = require('./processValidateCreate/validateLeague')
-const validateCountryLinks = require('./processValidateCreate/validateCountryLinks')
+const { validateBodyCreatePais, validateBodyCreateFixture, validateBodyCreateStandings } = require('./processValidateCreate/validateBodyCreate')
+const { validateIds } = require('./processValidateCreate/validateInt')
+const { validateCountryCode, validateLeagueName, validateLeagueCode } = require('./processValidateCreate/validateNames')
+const { generarRutaPais, generarRutaFixtures, generarRutaStandings, generarRutaDataLeague } = require('../helpers/generarRutas')
 const pc = require('picocolors')
 
-async function validateCreateLinks (req, res, next) {
-  /**
-   * Valida el cuerpo de la solicitud antes de la creacion del nuevo recurso.
-   * Retorna el cuerpo de la solicitud con la ruta del archivo para el nuevo recurso:
-   * {
-   *  id:[1,2,3,4],
-   *  country:["fifa"],
-   *  path:[RUTA_DEL_ARCHIVO]
-   * }
-   */
+async function validateCreateDataLeague (req, res, next) {
   try {
-    validateBodyLinks({ ...req.body })
-    const idValidados = await validateIdLinks({ ...req.body })
-    const { pathLink } = await validateCountryLinks({ ...req.body })
-    req.body.id = idValidados
-    req.body.path = pathLink
-    next()
-  } catch (err) {
-    console.log(`${pc.bgRed('Request Invalid')}`)
-    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
-    const data = {}
-    data.post = req.url
-    data.timestamp = Date.now()
-    data.response = err
-    res.status(400).json(data)
-  }
-}
-
-async function validateCreateFxSt (req, res, next) {
-  try {
-    validateBodyFxSt({ ...req.body })
-    const leagueValidado = await validateLeagueFxSt({ ...req.body })
-    const seasonValidado = await validateSeasonFxSt({ ...req.body })
-    req.body.league = leagueValidado
-    req.body.season = seasonValidado
-    const pathFiles = await validateLeague({ ...req.body })
+    await validateBodyCreateFixture(req.body)
+    await validateIds(req.body)
+    await validateCountryCode(req.body)
+    await validateLeagueName(req.body)
+    await validateLeagueCode(req.body)
+    const pathFiles = await generarRutaDataLeague(req.body)
     req.body.pathFiles = pathFiles
     next()
   } catch (err) {
@@ -53,4 +25,65 @@ async function validateCreateFxSt (req, res, next) {
   }
 }
 
-module.exports = { validateCreateLinks, validateCreateFxSt }
+async function validateCreatePais (req, res, next) {
+  try {
+    await validateBodyCreatePais(req.body)
+    await validateIds(req.body)
+    await validateCountryCode(req.body)
+    const { pathLink } = await generarRutaPais(req.body)
+    req.body.path = pathLink
+    next()
+  } catch (err) {
+    console.log(`${pc.bgRed('Request Invalid')}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    const data = {}
+    data.post = req.url
+    data.timestamp = Date.now()
+    data.response = err
+    res.status(400).json(data)
+  }
+}
+
+async function validateCreateFixture (req, res, next) {
+  try {
+    await validateBodyCreateFixture(req.body)
+    await validateIds(req.body)
+    await validateCountryCode(req.body)
+    await validateLeagueName(req.body)
+    await validateLeagueCode(req.body)
+    const pathFiles = await generarRutaFixtures(req.body)
+    req.body.pathFiles = pathFiles
+    next()
+  } catch (err) {
+    console.log(`${pc.bgRed('Request Invalid')}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    const data = {}
+    data.post = req.url
+    data.timestamp = Date.now()
+    data.response = err
+    res.status(400).json(data)
+  }
+}
+
+async function validateCreateStanding (req, res, next) {
+  try {
+    await validateBodyCreateStandings(req.body)
+    await validateIds(req.body)
+    await validateCountryCode(req.body)
+    await validateLeagueName(req.body)
+    await validateLeagueCode(req.body)
+    const pathFiles = await generarRutaStandings(req.body)
+    req.body.pathFiles = pathFiles
+    next()
+  } catch (err) {
+    console.log(`${pc.bgRed('Request Invalid')}`)
+    console.log(`${pc.bgRed('Message:')} ${pc.red(err.message)}`)
+    const data = {}
+    data.post = req.url
+    data.timestamp = Date.now()
+    data.response = err
+    res.status(400).json(data)
+  }
+}
+
+module.exports = { validateCreatePais, validateCreateFixture, validateCreateDataLeague, validateCreateStanding }

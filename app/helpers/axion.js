@@ -34,11 +34,26 @@ async function axionLinksIds (...params) {
 }
 
 async function axionFixtures (...params) {
-  const [league, season] = params
+  const [id, season] = params
 
   const config = {
     method: 'get',
-    url: `https://v3.football.api-sports.io/fixtures?league=${league}&season=${season}`,
+    url: `https://v3.football.api-sports.io/fixtures?league=${id}&season=${season}`,
+    headers: {
+      'x-rapidapi-key': API_KEY,
+      'x-rapidapi-host': 'v3.football.api-sports.io'
+    }
+  }
+
+  return axios(config)
+}
+
+async function axionFixturesDates (...params) {
+  const [id, season, date] = params
+
+  const config = {
+    method: 'get',
+    url: `https://v3.football.api-sports.io/fixtures?league=${id}&season=${season}&from=${date[0]}&to=${date[1]}`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -53,7 +68,7 @@ async function axionFixturesRounds (...params) {
 
   const config = {
     method: 'get',
-    url: `https://v3.football.api-sports.io/fixtures/rounds?league=${league}&season=${season}`,
+    url: `https://v3.football.api-sports.io/fixtures/rounds?league=${league}&season=${season}&dates=true`,
     headers: {
       'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
@@ -82,6 +97,7 @@ module.exports = {
   axionLinks,
   axionLinksIds,
   axionFixtures,
+  axionFixturesDates,
   axionFixturesRounds,
   axionStandings
 }

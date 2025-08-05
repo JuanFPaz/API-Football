@@ -1,0 +1,7 @@
+##
+GET http://localhost:3000/
+###
+GET http://localhost:3000/arg/2025/lpf-clausura
+###
+GET http://localhost:3000/
+###

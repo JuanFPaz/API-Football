@@ -62,7 +62,8 @@ dir_ejemplo
 ## Paises, ligas y copas a obtener
 
 ### Nations
-
+-Eliminatorias mundial de europa: 32
+- eliminatorias mundial de conmebol: 34
 - Mundial de FIFA
   - `league_param`: 1
   - `country_name` : world
