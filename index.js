@@ -63,5 +63,5 @@ app.use((req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(pc.bgGreen(` Server running on http://localhost:${PORT} `))
+  console.log(pc.bgBlue('Servidor:') + ' ' + pc.blue(`http://localhost:${PORT}`))
 })
