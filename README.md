@@ -1,163 +1,56 @@
-# API Football
+# React Footballito
 
-Proyecto desarrollado con `Nodejs` y `Express`. Es una API que obtiene de su homonima [API Football](https://www.api-football.com/documentation-v3), los datos de diferentes ligas y copas, las tablas de posiciones, fixtures, datos de jugadores, ettc. Tambien tenemos `endpoints` que se encargan del proceso de estos datos, para formatearlos y enviarlos al frontend ([React Footballito](https://github.com/JuanFPaz/react-footballito)) y ser más facil de manipual.
+![presentacion React Footballito](https://jpaz.ar/img/proyectos/reactFBrowser.png)
 
-## Enlaces
+## Descripcion
 
-- Repositorio `React Footballito`: [github.com/JuanFPaz/react-footballito](https://github.com/JuanFPaz/react-footballito)
+**React Footballito** es una aplicacion **Front-End** en *desarrollo*, donde se previsualizan los datos de las ligas y competencias de Argentina, y las mas importantes del mundo.
+Los datos son obtenidos de [API Footballito](https://github.com/JuanFPaz/API-Football), aplicacion **Back-End** desarrollada en simultaneo. El objetivo de la aplicacion es poder tener un seguimiento de las ligas y copas, mostrando los resultados semana a semana de los partidos, las tablas de posiciones, campeones, clasificaciones, descensos, goleadores, asistencias, etc.
 
-- Repositorio `API Football`: [github.com/JuanFPaz/API-Football](https://github.com/JuanFPaz/API-Football)
+## Herramientas
 
-## Version de Node
+- **Javascript** (Lenguaje de Programacion)
+- **Bootstrap 5** (Framework de Estilos)
+- **Nodejs** (Entorno de desarrollo Javascript)
+- **Vite** (Herramienta de desarrollo Frontend)
+- **React** (Libreria de Javascript)
+- **Git** (Sistema de Gestion de Versiones)
 
-**_Se recomienda tener instalada la ultima version LTS (20.xx.xx)_**
+## Requisitos
 
-```json
-  "engines" : {
-    "node" : ">=18.0.0 <21.00.00"
-  }
+- Tener instalado [Nodejs](https://nodejs.org/es/download) (Se recomienda la version **22.17.1** o *mayor*)
+- Clonar el repositorio [API Footballito](https://github.com/JuanFPaz/API-Football) (Si no, no habran datos para mostrar, y solo veras un mensaje de error en la pagina.)
+
+## Instalacion
+
+Clonamos el repositorio de **React Footballito**
+
+```bash
+git clone https://github.com/JuanFPaz/react-footballito.git
 ```
 
-## Configuracion
+Desde la terminal de comandos nos dirigimos al directorio **React Footballito**
 
-Crear un directorio nuevo, dond etengamos los repositorios clonados y poder trabajar con estos durante el desarrollo:
-
-```
-dir_ejemplo
-|
-|___
-    |---React-footballito (clonado)
-    |
-    |---API-Football (clonado)
+```bash
+cd react-footballito
 ```
 
-### Instalacion
+Instalamos la dependencias
 
-`git clone https://github.com/JuanFPaz/API-Football`
+```node
+npm install
+```
 
-`cd API-football`
+Para finalizar, ejecutamos el siguiente comando para previsualizar el proyecto
 
-`npm install`
+```node
+npm run dev
+```
 
-`npm run dev`
+## Contribuciones
 
-## Info
+Actualmente, estoy en **busqueda** de alguien que pueda **contribuir con el diseño de la pagina**, ya que estoy más centrado en la parte de la logica de la pagina, en el maquetado y la distribucion de los datos. Si estas interesado en **sumarte**, por favor no dudes en ponerte en contacto conmigo a traves de mi perfil de [Linkedin](https://www.linkedin.com/in/jpaz94/), [Github](https://github.com/JuanFPaz) o [Correo Electronico](mailto:jpaz.dev94@gmail.com)
 
-- Documentacion API: [API Football - Documentacion (V3)](https://www.api-football.com/documentation-v3)
-- Dashboard API: [Dashboard API Football](https://dashboard.api-football.com/)
+## Autor
 
-### Descripcion endpoints de la API original (todavia no hice ningun endpoint xd)
-
-| Endpoint                                  | Descripción                                                                                                              |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `/countries`                              | Nos devuelve los países disponibles, con claves y valores para los Query Search.                                         |
-| `/leagues?country=Argentina`              | Nos devuelve todas las ligas, copas de liga y copas nacionales disponibles de un pais.                                   |
-| `/leagues?country=Argentina&id=128`              | Nos devuelve la liga especificada por ID de un pais.                                   |
-| `/standings?league=128&season=2024`       | Nos devuelve las tablas de posiciones por liga, copa de liga y temporada.                                                |
-| `/fixtures?league=128&season=2024`        | Nos devuelve los fixture completos de ligas, copas de liga y copa nacional/internacional.                                |
-| `/fixtures/rounds?league=130&season=2024` | Nos devuelve el fixture de una liga, copas de liga y copa nacional/internacional por rondas.                             |
-| `/fixtures/statistics?fixture=1158464`    | Nos devuelve las estadisticas de los equipos en un partido especifico, utilizando la ID del fixture.                     |
-| `/fixtures/events?fixture=1158464`        | Nos devuelve los eventos de un partido especifico, como los goles, tarjetas, penales, etc, utilizando la ID del fixture. |
-
-## Paises, ligas y copas a obtener
-
-### Nations
--Eliminatorias mundial de europa: 32
-- eliminatorias mundial de conmebol: 34
-- Mundial de FIFA
-  - `league_param`: 1
-  - `country_name` : world
-  - `current-season`: 2022
-- Eurocopa
-  - `country_name` : world
-  - `league_param` : 4
-  - `current-season:` 2024
-
-- Copa America
-  - `country_name` : world
-  - `league_param` : 9
-  - `current-season:` 2024
-
-- Nation leaguezzzzzzzzzzz?
-  - `country_name` : world
-  - `league_param` : 5
-  - `current-season:` 2024
-
-- Amistosos FIFA
-  - `country_name` : world
-  - `league_param` : 10
-  - `current-season:` 2024
-
-### Argentina
-
-- Liga Profesional
-  - `country_name` : argentina
-  - `league_param` : 128
-  - `current-season:` 2024
-
-- Copa de Liga Profesional
-  - `country_name` : argentina
-  - `league_param` : 128
-  - `current-season:` 2024
-
-- Copa Argentina
-  - `country_name` : argentina
-  - `league_param` : 130
-  - `current-season:` 2024
-
-- Super Copa
-  - `country_name` : argentina
-  - `league_param` : 810
-  - `current-season:` 2024
-
-- Copa Trofeo de Campeones
-  - `country_name` : argentina
-  - `league_param` : 517
-  - `current-season:` 2024
-  
-- Copa de la superliga (predecesor de copa de la liga)
-  - `country_name` : argentina
-  - `league_param` : 483
-  - `current-season:` 2020 -.-
-
-
-### Brazil
-
-- Serie A (Brasileirao)
-  - `country_name` : brazil
-  - `league_param` : 71
-  - `current-season:` 2024
-<!--   
-- Primera Nacional
-  - `league_id`: 129
-  - `current-season`: 2024
-- Primera B Netropolitana:
-  - `league_id`: 131,
-  - `current-season`: 2024
-- Primera C:
-  - `league_id`: 132
-  - `current-season`: 2024 -->
-
-### World
-
-- CONMEBOL Libertadores:
-  - `league-id`: 13
-  - `current-season`: 2024
-- CONMEBOL Sudamericana:
-  - `league-id`: 11
-  - `current-season`: 2024
-- CONMEBOL Recopa Sudamericana:
-  - `league-id`: 541
-  - `current-season`: 2024
-- UEFA Champions League:
-  - `league-id`: 2
-  - `current-season`: 2023
-- UEFA Europa League:
-  - `league-id`: 3
-  - `current-season`: 2023
-- UEFA Conference League:
-  - `league-id`:848
-  - `current-season`:2023
-- UEFA Supercup:
-  - `league-id`:531
-  - `current-season`:2023
+- [Juan Paz](https://jpaz.ar), desarrollador Javascript.
